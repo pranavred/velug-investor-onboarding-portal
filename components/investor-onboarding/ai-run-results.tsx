@@ -1,0 +1,23 @@
+'use client';
+import report from '@/lib/investor-onboarding/ai-report.json';
+import {LiveEvaluationResults} from './live-evaluation-results';
+import { Icon } from './icons';
+
+export function AIRunResults() {
+  const date = new Date(report.completedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  const samples = report.documents.filter(d => d.kind === 'sample');
+  const edgeCases = report.documents.filter(d => d.kind !== 'sample');
+  return <><section id="ob-ai-results" className="ob-control-section ob-ai-results" aria-label="Recorded AI evaluation results">
+    <header className="ob-control-section-heading"><div><span className="ob-eyebrow">03 / AI evaluation</span><h4>Sample model run</h4><p>{report.documentCount} sample PDFs · 4 edge documents · {report.requestCount} model calls · {date} UTC</p></div><a className="ob-button ob-button-outline" href="/investor-onboarding/ai-report.json" download="velug-ai-evaluation.json"><Icon name="download" size={15} />AI report</a></header>
+    <div className="ob-ai-run-summary"><span className="ob-controls-kicker"><Icon name="spark" size={15} />{report.provider}</span><strong>{report.requestedModel}</strong><p>Sample application uploads replay these historical model outputs.</p><code>Run {report.runId}</code></div>
+    <div className="ob-ai-metrics">{report.metrics.map(metric => <article key={metric.id} className={metric.correct < metric.total ? 'ob-ai-metric-review' : ''}><span>{metric.label}</span><strong>{metric.correct}<small>/ {metric.total}</small></strong><p>{metric.unit}</p><details><summary>Criteria <Icon name="chevron" size={12} /></summary><p>{metric.scope}</p></details></article>)}</div>
+    <p className="ob-ai-scope">One run on synthetic samples. Expected answers were withheld from the model. This is not a production accuracy benchmark.</p>
+    <div className="ob-ai-eval-rows">
+      <details><summary><strong>Document results</strong><span>{samples.filter(d => d.grade.passed).length} / {samples.length} passed</span><Icon name="chevron" size={16} /></summary><div className="ob-ai-document-results">{samples.map(document => <details key={document.id}><summary><strong>{document.label}<small>{document.scenarioId}</small></strong><span>{document.grade.passed ? 'Passed' : 'Needs review'}</span><Icon name="chevron" size={14} /></summary><div><p>Category: {document.actual.category} · {document.grade.fields.filter(f => f.correct).length}/{document.grade.fields.length} expected fields matched</p>{document.grade.extras.map(extra => <p className="ob-caution-text" key={extra.key}>Unexpected field: {extra.key} = {extra.value ?? 'null'}. Retained in the report; excluded from the investor record.</p>)}{document.grade.fields.filter(f => !f.correct || !f.unknown && !f.sourceCorrect).map(field => <p className="ob-caution-text" key={field.key}>{field.key}: expected {field.expected}; returned {field.actual ?? 'null'}; source {field.sourceCorrect ? 'matched' : 'not matched'}.</p>)}<small>Response {document.responseId}</small></div></details>)}</div></details>
+      <details><summary><strong>Missing evidence & injected instructions</strong><span>{edgeCases.filter(d => d.grade.passed).length} / {edgeCases.length} passed</span><Icon name="chevron" size={16} /></summary><div>{edgeCases.map(document => <p key={document.id}><span>{document.grade.passed ? 'Passed' : 'Needs review'}</span><strong>{document.label}</strong> · <a href={`/${document.path.replace(/^public\//, '')}`} target="_blank" rel="noreferrer">Test PDF ↗</a></p>)}</div></details>
+      <details><summary><strong>Application checks</strong><span>{report.cases.filter(c => c.passed).length} / {report.cases.length} passed</span><Icon name="chevron" size={16} /></summary><div>{report.cases.map(test => <p key={test.id}><span>{test.passed ? 'Passed' : 'Needs review'}</span><strong>{test.label}</strong><br />Expected: {test.expectedDecision.replaceAll('_',' ')} · Returned: {test.actual.decision.replaceAll('_',' ')}</p>)}</div></details>
+      <details><summary><strong>Run scope</strong><span>Method & limits</span><Icon name="chevron" size={16} /></summary><div><p><span>Scoring</span>{report.grading}</p><p><span>Not measured</span>{report.notMeasured.join('; ')}.</p><p><span>Source fingerprint</span><code>{report.sourceFingerprint.slice(0,16)}</code></p></div></details>
+    </div>
+    <a className="ob-ai-raw-link" href="/investor-onboarding/ai-run-records.json" target="_blank" rel="noreferrer">Prompts, raw outputs, request IDs, and token usage <Icon name="arrow" size={14} /></a>
+  </section><LiveEvaluationResults/></>;
+}

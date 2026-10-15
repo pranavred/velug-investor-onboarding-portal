@@ -1,0 +1,748 @@
+{
+  "upstreamCommit": "c8a7b32b80291a2af2e9773f13098c89913bb3f4",
+  "historyImported": false,
+  "files": [
+    {
+      "source": "app/investor-onboarding-example/onboarding.css",
+      "destination": "app/onboarding.css",
+      "sha256": "6d69d8a7d91ed5c4f795cd2480d84dfb33cd9d14d8b3207767202358939819c6",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/admin-workspace.tsx",
+      "destination": "components/investor-onboarding/admin-workspace.tsx",
+      "sha256": "4e2be1680541eb35966a423e7f41f2255d91be36b335e8509cbdceea4cc97585",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/ai-run-results.tsx",
+      "destination": "components/investor-onboarding/ai-run-results.tsx",
+      "sha256": "bb8e598f895194bb36bf172c0da28ab24c7b4669c4f65b37ed25b10d95f21a8f",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/assurance-panel.tsx",
+      "destination": "components/investor-onboarding/assurance-panel.tsx",
+      "sha256": "1d7e91dc15d2c8a7ce75e6e134f99219cf5c4c9bb2b0c5e7c305a47b10fdd649",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/backend-walkthrough.tsx",
+      "destination": "components/investor-onboarding/backend-walkthrough.tsx",
+      "sha256": "60c0808615a7a8d4bdd9ede67b109336e35fe2f3982af268899e487d76ea9814",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/checks-controls.tsx",
+      "destination": "components/investor-onboarding/checks-controls.tsx",
+      "sha256": "42be5a5f8027a97a62c0bbd510f5b190308737ac13ea2ee81ed294f8ba6f02ed",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/demo-tour.tsx",
+      "destination": "components/investor-onboarding/demo-tour.tsx",
+      "sha256": "cab05f33fb5dd017f397900a4a9be4b01dae0703181d995232d79a2901451830",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/document-preview.tsx",
+      "destination": "components/investor-onboarding/document-preview.tsx",
+      "sha256": "eb865fc077d7678f07cd22f89bc094b4b726d0f1ac8a2c225054b390714f3b4b",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/evidence-panel.tsx",
+      "destination": "components/investor-onboarding/evidence-panel.tsx",
+      "sha256": "70e61dc5689b60af54e2ad1dafe9e02c323d15986b9fd77c365f324f864e12b5",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/guided-journey.tsx",
+      "destination": "components/investor-onboarding/guided-journey.tsx",
+      "sha256": "3a7d6f3ed9fd46a3281db777ff1a087637369d01becfbc47f2cc00ffc8c66748",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/icons.tsx",
+      "destination": "components/investor-onboarding/icons.tsx",
+      "sha256": "e2c7bf85acb4b89c343eb47f2105e3348cabc53d566ff35235016370fb58be8d",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/investor-portal.tsx",
+      "destination": "components/investor-onboarding/investor-portal.tsx",
+      "sha256": "5cb16cc4922052b884056371f0b2a0ce22876f59c242059343c7f46db82e3194",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/live-case-checks.tsx",
+      "destination": "components/investor-onboarding/live-case-checks.tsx",
+      "sha256": "e8669b1b3e70703200ce7b62faf538778aaa484e7d9cfbd85540e4127cb4b3cb",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/live-evaluation-results.tsx",
+      "destination": "components/investor-onboarding/live-evaluation-results.tsx",
+      "sha256": "d8569624c865f7731d03ff59963681844db16c3d439624cf504be3742a51ee7d",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/live-investor.tsx",
+      "destination": "components/investor-onboarding/live-investor.tsx",
+      "sha256": "a45092732d688bfec8b732a1f77a79a882fdaf277ef62a2b7a0f8b0a9fcea0da",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/live-workspace.tsx",
+      "destination": "components/investor-onboarding/live-workspace.tsx",
+      "sha256": "296c8334e420a67c4eff5ae549e3b7ac1db3532f55ba9d6cc9961a4b1d9c714c",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "components/investor-onboarding/onboarding-demo.tsx",
+      "destination": "components/investor-onboarding/onboarding-demo.tsx",
+      "sha256": "46e51aa31a161b19e616b07488a24a8d5b8bca1fbe9e7f85d571f2945033f541",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "eslint.config.mjs",
+      "destination": "eslint.config.mjs",
+      "sha256": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/ai-evaluation.ts",
+      "destination": "lib/investor-onboarding/ai-evaluation.ts",
+      "sha256": "75c659b96c231c06b01bfea02403e99ecba9d82656620fbdf60ffb7a27443026",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/ai-replay.json",
+      "destination": "lib/investor-onboarding/ai-replay.json",
+      "sha256": "97c5d9cd2646bced746fe9d4f7bebc73ff5d8cc950a7ca17bcda8ea730976512",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/ai-report.json",
+      "destination": "lib/investor-onboarding/ai-report.json",
+      "sha256": "0ccbcd6673783dfd348f58f84cc1584630057e6c50b26f1ad08092247b8756a6",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/controls.ts",
+      "destination": "lib/investor-onboarding/controls.ts",
+      "sha256": "d5ffc453303e2f4a458132077e632054841cb1551bcd4a457e26ac29729e01af",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/data.ts",
+      "destination": "lib/investor-onboarding/data.ts",
+      "sha256": "9032fb8ee0d47bb974bac177f952184a9c05ef043321bb820eef7c7a76aabdca",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/engine.ts",
+      "destination": "lib/investor-onboarding/engine.ts",
+      "sha256": "ca6fac3e1d28de81df763473ae21f62ecaeaaa7d933d4517155dc110a25baac9",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/evaluation-catalogue.ts",
+      "destination": "lib/investor-onboarding/evaluation-catalogue.ts",
+      "sha256": "16f52c956c89e693328009f45fac83dad2b1989c7acb4638808796c3c9b5670e",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/evaluation-report.json",
+      "destination": "lib/investor-onboarding/evaluation-report.json",
+      "sha256": "2b59d1820998f536b346c48f809bcfc59c87a017248b48b044f6a693c15418e8",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/live-ai-report.json",
+      "destination": "lib/investor-onboarding/live-ai-report.json",
+      "sha256": "8310dca383f56b0608507c20d0e003507c792e44393420c212bda40625c63574",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/live-case.ts",
+      "destination": "lib/investor-onboarding/live-case.ts",
+      "sha256": "44715f134b5011762d8050c80d8b00233d309214cfb1da462b5268b061f9e3a3",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/live-contract.ts",
+      "destination": "lib/investor-onboarding/live-contract.ts",
+      "sha256": "f2164eab1dcb579286434671dddfe9e1b89200bdfb7a35d07c8ce01a4ea75720",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/live-controller.ts",
+      "destination": "lib/investor-onboarding/live-controller.ts",
+      "sha256": "87c8449d0f98a8b5a28015f1e62355782b1366397254e38d2fbed0f08b2b343c",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/live-evaluation.ts",
+      "destination": "lib/investor-onboarding/live-evaluation.ts",
+      "sha256": "f61492bb214a207408df7da86e2e0f3ffecd2934f48700946235ffc458213540",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/live-service.ts",
+      "destination": "lib/investor-onboarding/live-service.ts",
+      "sha256": "11bdc00d6980f25b5be1e562d082933fde9f753037f01e3c8c2331d0ca0fa806",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/live-state.ts",
+      "destination": "lib/investor-onboarding/live-state.ts",
+      "sha256": "28ec9e6551995be49f775c409532c08515bab97a6a0233f3e1806ba53d7ab3d1",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/live-types.ts",
+      "destination": "lib/investor-onboarding/live-types.ts",
+      "sha256": "699f927c007fea02c081ce140926bb1875b110cc78e93cbc27df9e4713d09b8a",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/recorded-ai.ts",
+      "destination": "lib/investor-onboarding/recorded-ai.ts",
+      "sha256": "a77089acbd6f3c3d654ec27eb0d14083125c0e77f04324b882decc1ac1533e45",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/tour.ts",
+      "destination": "lib/investor-onboarding/tour.ts",
+      "sha256": "df7578f4c99ad1c16fb71eeb323c37049e739054232b6bc7b19f95f5268e72be",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/types.ts",
+      "destination": "lib/investor-onboarding/types.ts",
+      "sha256": "5855923858d24c98a4783dc7b0e0c844b2fcc2f71bbec1c8f6f39f73340b68a8",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "lib/investor-onboarding/value-checks.ts",
+      "destination": "lib/investor-onboarding/value-checks.ts",
+      "sha256": "2701134df3afe2268a95e143b14d244cd48aa89342befe2712c7450573909e40",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "postcss.config.mjs",
+      "destination": "postcss.config.mjs",
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/ai-cases/blank-ownership.pdf",
+      "destination": "public/investor-onboarding/ai-cases/blank-ownership.pdf",
+      "sha256": "20fb22f6b1997826a2177dcaff4a2dc2c29452b46410650b2dfcc35251b80063",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/ai-cases/injected-bank.pdf",
+      "destination": "public/investor-onboarding/ai-cases/injected-bank.pdf",
+      "sha256": "937162046c14ef66afbca7f42f58146fb325954cde7e20016dd99ce63fefdd4c",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/ai-cases/injected-tax.pdf",
+      "destination": "public/investor-onboarding/ai-cases/injected-tax.pdf",
+      "sha256": "1bf21d31269da02c4d6336dd4c53a29e27c44be20c6b944f32d64dbc1cb06386",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/ai-cases/unsupported-menu.pdf",
+      "destination": "public/investor-onboarding/ai-cases/unsupported-menu.pdf",
+      "sha256": "8e2ac68600a0dbfcae99c60bdda311f5faf5050a3e81f6efafe888078c20d634",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/ai-report.json",
+      "destination": "public/investor-onboarding/ai-report.json",
+      "sha256": "0ccbcd6673783dfd348f58f84cc1584630057e6c50b26f1ad08092247b8756a6",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/ai-run-records.json",
+      "destination": "public/investor-onboarding/ai-run-records.json",
+      "sha256": "28fb2f0f81df88428b40027499899e1270fa2ad69a1b1fd71b1444c59985814a",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/ai-source-text.json",
+      "destination": "public/investor-onboarding/ai-source-text.json",
+      "sha256": "66b720e55a57210955d9904b787cb1318b8ee6e73ddc8cb622298719da49baea",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-address.pdf",
+      "destination": "public/investor-onboarding/documents/company-address.pdf",
+      "sha256": "77bb7e84b7468a643460760a344d15697a981a538cb46900a3ab0d30c22d2749",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-authority.pdf",
+      "destination": "public/investor-onboarding/documents/company-authority.pdf",
+      "sha256": "f1cd0b9787a30c8756aefc83bb09c6a208ad0b0f8f1b239f450fd9e0bead83cc",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-bank-corrected.pdf",
+      "destination": "public/investor-onboarding/documents/company-bank-corrected.pdf",
+      "sha256": "6e547cdb184f578d5681ad178fafdfe6d67afd9051f6502f341288a4bcb5e6d8",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-bank.pdf",
+      "destination": "public/investor-onboarding/documents/company-bank.pdf",
+      "sha256": "fce8badd92e33f1c228bd5e895430df63f64ef2d8d9376a73c4ebb9b48cd82e9",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-formation.pdf",
+      "destination": "public/investor-onboarding/documents/company-formation.pdf",
+      "sha256": "81742e5bfadb5331dd9cd59d79dffac75370baa8c7e396975f1a459db36bf61b",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-identity.pdf",
+      "destination": "public/investor-onboarding/documents/company-identity.pdf",
+      "sha256": "9b6e25079b35f59d34ec1507931001d035826f3b8570301aad0b5b2901ab96f6",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-ownership.pdf",
+      "destination": "public/investor-onboarding/documents/company-ownership.pdf",
+      "sha256": "9060e20e31598b33d292530ee602281430fc3619e39b9cf8f462cc2afd14a2ad",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-subscription.pdf",
+      "destination": "public/investor-onboarding/documents/company-subscription.pdf",
+      "sha256": "7d4e62f3d7b5307c7080e825549f00941e9e3d6a92c229ebe6707f6c783ce5a3",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/company-tax.pdf",
+      "destination": "public/investor-onboarding/documents/company-tax.pdf",
+      "sha256": "942a466d121adf52c184c3dd29272d43d04c26b0b177e7e510fe132daf5d78a7",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/complex-address.pdf",
+      "destination": "public/investor-onboarding/documents/complex-address.pdf",
+      "sha256": "09bcb4bff83045493360a1d540a4bf0d8f8a83e059edcdd9ef9b431c6bb0c971",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/complex-authority.pdf",
+      "destination": "public/investor-onboarding/documents/complex-authority.pdf",
+      "sha256": "555310ea946608d9c4571d14eca45ddb56370327d4c05cc7e2c375954844ec96",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/complex-bank.pdf",
+      "destination": "public/investor-onboarding/documents/complex-bank.pdf",
+      "sha256": "0d56ee5f1acbdbb3f6fe718e62d56bedba60a44402a7541e2b3bf2472a101e19",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/complex-formation.pdf",
+      "destination": "public/investor-onboarding/documents/complex-formation.pdf",
+      "sha256": "791bf7c0f0e16c2ffee519f1d5f87c2fce4e833fa113fcbfc4f8cd3f90ffe37c",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/complex-identity.pdf",
+      "destination": "public/investor-onboarding/documents/complex-identity.pdf",
+      "sha256": "b24be8e1000b4b1687334fece2f42843042d25143ccd7b9e076fb2354b9ac1cc",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/complex-ownership.pdf",
+      "destination": "public/investor-onboarding/documents/complex-ownership.pdf",
+      "sha256": "344476f9a13694db459f28ac0b8db8f587593c3723e88db6ae5be9ba16a185e1",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/complex-subscription.pdf",
+      "destination": "public/investor-onboarding/documents/complex-subscription.pdf",
+      "sha256": "86cd809a632beea24e4dd4c16ec601a8d40b1dc836ac58555b2f63accab7bab3",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/complex-tax.pdf",
+      "destination": "public/investor-onboarding/documents/complex-tax.pdf",
+      "sha256": "0ed48ae3c80d47be064301fa2c5882b9c601bd758983cfff93c06f1caafe926c",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/individual-address.pdf",
+      "destination": "public/investor-onboarding/documents/individual-address.pdf",
+      "sha256": "3ee26cc675f1fd912171a4caa2d6701df8fa094d02d798c3bd8b52eae85cdc98",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/individual-bank.pdf",
+      "destination": "public/investor-onboarding/documents/individual-bank.pdf",
+      "sha256": "aaf74b953b2cb77d477e9941c106657ad4c0fc9baff0c72675af0749d765d80c",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/individual-identity.pdf",
+      "destination": "public/investor-onboarding/documents/individual-identity.pdf",
+      "sha256": "f028cd2657f96e79195b4d1e580e14587111477331c5c3bd17bac26ffe4150bd",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/individual-subscription.pdf",
+      "destination": "public/investor-onboarding/documents/individual-subscription.pdf",
+      "sha256": "a73e44c236a78eada97cb2f1e81ab2430facd8755ecd9e5ee376af824bfe9e65",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/documents/individual-tax.pdf",
+      "destination": "public/investor-onboarding/documents/individual-tax.pdf",
+      "sha256": "987a67744efb17a38320f67f8beca74120cb47331fc5e7ef944c3b2aecdfead5",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/evaluation-report.json",
+      "destination": "public/investor-onboarding/evaluation-report.json",
+      "sha256": "2b59d1820998f536b346c48f809bcfc59c87a017248b48b044f6a693c15418e8",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/evaluation-run.txt",
+      "destination": "public/investor-onboarding/evaluation-run.txt",
+      "sha256": "ac01cb624efb003e7708174f34de8ce700c6d052666bf742a57edd68a6449f6e",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-ai-records.json",
+      "destination": "public/investor-onboarding/live-ai-records.json",
+      "sha256": "c1fe87c42ff5027b70ff133996547afb0c3ee2a6338b090349e814d0b0c1ee0b",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-ai-report.json",
+      "destination": "public/investor-onboarding/live-ai-report.json",
+      "sha256": "8310dca383f56b0608507c20d0e003507c792e44393420c212bda40625c63574",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/address.pdf",
+      "destination": "public/investor-onboarding/live-eval/address.pdf",
+      "sha256": "f7e8b79ddc448e86679475b3fe4c72dc6f69a70951f8f446c8d78f93ae54bc64",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/authority.pdf",
+      "destination": "public/investor-onboarding/live-eval/authority.pdf",
+      "sha256": "2b0457cd140cbeb1bc392d82237e93d69846be51b5aa582a416ac8ef23a1f02a",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/bank-conflicting.pdf",
+      "destination": "public/investor-onboarding/live-eval/bank-conflicting.pdf",
+      "sha256": "344cf2b032fff0e7f4ee3c8cde857c34072801f84622b1fc1e5e7bb3b13c9408",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/bank-injection.pdf",
+      "destination": "public/investor-onboarding/live-eval/bank-injection.pdf",
+      "sha256": "e08b5b68cb596124f0abc6b046e7f1672ef547110e6cc5e6d1f0c2dc4b3839ae",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/bank-omitted-holder.pdf",
+      "destination": "public/investor-onboarding/live-eval/bank-omitted-holder.pdf",
+      "sha256": "a63f8681def8ad30031a9522b02c25282107a17c847295a16cc47cb7f691d821",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/bank-v2.pdf",
+      "destination": "public/investor-onboarding/live-eval/bank-v2.pdf",
+      "sha256": "82045f07cf3dd2c836592428504522738036eddc795cac4bc1a2db9792b27615",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/bank.pdf",
+      "destination": "public/investor-onboarding/live-eval/bank.pdf",
+      "sha256": "d71ae26244e122a969ec510ca89d981b60bf81280571c851411e74224aae4229",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/expected.json",
+      "destination": "public/investor-onboarding/live-eval/expected.json",
+      "sha256": "82b9fd874ff020273104fbf3d1f613e4eeb2fa697ae3b5e301d9d032e0f0baac",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/formation.pdf",
+      "destination": "public/investor-onboarding/live-eval/formation.pdf",
+      "sha256": "242af5b7f9172b14c6555f675cd69ee2a46ce46498d9457e98db328edf6a34fd",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/identity.pdf",
+      "destination": "public/investor-onboarding/live-eval/identity.pdf",
+      "sha256": "d7c7e63cff7753798740b2f7afd3d47d94610845911629ca7b0865a47875ab9c",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/ownership-unknown.pdf",
+      "destination": "public/investor-onboarding/live-eval/ownership-unknown.pdf",
+      "sha256": "b3e65dac064a29dd9670832a4843737ffa3edb23df1b66f046b4813126ceff7a",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/ownership.pdf",
+      "destination": "public/investor-onboarding/live-eval/ownership.pdf",
+      "sha256": "e63d4a50474d01297ea6c738cc2b404e2f38d6050039eecfdcd356b5890e8621",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/subscription-different-amount.pdf",
+      "destination": "public/investor-onboarding/live-eval/subscription-different-amount.pdf",
+      "sha256": "3c76f34eee20e5c905bc9f3eec0c773d8592643dbe87c9ac64e6605dfd5109c9",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/subscription-different-currency.pdf",
+      "destination": "public/investor-onboarding/live-eval/subscription-different-currency.pdf",
+      "sha256": "e3774491d54f5eebbde0f0b33cb9fb211b9cef309e301c5348949baba0dd1384",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/subscription-equivalent.pdf",
+      "destination": "public/investor-onboarding/live-eval/subscription-equivalent.pdf",
+      "sha256": "b58461af9f66c319b0441024ddeb9b975e6f216f6fe3883ac61c230391009d2e",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/subscription.pdf",
+      "destination": "public/investor-onboarding/live-eval/subscription.pdf",
+      "sha256": "80a636d0aa0bcf14e31b241a134a65e405ee5c719da9c88c664a4bb68861f6b5",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/tax.pdf",
+      "destination": "public/investor-onboarding/live-eval/tax.pdf",
+      "sha256": "410c6672443245948fb898578d9d3ce778326e41590592c965b71284c40273a7",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "public/investor-onboarding/live-eval/unrelated.pdf",
+      "destination": "public/investor-onboarding/live-eval/unrelated.pdf",
+      "sha256": "f2a457732a3ccbbf24225fc2b16f7f28535f0467fe6b2d801fafbc0c46a50d62",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "scripts/build-onboarding-ai-cases.py",
+      "destination": "scripts/build-onboarding-ai-cases.py",
+      "sha256": "ffdbeca1fcb96eeea1a02b9795edf32566db02168e304e4a4b80e51d7f4cbe23",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "scripts/build-onboarding-documents.py",
+      "destination": "scripts/build-onboarding-documents.py",
+      "sha256": "94f225689399310f8cdc0f463a9a52d3ecefafb82b13b22c24a9cc566096c3b6",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "scripts/build-onboarding-live-eval-cases.py",
+      "destination": "scripts/build-onboarding-live-eval-cases.py",
+      "sha256": "3b078e88e129f7275f9fe9eb4cb2dfc34fe437d0e93d4b4d3029e592a22d85e3",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "scripts/evaluate-onboarding.mjs",
+      "destination": "scripts/evaluate-onboarding.mjs",
+      "sha256": "4686eed08e206533e8cd583aaa488b2642fdd275271f751c7af0335303e5c82d",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "scripts/verify-onboarding-ai.mjs",
+      "destination": "scripts/verify-onboarding-ai.mjs",
+      "sha256": "22f40a2e1a0fac7b5c617224a56106e34e59769ce75c9845207923613c200232",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "scripts/verify-onboarding-live-ai.mjs",
+      "destination": "scripts/verify-onboarding-live-ai.mjs",
+      "sha256": "2b9645b086f89b037383d6e80a6ec7e1fcc52c55cc6b6a9858c8b59df3957f04",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/fixtures/onboarding-live-eleven-pages.pdf",
+      "destination": "tests/fixtures/onboarding-live-eleven-pages.pdf",
+      "sha256": "7ede9be75330959a764e9d1c9b75b092aec9f61530d246aa20b3695a75e27fbd",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/investor-onboarding-ai-engine.test.mjs",
+      "destination": "tests/investor-onboarding-ai-engine.test.mjs",
+      "sha256": "b42a821f56acff5ff6478bfc52eaa5342193bcdb1b8d9e72c7fb701f5df9b721",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/investor-onboarding-controls-engine.test.mjs",
+      "destination": "tests/investor-onboarding-controls-engine.test.mjs",
+      "sha256": "04bf4bf3b24b6bcab433dabe69781393bbc33a5c6d9a63458bc3e9f35a5e1c4c",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/investor-onboarding-engine.test.mjs",
+      "destination": "tests/investor-onboarding-engine.test.mjs",
+      "sha256": "caddf4c375300abeb10c6a1c46ca04b395d0ec01817d93d83b200de2c5939b36",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/investor-onboarding-live-case-engine.test.mjs",
+      "destination": "tests/investor-onboarding-live-case-engine.test.mjs",
+      "sha256": "484fa2589971149bccf4b9c6fdc5cf8aa5c5b189da71a55b06464358ec61d0c0",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/investor-onboarding-live-controller-engine.test.mjs",
+      "destination": "tests/investor-onboarding-live-controller-engine.test.mjs",
+      "sha256": "7d6e8601e695f853c1651b9281494bf3f5ea75b0689e601bdde9231a784ecab0",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/investor-onboarding-live-engine.test.mjs",
+      "destination": "tests/investor-onboarding-live-engine.test.mjs",
+      "sha256": "e5a7d3035e2d2bb8d0f996ec5bff364ce440a6c38594a6230b79820d4d49976e",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/investor-onboarding-live-evaluation-engine.test.mjs",
+      "destination": "tests/investor-onboarding-live-evaluation-engine.test.mjs",
+      "sha256": "8b1129feed0032f486896a5e034604556ada74819de935656d682b35f05e08a6",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tests/investor-onboarding-tour-engine.test.mjs",
+      "destination": "tests/investor-onboarding-tour-engine.test.mjs",
+      "sha256": "6c7025a349448c363697ee50121d040ca136320a6748e371b6a29652707b8fbb",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    },
+    {
+      "source": "tsconfig.json",
+      "destination": "tsconfig.json",
+      "sha256": "9b92cfa2e569828f8b7d14e89beadc88b56085d283976a571ca022aea0c8da23",
+      "reason": "Onboarding application, synthetic fixture, regression or reference evidence",
+      "rights": "Velug-authored; third-party dependency licenses separately inventoried"
+    }
+  ]
+}

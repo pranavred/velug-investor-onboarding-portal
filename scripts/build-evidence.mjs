@@ -1,0 +1,1 @@
+import {spawnSync} from 'node:child_process';const r=spawnSync(process.execPath,['--experimental-strip-types','--test','tests/investor-onboarding-engine.test.mjs','tests/investor-onboarding-controls-engine.test.mjs'],{stdio:'inherit'});if(r.status!==0)process.exit(1);

@@ -1,0 +1,834 @@
+{
+  "company-formation": {
+    "category": "entity",
+    "fields": [
+      {
+        "key": "legal-name",
+        "value": "Oakbridge Holdings LLC",
+        "page": 1,
+        "quote": "Legal entity name Oakbridge Holdings LLC"
+      },
+      {
+        "key": "legal-form",
+        "value": "Limited liability company",
+        "page": 1,
+        "quote": "Legal form Limited liability company"
+      },
+      {
+        "key": "formation-jurisdiction",
+        "value": "Delaware, United States",
+        "page": 1,
+        "quote": "Formation jurisdiction Delaware, United States"
+      },
+      {
+        "key": "registered-address",
+        "value": "100 Sample Avenue, New York, NY 00000",
+        "page": 1,
+        "quote": "Registered address 100 Sample Avenue, New York, NY 00000"
+      },
+      {
+        "key": "registry-reference",
+        "value": "SAMPLE-OBH-2026",
+        "page": 1,
+        "quote": "Formation reference SAMPLE-OBH-2026"
+      },
+      {
+        "key": "formation-date",
+        "value": "January 15, 2021",
+        "page": 1,
+        "quote": "Formation date January 15, 2021"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "company-ownership": {
+    "category": "ownership",
+    "fields": [
+      {
+        "key": "owner-1",
+        "value": "Morgan Ellis",
+        "page": 1,
+        "quote": "First owner Morgan Ellis"
+      },
+      {
+        "key": "owner-1-interest",
+        "value": "60%",
+        "page": 1,
+        "quote": "First direct equity interest 60%"
+      },
+      {
+        "key": "owner-2",
+        "value": "Taylor Reed",
+        "page": 1,
+        "quote": "Second owner Taylor Reed"
+      },
+      {
+        "key": "owner-2-interest",
+        "value": "40%",
+        "page": 1,
+        "quote": "Second direct equity interest 40%"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "company-authority": {
+    "category": "ownership",
+    "fields": [
+      {
+        "key": "authorised-party",
+        "value": "Oakbridge Holdings LLC",
+        "page": 1,
+        "quote": "Represented entity Oakbridge Holdings LLC"
+      },
+      {
+        "key": "signatory",
+        "value": "Morgan Ellis",
+        "page": 1,
+        "quote": "Authorised signatory Morgan Ellis"
+      },
+      {
+        "key": "signing-capacity",
+        "value": "Manager",
+        "page": 1,
+        "quote": "Signing capacity Manager"
+      },
+      {
+        "key": "authority-scope",
+        "value": "Execute the Asteria subscription documents",
+        "page": 1,
+        "quote": "Authority scope Execute the Asteria subscription documents"
+      },
+      {
+        "key": "resolution-date",
+        "value": "September 22, 2026",
+        "page": 1,
+        "quote": "Resolution date September 22, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "company-identity": {
+    "category": "identity",
+    "fields": [
+      {
+        "key": "identity-name",
+        "value": "Morgan Ellis",
+        "page": 1,
+        "quote": "Name on evidence Morgan Ellis"
+      },
+      {
+        "key": "identity-reference",
+        "value": "NOT-A-VALID-ID-2026",
+        "page": 1,
+        "quote": "Evidence reference NOT-A-VALID-ID-2026"
+      },
+      {
+        "key": "identity-expiry",
+        "value": "December 31, 2030",
+        "page": 1,
+        "quote": "Illustrative expiry December 31, 2030"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "company-address": {
+    "category": "identity",
+    "fields": [
+      {
+        "key": "address-subject",
+        "value": "Morgan Ellis",
+        "page": 1,
+        "quote": "Named party Morgan Ellis"
+      },
+      {
+        "key": "residential-address",
+        "value": "100 Sample Avenue, New York, NY 00000",
+        "page": 1,
+        "quote": "Address on evidence 100 Sample Avenue, New York, NY 00000"
+      },
+      {
+        "key": "address-issued",
+        "value": "September 20, 2026",
+        "page": 1,
+        "quote": "Evidence date September 20, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "company-tax": {
+    "category": "tax",
+    "fields": [
+      {
+        "key": "tax-form",
+        "value": "W-9 (illustrative)",
+        "page": 1,
+        "quote": "Candidate form route W-9 (illustrative)"
+      },
+      {
+        "key": "tax-owner",
+        "value": "Oakbridge Holdings LLC",
+        "page": 1,
+        "quote": "Declared tax owner Oakbridge Holdings LLC"
+      },
+      {
+        "key": "tax-classification",
+        "value": "C corporation",
+        "page": 1,
+        "quote": "Declared US tax classification C corporation"
+      },
+      {
+        "key": "tax-residence",
+        "value": "United States",
+        "page": 1,
+        "quote": "Declared tax residence United States"
+      },
+      {
+        "key": "tax-identifier",
+        "value": "INVALID-SAMPLE-TIN",
+        "page": 1,
+        "quote": "Synthetic tax reference INVALID-SAMPLE-TIN"
+      },
+      {
+        "key": "tax-signed",
+        "value": "September 23, 2026",
+        "page": 1,
+        "quote": "Certification date September 23, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "company-subscription": {
+    "category": "subscription",
+    "fields": [
+      {
+        "key": "subscribing-party",
+        "value": "Oakbridge Holdings LLC",
+        "page": 1,
+        "quote": "Legal subscriber Oakbridge Holdings LLC"
+      },
+      {
+        "key": "fund-name",
+        "value": "Asteria Private Credit Fund I",
+        "page": 1,
+        "quote": "Fund Asteria Private Credit Fund I"
+      },
+      {
+        "key": "share-class",
+        "value": "Class A",
+        "page": 1,
+        "quote": "Share class Class A"
+      },
+      {
+        "key": "commitment",
+        "value": "$1,000,000",
+        "page": 1,
+        "quote": "Requested commitment $1,000,000"
+      },
+      {
+        "key": "currency",
+        "value": "USD",
+        "page": 1,
+        "quote": "Currency USD"
+      },
+      {
+        "key": "qualification",
+        "value": "Accredited investor (self-declared)",
+        "page": 1,
+        "quote": "Declared qualification Accredited investor (self-declared)"
+      },
+      {
+        "key": "execution",
+        "value": "Illustrative signed sample",
+        "page": 1,
+        "quote": "Document execution Illustrative signed sample"
+      },
+      {
+        "key": "execution-date",
+        "value": "September 25, 2026",
+        "page": 1,
+        "quote": "Sample execution date September 25, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "company-bank": {
+    "category": "bank",
+    "fields": [
+      {
+        "key": "account-holder",
+        "value": "Oakbridge Management LLC",
+        "page": 1,
+        "quote": "Account holder Oakbridge Management LLC"
+      },
+      {
+        "key": "bank-name",
+        "value": "Example Bank (fictional)",
+        "page": 1,
+        "quote": "Financial institution Example Bank (fictional)"
+      },
+      {
+        "key": "account-suffix",
+        "value": "SAMPLE-XXXX-4821",
+        "page": 1,
+        "quote": "Account reference SAMPLE-XXXX-4821"
+      },
+      {
+        "key": "bank-currency",
+        "value": "USD",
+        "page": 1,
+        "quote": "Account currency USD"
+      },
+      {
+        "key": "statement-date",
+        "value": "September 30, 2026",
+        "page": 1,
+        "quote": "Statement date September 30, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "company-bank-corrected": {
+    "category": "bank",
+    "fields": [
+      {
+        "key": "account-holder",
+        "value": "Oakbridge Holdings LLC",
+        "page": 1,
+        "quote": "Account holder Oakbridge Holdings LLC"
+      },
+      {
+        "key": "bank-name",
+        "value": "Example Bank (fictional)",
+        "page": 1,
+        "quote": "Financial institution Example Bank (fictional)"
+      },
+      {
+        "key": "account-suffix",
+        "value": "SAMPLE-XXXX-4821",
+        "page": 1,
+        "quote": "Account reference SAMPLE-XXXX-4821"
+      },
+      {
+        "key": "bank-currency",
+        "value": "USD",
+        "page": 1,
+        "quote": "Account currency USD"
+      },
+      {
+        "key": "statement-date",
+        "value": "September 30, 2026",
+        "page": 1,
+        "quote": "Statement date September 30, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "individual-identity": {
+    "category": "identity",
+    "fields": [
+      {
+        "key": "identity-name",
+        "value": "Alex Chen",
+        "page": 1,
+        "quote": "Name on evidence Alex Chen"
+      },
+      {
+        "key": "identity-reference",
+        "value": "NOT-A-VALID-ID-2026",
+        "page": 1,
+        "quote": "Evidence reference NOT-A-VALID-ID-2026"
+      },
+      {
+        "key": "identity-expiry",
+        "value": "December 31, 2030",
+        "page": 1,
+        "quote": "Illustrative expiry December 31, 2030"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "individual-address": {
+    "category": "identity",
+    "fields": [
+      {
+        "key": "address-subject",
+        "value": "Alex Chen",
+        "page": 1,
+        "quote": "Named party Alex Chen"
+      },
+      {
+        "key": "residential-address",
+        "value": "18 Example Street, New York, NY 00000",
+        "page": 1,
+        "quote": "Address on evidence 18 Example Street, New York, NY 00000"
+      },
+      {
+        "key": "address-issued",
+        "value": "September 20, 2026",
+        "page": 1,
+        "quote": "Evidence date September 20, 2026"
+      },
+      {
+        "key": "identity-reference",
+        "value": null,
+        "page": 1,
+        "quote": null
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "individual-tax": {
+    "category": "tax",
+    "fields": [
+      {
+        "key": "tax-form",
+        "value": "W-9 (illustrative)",
+        "page": 1,
+        "quote": "Candidate form route W-9 (illustrative)"
+      },
+      {
+        "key": "tax-owner",
+        "value": "Alex Chen",
+        "page": 1,
+        "quote": "Declared tax owner Alex Chen"
+      },
+      {
+        "key": "tax-classification",
+        "value": "US tax person",
+        "page": 1,
+        "quote": "Declared US tax status US tax person"
+      },
+      {
+        "key": "tax-residence",
+        "value": "United States",
+        "page": 1,
+        "quote": "Declared tax residence United States"
+      },
+      {
+        "key": "tax-identifier",
+        "value": "INVALID-SAMPLE-TIN",
+        "page": 1,
+        "quote": "Synthetic tax reference INVALID-SAMPLE-TIN"
+      },
+      {
+        "key": "tax-signed",
+        "value": "September 23, 2026",
+        "page": 1,
+        "quote": "Certification date September 23, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "individual-subscription": {
+    "category": "subscription",
+    "fields": [
+      {
+        "key": "subscribing-party",
+        "value": "Alex Chen",
+        "page": 1,
+        "quote": "Legal subscriber Alex Chen"
+      },
+      {
+        "key": "fund-name",
+        "value": "Asteria Private Credit Fund I",
+        "page": 1,
+        "quote": "Fund Asteria Private Credit Fund I"
+      },
+      {
+        "key": "share-class",
+        "value": "Class A",
+        "page": 1,
+        "quote": "Share class Class A"
+      },
+      {
+        "key": "commitment",
+        "value": "$250,000",
+        "page": 1,
+        "quote": "Requested commitment $250,000"
+      },
+      {
+        "key": "currency",
+        "value": "USD",
+        "page": 1,
+        "quote": "Currency USD"
+      },
+      {
+        "key": "qualification",
+        "value": "Accredited investor (self-declared)",
+        "page": 1,
+        "quote": "Declared qualification Accredited investor (self-declared)"
+      },
+      {
+        "key": "execution",
+        "value": "Illustrative signed sample",
+        "page": 1,
+        "quote": "Document execution Illustrative signed sample"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "individual-bank": {
+    "category": "bank",
+    "fields": [
+      {
+        "key": "account-holder",
+        "value": "Alex Chen",
+        "page": 1,
+        "quote": "Account holder Alex Chen"
+      },
+      {
+        "key": "bank-name",
+        "value": "Example Bank (fictional)",
+        "page": 1,
+        "quote": "Financial institution Example Bank (fictional)"
+      },
+      {
+        "key": "account-suffix",
+        "value": "SAMPLE-XXXX-7190",
+        "page": 1,
+        "quote": "Account reference SAMPLE-XXXX-7190"
+      },
+      {
+        "key": "bank-currency",
+        "value": "USD",
+        "page": 1,
+        "quote": "Account currency USD"
+      },
+      {
+        "key": "statement-date",
+        "value": "September 30, 2026",
+        "page": 1,
+        "quote": "Statement date September 30, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "complex-formation": {
+    "category": "entity",
+    "fields": [
+      {
+        "key": "legal-name",
+        "value": "Redwood Holdings LLC",
+        "page": 1,
+        "quote": "Legal entity name Redwood Holdings LLC"
+      },
+      {
+        "key": "legal-form",
+        "value": "Limited liability company",
+        "page": 1,
+        "quote": "Legal form Limited liability company"
+      },
+      {
+        "key": "formation-jurisdiction",
+        "value": "Delaware, United States",
+        "page": 1,
+        "quote": "Formation jurisdiction Delaware, United States"
+      },
+      {
+        "key": "registered-address",
+        "value": "42 Example Lane, Boston, MA 00000",
+        "page": 1,
+        "quote": "Registered address 42 Example Lane, Boston, MA 00000"
+      },
+      {
+        "key": "registry-reference",
+        "value": "SAMPLE-RWH-2026",
+        "page": 1,
+        "quote": "Formation reference SAMPLE-RWH-2026"
+      },
+      {
+        "key": "formation-date",
+        "value": "January 15, 2021",
+        "page": 1,
+        "quote": "Formation date January 15, 2021"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "complex-ownership": {
+    "category": "ownership",
+    "fields": [
+      {
+        "key": "owner-1",
+        "value": "Northstar Holding Ltd (fictional)",
+        "page": 1,
+        "quote": "Direct owner Northstar Holding Ltd (fictional)"
+      },
+      {
+        "key": "owner-1-interest",
+        "value": "60%",
+        "page": 1,
+        "quote": "Direct equity interest 60%"
+      },
+      {
+        "key": "owner-2",
+        "value": "Jordan Avery",
+        "page": 1,
+        "quote": "Second direct owner Jordan Avery"
+      },
+      {
+        "key": "owner-2-interest",
+        "value": "40%",
+        "page": 1,
+        "quote": "Second direct equity interest 40%"
+      },
+      {
+        "key": "intermediate-owner",
+        "value": "Cameron Blake",
+        "page": 1,
+        "quote": "Owner of Northstar Holding Ltd Cameron Blake"
+      },
+      {
+        "key": "intermediate-interest",
+        "value": null,
+        "page": 1,
+        "quote": "Interest in intermediate entity Unknown"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "complex-authority": {
+    "category": "ownership",
+    "fields": [
+      {
+        "key": "authorised-party",
+        "value": "Redwood Holdings LLC",
+        "page": 1,
+        "quote": "Represented entity Redwood Holdings LLC"
+      },
+      {
+        "key": "signatory",
+        "value": "Jordan Avery",
+        "page": 1,
+        "quote": "Authorised signatory Jordan Avery"
+      },
+      {
+        "key": "signing-capacity",
+        "value": "Manager",
+        "page": 1,
+        "quote": "Signing capacity Manager"
+      },
+      {
+        "key": "authority-scope",
+        "value": "Execute the Asteria subscription documents",
+        "page": 1,
+        "quote": "Authority scope Execute the Asteria subscription documents"
+      },
+      {
+        "key": "resolution-date",
+        "value": "September 22, 2026",
+        "page": 1,
+        "quote": "Resolution date September 22, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "complex-identity": {
+    "category": "identity",
+    "fields": [
+      {
+        "key": "identity-name",
+        "value": "Jordan Avery",
+        "page": 1,
+        "quote": "Name on evidence Jordan Avery"
+      },
+      {
+        "key": "identity-reference",
+        "value": "NOT-A-VALID-ID-2026",
+        "page": 1,
+        "quote": "Evidence reference NOT-A-VALID-ID-2026"
+      },
+      {
+        "key": "identity-expiry",
+        "value": "December 31, 2030",
+        "page": 1,
+        "quote": "Illustrative expiry December 31, 2030"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "complex-address": {
+    "category": "identity",
+    "fields": [
+      {
+        "key": "address-subject",
+        "value": "Jordan Avery",
+        "page": 1,
+        "quote": "Named party Jordan Avery"
+      },
+      {
+        "key": "residential-address",
+        "value": "42 Example Lane, Boston, MA 00000",
+        "page": 1,
+        "quote": "Address on evidence 42 Example Lane, Boston, MA 00000"
+      },
+      {
+        "key": "address-issued",
+        "value": "September 20, 2026",
+        "page": 1,
+        "quote": "Evidence date September 20, 2026"
+      },
+      {
+        "key": "identity-reference",
+        "value": "complex-address / Version 1",
+        "page": 1,
+        "quote": "Evidence reference: complex-address / Version 1"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "complex-tax": {
+    "category": "tax",
+    "fields": [
+      {
+        "key": "tax-form",
+        "value": "W-9 (illustrative)",
+        "page": 1,
+        "quote": "Candidate form route W-9 (illustrative)"
+      },
+      {
+        "key": "tax-owner",
+        "value": "Redwood Holdings LLC",
+        "page": 1,
+        "quote": "Declared tax owner Redwood Holdings LLC"
+      },
+      {
+        "key": "tax-classification",
+        "value": "C corporation",
+        "page": 1,
+        "quote": "Declared US tax classification C corporation"
+      },
+      {
+        "key": "tax-residence",
+        "value": "United States",
+        "page": 1,
+        "quote": "Declared tax residence United States"
+      },
+      {
+        "key": "tax-identifier",
+        "value": "INVALID-SAMPLE-TIN",
+        "page": 1,
+        "quote": "Synthetic tax reference INVALID-SAMPLE-TIN"
+      },
+      {
+        "key": "tax-signed",
+        "value": "September 23, 2026",
+        "page": 1,
+        "quote": "Certification date September 23, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "complex-subscription": {
+    "category": "subscription",
+    "fields": [
+      {
+        "key": "subscribing-party",
+        "value": "Redwood Holdings LLC",
+        "page": 1,
+        "quote": "Legal subscriber Redwood Holdings LLC"
+      },
+      {
+        "key": "fund-name",
+        "value": "Asteria Private Credit Fund I",
+        "page": 1,
+        "quote": "Fund Asteria Private Credit Fund I"
+      },
+      {
+        "key": "share-class",
+        "value": "Class A",
+        "page": 1,
+        "quote": "Share class Class A"
+      },
+      {
+        "key": "commitment",
+        "value": "$2,500,000",
+        "page": 1,
+        "quote": "Requested commitment $2,500,000"
+      },
+      {
+        "key": "currency",
+        "value": "USD",
+        "page": 1,
+        "quote": "Currency USD"
+      },
+      {
+        "key": "qualification",
+        "value": "Accredited investor (self-declared)",
+        "page": 1,
+        "quote": "Declared qualification Accredited investor (self-declared)"
+      },
+      {
+        "key": "execution",
+        "value": "Illustrative signed sample",
+        "page": 1,
+        "quote": "Document execution Illustrative signed sample"
+      },
+      {
+        "key": "execution-date",
+        "value": "September 25, 2026",
+        "page": 1,
+        "quote": "Sample execution date September 25, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  },
+  "complex-bank": {
+    "category": "bank",
+    "fields": [
+      {
+        "key": "account-holder",
+        "value": "Redwood Holdings LLC",
+        "page": 1,
+        "quote": "Account holder Redwood Holdings LLC"
+      },
+      {
+        "key": "bank-name",
+        "value": "Example Bank (fictional)",
+        "page": 1,
+        "quote": "Financial institution Example Bank (fictional)"
+      },
+      {
+        "key": "account-suffix",
+        "value": "SAMPLE-XXXX-4821",
+        "page": 1,
+        "quote": "Account reference SAMPLE-XXXX-4821"
+      },
+      {
+        "key": "bank-currency",
+        "value": "USD",
+        "page": 1,
+        "quote": "Account currency USD"
+      },
+      {
+        "key": "statement-date",
+        "value": "September 30, 2026",
+        "page": 1,
+        "quote": "Statement date September 30, 2026"
+      }
+    ],
+    "model": "gpt-4.1-2025-04-14",
+    "runId": "c8a408d6d58b6aeb"
+  }
+}

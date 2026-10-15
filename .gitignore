@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+coverage/
+.env*
+!.env.example
+.vercel/
+.superpowers/
+.cache/
+*.tsbuildinfo
+next-env.d.ts
+evaluations/runs/
+!evaluations/runs/.gitkeep
+.DS_Store
