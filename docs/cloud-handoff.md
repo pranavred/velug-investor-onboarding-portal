@@ -11,6 +11,10 @@ User authorized building and publishing **pranavred/velug-investor-onboarding-po
 - Live API route is an intentional503 setup stub at this checkpoint. New provider pipeline has NOT been implemented. Old lib/investor-onboarding/live-service.ts still contains the historical GPT-4.1 implementation used by retained tests; do not mistake it for the new route.
 - No API credentials read/copied and zero provider calls made.
 
+## GitHub Actions constraint
+
+The user has no GitHub Actions minutes remaining. Do not rely on GitHub-hosted CI or trigger Actions workflows during this build. Run tests/build/scans/container checks directly in the cloud task when available. Any distributed workflow should be manual-only (`workflow_dispatch`) by default, with activation documented as optional. OpenAI cloud task execution is separate from GitHub Actions; the originating chat observed cloud checkpoint20bc249 on the remote branch, confirming cloud execution has started.
+
 ## Next work
 
 1. Read docs/implementation-plan.md and docs/design.md. Preserve role tabs, sample drag/drop, correction/v2 history, source-PDF dialog, tour, backend diagrams and direct copy.
