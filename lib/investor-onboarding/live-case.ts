@@ -11,7 +11,7 @@ export function seedLiveApplication(id:ScenarioId):LiveApplication {const s=getS
 export function createLiveCase(id:ScenarioId='company'):LiveCaseState{return {application:seedLiveApplication(id),documents:[],requests:[],events:[]};}
 export function currentLiveDocuments(documents:LiveDocument[]) {
  // Only a successful, explicitly linked replacement supersedes its original.
- return documents.filter(d=>!documents.some(next=>next.status==='complete'&&next.result&&next.logicalId===d.logicalId&&next.version>d.version&&next.replacesId&&documents.some(original=>original.id===next.replacesId&&original.logicalId===d.logicalId&&original.result?.purpose===next.result?.purpose&&next.result?.purpose!=='unsupported')));
+ return documents.filter(d=>!documents.some(next=>next.status==='complete'&&next.result&&(!next.result.processing||next.result.processing.extraction.status==='completed'&&next.result.fields.length>0&&next.result.fields.every(f=>f.sourceStatus==='matched'))&&next.logicalId===d.logicalId&&next.version>d.version&&next.replacesId&&documents.some(original=>original.id===next.replacesId&&original.logicalId===d.logicalId&&original.result?.purpose===next.result?.purpose&&next.result?.purpose!=='unsupported')));
 }
 const usable=(f:LiveField)=>f.sourceStatus==='matched'&&Boolean(f.value?.trim())&&!['unknown','n/a','not provided','illegible'].includes(normalizeValue(f.value??''));
 function ownershipKeys(document:LiveDocument) {

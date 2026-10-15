@@ -1,3 +1,4 @@
+// Historical GPT-4.1 replay adapter. NOT used by any live route.
 import { extractText, getDocumentProxy } from 'unpdf';
 import { scenarios } from './data.ts';
 import { normalizeValue as normalize, quoteContainsValue, commitmentMatches } from './value-checks.ts';

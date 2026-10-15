@@ -1,1 +1,4 @@
-export async function POST(){return Response.json({error:'Live uploads are not configured yet.'},{status:503,headers:{'Cache-Control':'no-store'}});}
+import {processUpload} from '@/lib/server/process-upload';
+export const runtime='nodejs';
+export const maxDuration=60;
+export async function POST(request:Request){return processUpload(request);}

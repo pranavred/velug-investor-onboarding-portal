@@ -7,7 +7,7 @@ export function createLiveUploadController(dependencies:Dependencies) {
  async function process(id:string){const entry=entries.get(id);if(!entry)return;const attempt=++entry.attempt,context=epoch,abort=entry.abort;const application={...dependencies.getState().application};
   const current=()=>entries.get(id)===entry&&entry.attempt===attempt&&epoch===context&&!abort.signal.aborted;
   const form=new FormData();form.set('file',entry.file);form.set('scenarioId',application.scenarioId);form.set('application',JSON.stringify(application));
-  try{const response=await(dependencies.fetchImpl??fetch)('/api/investor-onboarding/process',{method:'POST',body:form,signal:abort.signal});const result=await response.json();if(!current())return;if(!response.ok)throw new Error(result.error||'AI processing could not finish. Retry this PDF.');dependencies.dispatch({type:'complete',id,result:{...result,requestApplication:application} as LiveResult,at:at()});}
+  try{const response=await(dependencies.fetchImpl??fetch)('/api/investor-onboarding/process',{method:'POST',body:form,signal:abort.signal});const result=await response.json();if(!current())return;if(!response.ok){dependencies.dispatch({type:'error',id,error:result.error||'Processing incomplete.',processing:result.processing,at:at()});return;}dependencies.dispatch({type:'complete',id,result:{...result,requestApplication:application} as LiveResult,at:at()});}
   catch(error){if(current())dependencies.dispatch({type:'error',id,error:error instanceof Error?error.message:'Upload failed. Try again.',at:at()});}
  }
  function upload(files:File[],replacementId?:string){dependencies.notice('');if(files.length!==1){dependencies.notice('Choose one dummy PDF at a time.');return;}const file=files[0];

@@ -6,7 +6,7 @@ export function liveReducer(state: LiveDocument[], action: LiveAction): LiveDocu
   return state.map(document => {
     if (document.id !== action.id) return document;
     if (action.type === 'complete') return document.status === 'processing' ? { ...document, status: 'complete', result: action.result } : document;
-    if (action.type === 'error') return document.status === 'processing' ? { ...document, status: 'error', error: action.error } : document;
+    if (action.type === 'error') return document.status === 'processing' ? { ...document, status: 'error', error: action.error, processing:action.processing } : document;
     const field = document.result?.fields[action.index];
     return field?.value?.trim() && !['unknown', 'n/a', 'not provided', 'illegible'].includes(field.value.trim().toLowerCase()) && field.sourceStatus === 'matched' ? { ...document, confirmed: { ...document.confirmed, [action.index]: true } } : document;
   });
