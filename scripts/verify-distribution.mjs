@@ -1,6 +1,8 @@
-import assert from 'node:assert/strict';
-import {existsSync,readFileSync} from 'node:fs';
-for(const path of ['app/page.tsx','docs/source-manifest.json','.env.example','LICENSE','README.md'])assert.ok(existsSync(path),path);
-for(const path of ['.vercel/project.json','app/insights','app/api/voice-demo'])assert.equal(existsSync(path),false,path);
-assert.equal(JSON.parse(readFileSync('package.json')).name,'velug-investor-onboarding-portal');
-console.log('Standalone distribution boundary verified.');
+import {readFileSync,readdirSync,existsSync} from 'node:fs';import assert from 'node:assert/strict';
+const ignored=new Set(['.git','node_modules','.next','.cache','.superpowers']);const files=[];
+function walk(dir){for(const e of readdirSync(dir,{withFileTypes:true})){if(ignored.has(e.name)||dir==='evaluations/runs')continue;const p=dir==='.'?e.name:dir+'/'+e.name;if(e.isDirectory())walk(p);else files.push(p);}}walk('.');
+for(const p of ['app/page.tsx','.env.example','LICENSE','NOTICE','README.md','SECURITY.md','THIRD_PARTY_NOTICES.md'])assert.ok(existsSync(p),p);
+for(const p of files){assert.ok(!/(^|\/)\.env(?!\.example$)/.test(p),'Environment file in distribution: '+p);assert.ok(!/^\.vercel\//.test(p),'Cloud metadata: '+p);assert.ok(!/^(app\/(insights|services|about)|app\/api\/(voice|proxy))/.test(p),'Website route: '+p);const t=readFileSync(p).toString();for(const [name,re] of [['private key',/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/],['provider key',/\bsk-(?:proj-)?[A-Za-z0-9_-]{32,}/],['GitHub token',/\b(?:ghp_|github_pat_)[A-Za-z0-9_]{30,}/],['personal path',/\/(?:Users|home)\/[A-Za-z0-9_.-]+\//],['cloud ID',/\b(?:prj_|team_)[A-Za-z0-9]{16,}/]])assert.ok(!re.test(t),`${name}: ${p}`);}
+// Built browser bundles are independently scanned for fake runtime test sentinels.
+function scanBundles(dir){if(!existsSync(dir))return;for(const e of readdirSync(dir,{withFileTypes:true})){const p=dir+'/'+e.name;if(e.isDirectory())scanBundles(p);else{const t=readFileSync(p).toString();assert.ok(!/runtime-private-sentinel|runtime-session-private-sentinel/.test(t),'Runtime secret leaked into client bundle: '+p);}}}scanBundles('.next/static');
+assert.equal(JSON.parse(readFileSync('package.json')).name,'velug-investor-onboarding-portal');console.log(`Distribution and targeted credential/path scan passed (${files.length} source artifacts plus client bundles). This is a pattern scanner, not proof of absence of all secrets.`);

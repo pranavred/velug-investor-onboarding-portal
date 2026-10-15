@@ -21,7 +21,7 @@ export async function processUpload(request:Request,options:{config?:ServerConfi
   if(!getPublicCapabilities(c).liveUploads)throw new UploadError('Live processing is disabled or needs server setup. Sample mode remains available.',503);
   if(!request.headers.get('content-type')?.startsWith('multipart/form-data;'))throw new UploadError('Upload one fictional PDF.');
   const signal=AbortSignal.any([request.signal,AbortSignal.timeout(50000)]);
-  const bytes=await boundedBody(request);signal.throwIfAborted();
+  const bytes=await boundedBody(request,signal);signal.throwIfAborted();
   const form=await new Response(bytes,{headers:{'Content-Type':request.headers.get('content-type')!}}).formData();
   const files=form.getAll('file'),file=files[0];
   if(files.length!==1||!(file instanceof File)||!file.name.toLowerCase().endsWith('.pdf')||file.type&&file.type!=='application/pdf'||file.size<1||file.size>2097152)throw new UploadError('Use one non-empty PDF, up to 2 MB.');
@@ -30,7 +30,7 @@ export async function processUpload(request:Request,options:{config?:ServerConfi
   let application;try{application=JSON.parse(raw);}catch{throw new UploadError('Invalid application.');}
   if(!validateLiveApplication(application)||form.get('scenarioId')!==application.scenarioId)throw new UploadError('Invalid fictional application.');
   const pdfBytes=new Uint8Array(await file.arrayBuffer());if(Buffer.from(pdfBytes.subarray(0,5)).toString()!=='%PDF-')throw new UploadError('Unreadable PDF.');
-  const {texts,pageCount}=await parsePdf(pdfBytes);signal.throwIfAborted();
+  const {texts,pageCount}=await parsePdf(pdfBytes,signal);signal.throwIfAborted();
   const session=demoSession(request,c.sessionSecret!,c.appUrl.startsWith('https:'));cookie=session.cookie;
   const reserve=options.reserve??(()=>reserveProviderDispatch({namespace:c.namespace,sessionHash:session.hash,globalLimit:c.globalLimit,sessionLimit:c.sessionLimit},redisStore(c.redisUrl!)));
   const deps={apiKey:c.apiKey!,reserve,signal,fetchImpl:options.fetchImpl};

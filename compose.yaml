@@ -1,0 +1,26 @@
+services:
+  portal:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      APP_URL: ${APP_URL:-http://localhost:3000}
+      LIVE_AI_ENABLED: ${LIVE_AI_ENABLED:-false}
+      REVIEW_DRAFTS_ENABLED: ${REVIEW_DRAFTS_ENABLED:-false}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_CLASSIFICATION_MODEL: ${OPENAI_CLASSIFICATION_MODEL:-gpt-6-luna}
+      OPENAI_EXTRACTION_MODEL: ${OPENAI_EXTRACTION_MODEL:-gpt-5-2025-08-07}
+      OPENAI_REVIEW_MODEL: ${OPENAI_REVIEW_MODEL:-gpt-5-2025-08-07}
+      APP_SESSION_SECRET: ${APP_SESSION_SECRET:-}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379}
+      QUOTA_NAMESPACE: ${QUOTA_NAMESPACE:-investor-onboarding}
+      GLOBAL_CALLS_PER_HOUR: ${GLOBAL_CALLS_PER_HOUR:-20}
+      SESSION_CALLS_PER_HOUR: ${SESSION_CALLS_PER_HOUR:-5}
+  redis:
+    image: redis:7.4.2-bookworm
+    profiles: [live]
+    command: ['redis-server', '--appendonly', 'yes', '--maxmemory-policy', 'noeviction']
+    volumes:
+      - quota-data:/data
+volumes:
+  quota-data:

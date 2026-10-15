@@ -1,0 +1,12 @@
+import test,{after} from 'node:test';import assert from 'node:assert/strict';
+import {reserveProviderDispatch,redisStore,closeQuotaStores} from '../lib/server/quota.ts';
+import {demoSession} from '../lib/server/session.ts';
+function fixture(){const counts=new Map();return {reserve:async(keys,limits)=>{if(keys.some((k,i)=>(counts.get(k)??0)>=Number(limits[i])))return 0;keys.forEach(k=>counts.set(k,(counts.get(k)??0)+1));return 1;}};}
+const input={namespace:'test',sessionHash:'one',globalLimit:20,sessionLimit:5};
+test('two adapters share global budget across 21 parallel sessions',async()=>{const store=fixture();const results=await Promise.allSettled(Array.from({length:21},(_,i)=>reserveProviderDispatch({...input,sessionHash:String(i)},store)));assert.equal(results.filter(r=>r.status==='fulfilled').length,20);});
+test('session limit is five; failure does not partially spend global counter',async()=>{const store=fixture();for(let i=0;i<5;i++)await reserveProviderDispatch(input,store);await assert.rejects(reserveProviderDispatch(input,store),{status:429});for(let i=0;i<15;i++)await reserveProviderDispatch({...input,sessionHash:String(i)},store);await assert.rejects(reserveProviderDispatch({...input,sessionHash:'new'},store),{status:429});});
+test('store outage fails closed',async()=>assert.rejects(reserveProviderDispatch(input,{reserve:async()=>{throw Error('offline');}}),{status:503}));
+test('signed cookies resist forgery and expire; HTTPS sets Secure',()=>{const secret='test-secret-'.repeat(4),now=1792080000000;const a=demoSession(new Request('https://example.test'),secret,true,now);assert.match(a.cookie,/HttpOnly; SameSite=Strict/);assert.match(a.cookie,/Secure/);const cookie=a.cookie.split(';')[0];assert.equal(demoSession(new Request('https://example.test',{headers:{cookie}}),secret,true,now+1).hash,a.hash);assert.notEqual(demoSession(new Request('https://example.test',{headers:{cookie:cookie+'x'}}),secret,true,now+1).hash,a.hash);assert.notEqual(demoSession(new Request('https://example.test',{headers:{cookie}}),secret,true,now+86400001).hash,a.hash);});
+test('real Redis atomic adapter across instances',{skip:!process.env.TEST_REDIS_URL},async()=>{const namespace='ci_'+crypto.randomUUID().replaceAll('-',''),a=redisStore(process.env.TEST_REDIS_URL),b=redisStore(process.env.TEST_REDIS_URL);const r=await Promise.allSettled(Array.from({length:21},(_,i)=>reserveProviderDispatch({...input,namespace,sessionHash:String(i)},i%2?a:b)));assert.equal(r.filter(x=>x.status==='fulfilled').length,20);});
+
+after(()=>closeQuotaStores());

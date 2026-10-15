@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical_reference",
+  "upstreamCommit": "c8a7b32b80291a2af2e9773f13098c89913bb3f4",
+  "currentPipelineStatus": "not_run",
+  "artifacts": [
+    {
+      "path": "public/investor-onboarding/live-ai-report.json",
+      "sha256": "8310dca383f56b0608507c20d0e003507c792e44393420c212bda40625c63574"
+    },
+    {
+      "path": "public/investor-onboarding/ai-report.json",
+      "sha256": "0ccbcd6673783dfd348f58f84cc1584630057e6c50b26f1ad08092247b8756a6"
+    },
+    {
+      "path": "public/investor-onboarding/ai-run-records.json",
+      "sha256": "28fb2f0f81df88428b40027499899e1270fa2ad69a1b1fd71b1444c59985814a"
+    },
+    {
+      "path": "public/investor-onboarding/ai-source-text.json",
+      "sha256": "66b720e55a57210955d9904b787cb1318b8ee6e73ddc8cb622298719da49baea"
+    },
+    {
+      "path": "public/investor-onboarding/live-ai-records.json",
+      "sha256": "c1fe87c42ff5027b70ff133996547afb0c3ee2a6338b090349e814d0b0c1ee0b"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/ownership-unknown.pdf",
+      "sha256": "b3e65dac064a29dd9670832a4843737ffa3edb23df1b66f046b4813126ceff7a"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/identity.pdf",
+      "sha256": "d7c7e63cff7753798740b2f7afd3d47d94610845911629ca7b0865a47875ab9c"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/bank-v2.pdf",
+      "sha256": "82045f07cf3dd2c836592428504522738036eddc795cac4bc1a2db9792b27615"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/bank-conflicting.pdf",
+      "sha256": "344cf2b032fff0e7f4ee3c8cde857c34072801f84622b1fc1e5e7bb3b13c9408"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/bank-injection.pdf",
+      "sha256": "e08b5b68cb596124f0abc6b046e7f1672ef547110e6cc5e6d1f0c2dc4b3839ae"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/unrelated.pdf",
+      "sha256": "f2a457732a3ccbbf24225fc2b16f7f28535f0467fe6b2d801fafbc0c46a50d62"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/ownership.pdf",
+      "sha256": "e63d4a50474d01297ea6c738cc2b404e2f38d6050039eecfdcd356b5890e8621"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/subscription-different-amount.pdf",
+      "sha256": "3c76f34eee20e5c905bc9f3eec0c773d8592643dbe87c9ac64e6605dfd5109c9"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/subscription-different-currency.pdf",
+      "sha256": "e3774491d54f5eebbde0f0b33cb9fb211b9cef309e301c5348949baba0dd1384"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/formation.pdf",
+      "sha256": "242af5b7f9172b14c6555f675cd69ee2a46ce46498d9457e98db328edf6a34fd"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/bank-omitted-holder.pdf",
+      "sha256": "a63f8681def8ad30031a9522b02c25282107a17c847295a16cc47cb7f691d821"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/bank.pdf",
+      "sha256": "d71ae26244e122a969ec510ca89d981b60bf81280571c851411e74224aae4229"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/subscription.pdf",
+      "sha256": "80a636d0aa0bcf14e31b241a134a65e405ee5c719da9c88c664a4bb68861f6b5"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/tax.pdf",
+      "sha256": "410c6672443245948fb898578d9d3ce778326e41590592c965b71284c40273a7"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/subscription-equivalent.pdf",
+      "sha256": "b58461af9f66c319b0441024ddeb9b975e6f216f6fe3883ac61c230391009d2e"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/expected.json",
+      "sha256": "82b9fd874ff020273104fbf3d1f613e4eeb2fa697ae3b5e301d9d032e0f0baac"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/address.pdf",
+      "sha256": "f7e8b79ddc448e86679475b3fe4c72dc6f69a70951f8f446c8d78f93ae54bc64"
+    },
+    {
+      "path": "public/investor-onboarding/live-eval/authority.pdf",
+      "sha256": "2b0457cd140cbeb1bc392d82237e93d69846be51b5aa582a416ac8ef23a1f02a"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-bank.pdf",
+      "sha256": "fce8badd92e33f1c228bd5e895430df63f64ef2d8d9376a73c4ebb9b48cd82e9"
+    },
+    {
+      "path": "public/investor-onboarding/documents/individual-bank.pdf",
+      "sha256": "aaf74b953b2cb77d477e9941c106657ad4c0fc9baff0c72675af0749d765d80c"
+    },
+    {
+      "path": "public/investor-onboarding/documents/complex-subscription.pdf",
+      "sha256": "86cd809a632beea24e4dd4c16ec601a8d40b1dc836ac58555b2f63accab7bab3"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-formation.pdf",
+      "sha256": "81742e5bfadb5331dd9cd59d79dffac75370baa8c7e396975f1a459db36bf61b"
+    },
+    {
+      "path": "public/investor-onboarding/documents/complex-bank.pdf",
+      "sha256": "0d56ee5f1acbdbb3f6fe718e62d56bedba60a44402a7541e2b3bf2472a101e19"
+    },
+    {
+      "path": "public/investor-onboarding/documents/complex-authority.pdf",
+      "sha256": "555310ea946608d9c4571d14eca45ddb56370327d4c05cc7e2c375954844ec96"
+    },
+    {
+      "path": "public/investor-onboarding/documents/individual-address.pdf",
+      "sha256": "3ee26cc675f1fd912171a4caa2d6701df8fa094d02d798c3bd8b52eae85cdc98"
+    },
+    {
+      "path": "public/investor-onboarding/documents/complex-ownership.pdf",
+      "sha256": "344476f9a13694db459f28ac0b8db8f587593c3723e88db6ae5be9ba16a185e1"
+    },
+    {
+      "path": "public/investor-onboarding/documents/complex-address.pdf",
+      "sha256": "09bcb4bff83045493360a1d540a4bf0d8f8a83e059edcdd9ef9b431c6bb0c971"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-bank-corrected.pdf",
+      "sha256": "6e547cdb184f578d5681ad178fafdfe6d67afd9051f6502f341288a4bcb5e6d8"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-ownership.pdf",
+      "sha256": "9060e20e31598b33d292530ee602281430fc3619e39b9cf8f462cc2afd14a2ad"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-tax.pdf",
+      "sha256": "942a466d121adf52c184c3dd29272d43d04c26b0b177e7e510fe132daf5d78a7"
+    },
+    {
+      "path": "public/investor-onboarding/documents/individual-tax.pdf",
+      "sha256": "987a67744efb17a38320f67f8beca74120cb47331fc5e7ef944c3b2aecdfead5"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-identity.pdf",
+      "sha256": "9b6e25079b35f59d34ec1507931001d035826f3b8570301aad0b5b2901ab96f6"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-address.pdf",
+      "sha256": "77bb7e84b7468a643460760a344d15697a981a538cb46900a3ab0d30c22d2749"
+    },
+    {
+      "path": "public/investor-onboarding/documents/individual-identity.pdf",
+      "sha256": "f028cd2657f96e79195b4d1e580e14587111477331c5c3bd17bac26ffe4150bd"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-authority.pdf",
+      "sha256": "f1cd0b9787a30c8756aefc83bb09c6a208ad0b0f8f1b239f450fd9e0bead83cc"
+    },
+    {
+      "path": "public/investor-onboarding/documents/individual-subscription.pdf",
+      "sha256": "a73e44c236a78eada97cb2f1e81ab2430facd8755ecd9e5ee376af824bfe9e65"
+    },
+    {
+      "path": "public/investor-onboarding/documents/company-subscription.pdf",
+      "sha256": "7d4e62f3d7b5307c7080e825549f00941e9e3d6a92c229ebe6707f6c783ce5a3"
+    },
+    {
+      "path": "public/investor-onboarding/documents/complex-tax.pdf",
+      "sha256": "0ed48ae3c80d47be064301fa2c5882b9c601bd758983cfff93c06f1caafe926c"
+    },
+    {
+      "path": "public/investor-onboarding/documents/complex-formation.pdf",
+      "sha256": "791bf7c0f0e16c2ffee519f1d5f87c2fce4e833fa113fcbfc4f8cd3f90ffe37c"
+    },
+    {
+      "path": "public/investor-onboarding/documents/complex-identity.pdf",
+      "sha256": "b24be8e1000b4b1687334fece2f42843042d25143ccd7b9e076fb2354b9ac1cc"
+    },
+    {
+      "path": "public/investor-onboarding/ai-cases/injected-tax.pdf",
+      "sha256": "1bf21d31269da02c4d6336dd4c53a29e27c44be20c6b944f32d64dbc1cb06386"
+    },
+    {
+      "path": "public/investor-onboarding/ai-cases/blank-ownership.pdf",
+      "sha256": "20fb22f6b1997826a2177dcaff4a2dc2c29452b46410650b2dfcc35251b80063"
+    },
+    {
+      "path": "public/investor-onboarding/ai-cases/injected-bank.pdf",
+      "sha256": "937162046c14ef66afbca7f42f58146fb325954cde7e20016dd99ce63fefdd4c"
+    },
+    {
+      "path": "public/investor-onboarding/ai-cases/unsupported-menu.pdf",
+      "sha256": "8e2ac68600a0dbfcae99c60bdda311f5faf5050a3e81f6efafe888078c20d634"
+    },
+    {
+      "path": "lib/investor-onboarding/live-ai-report.json",
+      "sha256": "8310dca383f56b0608507c20d0e003507c792e44393420c212bda40625c63574"
+    },
+    {
+      "path": "lib/investor-onboarding/ai-report.json",
+      "sha256": "0ccbcd6673783dfd348f58f84cc1584630057e6c50b26f1ad08092247b8756a6"
+    },
+    {
+      "path": "lib/investor-onboarding/ai-replay.json",
+      "sha256": "97c5d9cd2646bced746fe9d4f7bebc73ff5d8cc950a7ca17bcda8ea730976512"
+    }
+  ]
+}

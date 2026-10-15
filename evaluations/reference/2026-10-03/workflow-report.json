@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 2,
+  "title": "Investor onboarding workflow regression tests",
+  "scope": "Regression tests of the portal rules and recorded AI replay. Separate historical and live pipeline reports measure their recorded model runs; these workflow tests make no new model calls.",
+  "runAt": "2026-10-03T14:33:51.555Z",
+  "sourceFingerprint": "1eb81c35002a03de9aeae15d5bec81857bc15fba5310330472e84cd476d99e24",
+  "command": "node --experimental-strip-types --test --test-reporter=tap tests/investor-onboarding-engine.test.mjs tests/investor-onboarding-controls-engine.test.mjs tests/investor-onboarding-ai-engine.test.mjs tests/investor-onboarding-live-engine.test.mjs tests/investor-onboarding-live-case-engine.test.mjs tests/investor-onboarding-live-controller-engine.test.mjs tests/investor-onboarding-live-evaluation-engine.test.mjs",
+  "total": 90,
+  "passed": 90,
+  "failed": 0,
+  "successful": true,
+  "scenarios": [
+    "Company subscription",
+    "Individual investor",
+    "Layered ownership"
+  ],
+  "results": [
+    {
+      "id": "ai-score-source",
+      "name": "AI scoring requires correct values and a quote on the actual PDF page",
+      "label": "AI source grading",
+      "group": "AI scoring tests",
+      "expected": "Fail wrong values, wrong pages, and invented quotes.",
+      "status": "passed"
+    },
+    {
+      "id": "ai-score-extra",
+      "name": "AI scoring fails missing duplicate and extra fields rather than hiding them",
+      "label": "AI output grading",
+      "group": "AI scoring tests",
+      "expected": "Count missing, duplicate, and extra fields as failures.",
+      "status": "passed"
+    },
+    {
+      "id": "ai-score-unknown",
+      "name": "missing evidence accepts abstention but never an inferred percentage",
+      "label": "Abstention grading",
+      "group": "AI scoring tests",
+      "expected": "Accept null for missing ownership; reject an invented percentage.",
+      "status": "passed"
+    },
+    {
+      "id": "ai-score-schema",
+      "name": "AI output validation rejects unsupported shape keys and page types",
+      "label": "AI schema validation",
+      "group": "AI scoring tests",
+      "expected": "Reject invalid shapes, unknown keys, and invalid page types.",
+      "status": "passed"
+    },
+    {
+      "id": "checks-wait",
+      "name": "empty and processing cases never show case checks as passed",
+      "label": "Checks without evidence",
+      "group": "Case checks",
+      "expected": "All case checks wait when required fields are unavailable.",
+      "status": "passed"
+    },
+    {
+      "id": "company-checks",
+      "name": "company case exposes bank conflict while passing evidence comparisons with source references",
+      "label": "Company sample",
+      "group": "Case checks",
+      "expected": "Flag the bank mismatch; pass the six other sample checks.",
+      "status": "passed"
+    },
+    {
+      "id": "partial-correction",
+      "name": "partial bank correction passes name comparison without completing missing evidence",
+      "label": "Correction with missing documents",
+      "group": "Case checks",
+      "expected": "Pass the corrected bank-name check; keep missing evidence checks waiting.",
+      "status": "passed"
+    },
+    {
+      "id": "layered-checks",
+      "name": "layered ownership remains unresolved even when direct interests total 100%",
+      "label": "Layered ownership sample",
+      "group": "Case checks",
+      "expected": "Flag the missing intermediate interest despite a 100% direct total.",
+      "status": "passed"
+    },
+    {
+      "id": "individual-checks",
+      "name": "individual case has an explicit not-applicable ownership result",
+      "label": "Individual sample",
+      "group": "Case checks",
+      "expected": "Pass six checks; mark entity ownership not applicable.",
+      "status": "passed"
+    },
+    {
+      "id": "name-conflicts",
+      "name": "mismatching subscription and signer values cannot pass consistency checks",
+      "label": "Altered subscriber and signer",
+      "group": "Case checks",
+      "expected": "Flag both name mismatches.",
+      "status": "passed"
+    },
+    {
+      "id": "source-conflicts",
+      "name": "provenance verification rejects an altered value, section or version",
+      "label": "Altered source reference",
+      "group": "Sources & exports",
+      "expected": "Flag an altered field value, section, or version.",
+      "status": "passed"
+    },
+    {
+      "id": "export-checks",
+      "name": "JSON review record includes scoped case-check evidence and keeps verification pending",
+      "label": "Case-check export",
+      "group": "Sources & exports",
+      "expected": "Export check rules, sources, and pending verification.",
+      "status": "passed"
+    },
+    {
+      "id": "review-boundary",
+      "name": "confirming every available field leaves verification pending and the case unaccepted",
+      "label": "Confirmation boundary",
+      "group": "Workflow guardrails",
+      "expected": "Confirm fields without completing verification or accepting the investor.",
+      "status": "passed"
+    },
+    {
+      "id": "missing-review",
+      "name": "missing and unprocessed field IDs cannot be confirmed",
+      "label": "Unavailable-field review",
+      "group": "Workflow guardrails",
+      "expected": "Ignore confirmation of nonexistent or unprocessed fields.",
+      "status": "passed"
+    },
+    {
+      "id": "term-conflicts",
+      "name": "conflicting commitment fund share class or currency cannot pass subscription terms",
+      "label": "Conflicting subscription terms",
+      "group": "Case checks",
+      "expected": "Flag a wrong commitment, fund, share class, or currency.",
+      "status": "passed"
+    },
+    {
+      "id": "ownership-invalid",
+      "name": "missing malformed and non-total ownership interests never pass completeness",
+      "label": "Invalid ownership interests",
+      "group": "Case checks",
+      "expected": "Wait on missing fields; flag Unknown, malformed, and non-100% interests.",
+      "status": "passed"
+    },
+    {
+      "id": "ai-output-review",
+      "name": "recorded AI extra fields stay flagged without creating an investor correction request",
+      "label": "Unexpected model fields",
+      "group": "Workflow guardrails",
+      "expected": "Keep the extra-output issue after confirmation; do not request a new investor document.",
+      "status": "passed"
+    },
+    {
+      "id": "ai-replay",
+      "name": "portal fields replay the recorded model values quotes and run identity",
+      "label": "Recorded model replay",
+      "group": "Sources & exports",
+      "expected": "Show the saved model values and quotes with their original model and run ID.",
+      "status": "passed"
+    },
+    {
+      "id": "empty-case",
+      "name": "an untouched case exposes no extracted fields or received documents",
+      "label": "Empty case",
+      "group": "Workflow",
+      "expected": "No documents or fields before intake.",
+      "status": "passed"
+    },
+    {
+      "id": "processing-gate",
+      "name": "received files expose no extraction until processing completes",
+      "label": "Processing gate",
+      "group": "Workflow guardrails",
+      "expected": "Fields appear only after processing completes.",
+      "status": "passed"
+    },
+    {
+      "id": "intake-ids",
+      "name": "duplicate and foreign sample IDs never create duplicate or foreign evidence",
+      "label": "Document intake",
+      "group": "Workflow guardrails",
+      "expected": "Ignore duplicate, unknown, and other-case sample IDs.",
+      "status": "passed"
+    },
+    {
+      "id": "correction-gate",
+      "name": "a corrected bank file cannot bypass the correction request",
+      "label": "Correction gate",
+      "group": "Workflow guardrails",
+      "expected": "Ignore corrected evidence before a correction request.",
+      "status": "passed"
+    },
+    {
+      "id": "bank-conflict",
+      "name": "bank discrepancy compares extracted evidence with the declared legal subscriber",
+      "label": "Bank-name mismatch",
+      "group": "Case checks",
+      "expected": "Flag the different account holder and retain its source.",
+      "status": "passed"
+    },
+    {
+      "id": "correction-loop",
+      "name": "correction completes the investor/admin loop while preserving the original and pending verification",
+      "label": "Corrected evidence",
+      "group": "Workflow",
+      "expected": "Use v2, retain v1, resolve the mismatch, and leave verification pending.",
+      "status": "passed"
+    },
+    {
+      "id": "version-review",
+      "name": "replacement evidence does not inherit a confirmation from its original version",
+      "label": "Version-specific review",
+      "group": "Workflow guardrails",
+      "expected": "A v1 confirmation does not confirm v2.",
+      "status": "passed"
+    },
+    {
+      "id": "reset-stale",
+      "name": "reset prevents a delayed processing completion from repopulating the case",
+      "label": "Reset during processing",
+      "group": "Workflow guardrails",
+      "expected": "Ignore processing completion from before the reset.",
+      "status": "passed"
+    },
+    {
+      "id": "scenario-stale",
+      "name": "scenario changes reject delayed stages and discard prior-case evidence",
+      "label": "Switch during processing",
+      "group": "Workflow guardrails",
+      "expected": "Discard the previous case and ignore its delayed updates.",
+      "status": "passed"
+    },
+    {
+      "id": "ownership-gap",
+      "name": "an incomplete ownership structure remains unknown and raises an evidence-linked issue",
+      "label": "Missing ownership",
+      "group": "Case checks",
+      "expected": "Keep the missing interest Unknown and flag its source.",
+      "status": "passed"
+    },
+    {
+      "id": "field-source",
+      "name": "extracted fields retain the document, version, page, and section",
+      "label": "Field source",
+      "group": "Sources & exports",
+      "expected": "Keep document, version, page, and section on each field.",
+      "status": "passed"
+    },
+    {
+      "id": "unknown-review",
+      "name": "unknown and missing fields cannot be confirmed and invalid requests have no effect",
+      "label": "Unknown-value review",
+      "group": "Workflow guardrails",
+      "expected": "Block Unknown confirmation and ignore a nonexistent issue request.",
+      "status": "passed"
+    },
+    {
+      "id": "export-lineage",
+      "name": "JSON export includes current values, source lineage, versions, and pending checks",
+      "label": "Review export",
+      "group": "Sources & exports",
+      "expected": "Export received evidence, source links, issues, and pending verification.",
+      "status": "passed"
+    },
+    {
+      "id": "correction-upload",
+      "name": "the correction upload action submits only requested correction evidence in a partial case",
+      "label": "Partial-case correction upload",
+      "group": "Workflow",
+      "expected": "Upload only the requested corrected file.",
+      "status": "passed"
+    },
+    {
+      "id": "package-upload",
+      "name": "the package upload action includes all missing originals and excludes locked corrections",
+      "label": "Package upload",
+      "group": "Workflow",
+      "expected": "Upload missing originals without locked corrections.",
+      "status": "passed"
+    },
+    {
+      "id": "case-purposes",
+      "name": "live case collection separates identity address and authority ownership purposes",
+      "label": "Collection separates identity address and authority ownership purposes",
+      "group": "Live application",
+      "expected": "Live case collection separates identity address and authority ownership purposes.",
+      "status": "passed"
+    },
+    {
+      "id": "case-required-fields",
+      "name": "live case missing omitted and ungrounded essential fields cannot pass collection",
+      "label": "Missing omitted and ungrounded essential fields cannot pass collection",
+      "group": "Live application",
+      "expected": "Live case missing omitted and ungrounded essential fields cannot pass collection.",
+      "status": "passed"
+    },
+    {
+      "id": "case-conflicts",
+      "name": "live case conflicting current signer and duplicate evidence never uses first match wins",
+      "label": "Conflicting current signer and duplicate evidence never uses first match wins",
+      "group": "Live application",
+      "expected": "Live case conflicting current signer and duplicate evidence never uses first match wins.",
+      "status": "passed"
+    },
+    {
+      "id": "case-editable-terms",
+      "name": "live case subscription compares amount and explicit currencies against editable application",
+      "label": "Subscription compares amount and explicit currencies against editable application",
+      "group": "Live application",
+      "expected": "Live case subscription compares amount and explicit currencies against editable application.",
+      "status": "passed"
+    },
+    {
+      "id": "case-unsupported-ownership",
+      "name": "live case unsupported documents satisfy nothing and unknown ownership remains review",
+      "label": "Unsupported documents satisfy nothing and unknown ownership remains review",
+      "group": "Live application",
+      "expected": "Live case unsupported documents satisfy nothing and unknown ownership remains review.",
+      "status": "passed"
+    },
+    {
+      "id": "case-pending-versions",
+      "name": "live case pending failed and arbitrary uploads retain original discrepancy",
+      "label": "Pending failed and arbitrary uploads retain original discrepancy",
+      "group": "Live application",
+      "expected": "Live case pending failed and arbitrary uploads retain original discrepancy.",
+      "status": "passed"
+    },
+    {
+      "id": "case-version-review",
+      "name": "live case explicit successful replacement retains original history and invalidates confirmations",
+      "label": "Explicit successful replacement retains original history and invalidates confirmations",
+      "group": "Live application",
+      "expected": "Live case explicit successful replacement retains original history and invalidates confirmations.",
+      "status": "passed"
+    },
+    {
+      "id": "case-confirm-reset",
+      "name": "live confirmation preserves substantive issues and reset clears case memory",
+      "label": "Live confirmation preserves substantive issues and reset clears case memory",
+      "group": "Live application",
+      "expected": "Live confirmation preserves substantive issues and reset clears case memory.",
+      "status": "passed"
+    },
+    {
+      "id": "case-guide-actions",
+      "name": "company guidance advances only after real source correction replacement and export actions",
+      "label": "Company guidance advances only after real source correction replacement and export actions",
+      "group": "Sample guidance",
+      "expected": "Company guidance advances only after real source correction replacement and export actions.",
+      "status": "passed"
+    },
+    {
+      "id": "case-replacement-purpose",
+      "name": "wrong-purpose or unsupported replacement cannot supersede valid original evidence",
+      "label": "Wrong-purpose or unsupported replacement cannot supersede valid original evidence",
+      "group": "Live application",
+      "expected": "Wrong-purpose or unsupported replacement cannot supersede valid original evidence.",
+      "status": "passed"
+    },
+    {
+      "id": "case-ownership-conflict",
+      "name": "conflicting ownership declarations require review even when each totals one hundred percent",
+      "label": "Conflicting ownership declarations require review even when each totals one hundred percent",
+      "group": "Live application",
+      "expected": "Conflicting ownership declarations require review even when each totals one hundred percent.",
+      "status": "passed"
+    },
+    {
+      "id": "case-confirm-history",
+      "name": "superseded transcription confirmations remain in review history",
+      "label": "Superseded transcription confirmations remain in review history",
+      "group": "Live application",
+      "expected": "Superseded transcription confirmations remain in review history.",
+      "status": "passed"
+    },
+    {
+      "id": "case-declared-currency",
+      "name": "application amount ISO currency must agree with its separately declared currency",
+      "label": "Application amount iso currency must agree with its separately declared currency",
+      "group": "Live application",
+      "expected": "Application amount ISO currency must agree with its separately declared currency.",
+      "status": "passed"
+    },
+    {
+      "id": "case-intermediate-interest",
+      "name": "malformed or out-of-range intermediate ownership interests require review",
+      "label": "Malformed or out-of-range intermediate ownership interests require review",
+      "group": "Live application",
+      "expected": "Malformed or out-of-range intermediate ownership interests require review.",
+      "status": "passed"
+    },
+    {
+      "id": "case-request-purpose",
+      "name": "incompatible replacement cannot resolve a correction request against an otherwise passing check",
+      "label": "Correction replacement purpose",
+      "group": "Live application",
+      "expected": "An incompatible replacement cannot resolve a correction request.",
+      "status": "passed"
+    },
+    {
+      "id": "case-guide-export",
+      "name": "company journey requires a fresh export after the evidence review changes",
+      "label": "Guide export freshness",
+      "group": "Sample guidance",
+      "expected": "Version, request and confirmation changes require a fresh sample review export.",
+      "status": "passed"
+    },
+    {
+      "id": "case-ownership-pairs",
+      "name": "ownership interests require unique grounded named owners and complete pairs",
+      "label": "Complete ownership pairs",
+      "group": "Live application",
+      "expected": "Orphan, duplicate, ungrounded or unexplained ownership relationships require review even in a full package.",
+      "status": "passed"
+    },
+    {
+      "id": "case-essential-conflicts",
+      "name": "conflicting current essential fields require review with both document sources",
+      "label": "Current essential-field conflicts",
+      "group": "Live application",
+      "expected": "Current purpose duplicates with differing essential values require review and retain both sources; explicit replacements supersede only their lineage.",
+      "status": "passed"
+    },
+    {
+      "id": "controller-reset",
+      "name": "live controller reset rejects success even when fetch ignores abort and revokes each URL once",
+      "label": "Reset rejects success even when fetch ignores abort and revokes each url once",
+      "group": "Live application",
+      "expected": "Live controller reset rejects success even when fetch ignores abort and revokes each URL once.",
+      "status": "passed"
+    },
+    {
+      "id": "controller-scenario",
+      "name": "live controller scenario switch rejects delayed old error",
+      "label": "Scenario switch rejects delayed old error",
+      "group": "Live application",
+      "expected": "Live controller scenario switch rejects delayed old error.",
+      "status": "passed"
+    },
+    {
+      "id": "controller-retry",
+      "name": "live controller retry rejects an earlier completion and preserves one source URL",
+      "label": "Retry rejects an earlier completion and preserves one source url",
+      "group": "Live application",
+      "expected": "Live controller retry rejects an earlier completion and preserves one source URL.",
+      "status": "passed"
+    },
+    {
+      "id": "controller-removal",
+      "name": "live controller removal during upload rejects late success",
+      "label": "Removal during upload rejects late success",
+      "group": "Live application",
+      "expected": "Live controller removal during upload rejects late success.",
+      "status": "passed"
+    },
+    {
+      "id": "controller-replacement",
+      "name": "live controller failed explicit replacement retains the original version",
+      "label": "Failed explicit replacement retains the original version",
+      "group": "Live application",
+      "expected": "Live controller failed explicit replacement retains the original version.",
+      "status": "passed"
+    },
+    {
+      "id": "controller-capacity",
+      "name": "live controller caps retained files at twelve and snapshots request application",
+      "label": "Caps retained files at twelve and snapshots request application",
+      "group": "Live application",
+      "expected": "Live controller caps retained files at twelve and snapshots request application.",
+      "status": "passed"
+    },
+    {
+      "id": "controller-invalid",
+      "name": "live controller rejects invalid batches and unknown replacement targets without calls or URLs",
+      "label": "Rejects invalid batches and unknown replacement targets without calls or urls",
+      "group": "Live application",
+      "expected": "Live controller rejects invalid batches and unknown replacement targets without calls or URLs.",
+      "status": "passed"
+    },
+    {
+      "id": "live-bytes",
+      "name": "live upload processes actual PDF bytes and flags an application mismatch",
+      "label": "Actual PDF bytes",
+      "group": "Live uploads",
+      "expected": "Actual bytes reach pinned model; mismatched account holder is flagged.",
+      "status": "passed"
+    },
+    {
+      "id": "live-intake",
+      "name": "live intake rejects invalid, empty, oversized, non-PDF and cross-site files before a model call",
+      "label": "File restrictions",
+      "group": "Live uploads",
+      "expected": "Invalid, oversized and cross-site input cannot call the model.",
+      "status": "passed"
+    },
+    {
+      "id": "live-body",
+      "name": "live API rejects oversized streamed bodies and multiple files before processing",
+      "label": "Body limits",
+      "group": "Live uploads",
+      "expected": "Streaming size and file-count checks stop processing.",
+      "status": "passed"
+    },
+    {
+      "id": "live-unsupported",
+      "name": "unsupported dummy PDF gets a real model outcome and remains in review",
+      "label": "Unsupported evidence",
+      "group": "Live uploads",
+      "expected": "Unsupported result is retained without fields or acceptance.",
+      "status": "passed"
+    },
+    {
+      "id": "live-sources",
+      "name": "live source checks flag wrong quotes, wrong pages, blank values and duplicate keys",
+      "label": "Live source checks",
+      "group": "Live uploads",
+      "expected": "Wrong quotes/pages, duplicates and blanks require review.",
+      "status": "passed"
+    },
+    {
+      "id": "live-format",
+      "name": "malformed, oversized and unexpected-key model output cannot become live fields",
+      "label": "Output validation",
+      "group": "Live uploads",
+      "expected": "Malformed or unbounded output is rejected.",
+      "status": "passed"
+    },
+    {
+      "id": "live-failure",
+      "name": "provider failure, refusal, truncation and wrong model never fall back to replay",
+      "label": "Provider failures",
+      "group": "Live uploads",
+      "expected": "Provider failures cannot become preset results.",
+      "status": "passed"
+    },
+    {
+      "id": "live-quota",
+      "name": "live provider calls stop when quota, configuration or limit service is unavailable",
+      "label": "Provider call gate",
+      "group": "Live uploads",
+      "expected": "Limit denial/error and missing configuration prevent provider calls.",
+      "status": "passed"
+    },
+    {
+      "id": "live-stale",
+      "name": "cleared live uploads reject stale completions and block confirmation of unknown or ungrounded fields",
+      "label": "Live review boundaries",
+      "group": "Live uploads",
+      "expected": "Reset rejects stale outputs; missing/ungrounded fields cannot be confirmed.",
+      "status": "passed"
+    },
+    {
+      "id": "live-pages",
+      "name": "PDFs over the page limit are rejected before model processing",
+      "label": "Page limit",
+      "group": "Live uploads",
+      "expected": "Eleven-page PDF is rejected before a model call.",
+      "status": "passed"
+    },
+    {
+      "id": "live-cancel",
+      "name": "cancelled requests and provider timeouts cannot produce successful live results",
+      "label": "Cancellation",
+      "group": "Live uploads",
+      "expected": "Cancellation and timeout cannot produce success.",
+      "status": "passed"
+    },
+    {
+      "id": "live-subscriber",
+      "name": "live subscription subscriber uses the extracted subscribing-party key for mismatch review",
+      "label": "Live subscriber comparison",
+      "group": "Live uploads",
+      "expected": "Wrong subscribing party requires review against the application.",
+      "status": "passed"
+    },
+    {
+      "id": "live-blank",
+      "name": "whitespace-only model values are missing and cannot be confirmed",
+      "label": "Blank values",
+      "group": "Live uploads",
+      "expected": "Whitespace is missing evidence, not a grounded value.",
+      "status": "passed"
+    },
+    {
+      "id": "live-partial-id",
+      "name": "partial identifiers cannot be grounded or confirmed from a longer quoted reference",
+      "label": "Complete identifiers",
+      "group": "Live uploads",
+      "expected": "Reject partial reference values and block confirmation.",
+      "status": "passed"
+    },
+    {
+      "id": "live-partial-number",
+      "name": "partial numeric tokens cannot be grounded inside decimal thousands percent or identifier values",
+      "label": "Complete numeric values",
+      "group": "Live uploads",
+      "expected": "Reject shorter values inside formatted numeric and identifier tokens.",
+      "status": "passed"
+    },
+    {
+      "id": "live-normalized-source",
+      "name": "complete quoted values retain original text with case whitespace and Unicode normalization",
+      "label": "Normalized source spans",
+      "group": "Live uploads",
+      "expected": "Match complete values under case, whitespace and Unicode normalization; preserve originals.",
+      "status": "passed"
+    },
+    {
+      "id": "live-amount-equivalence",
+      "name": "unambiguous equivalent commitment formats compare amounts without inventing currency",
+      "label": "Equivalent commitments",
+      "group": "Live uploads",
+      "expected": "Compare equivalent amounts without inferring currency.",
+      "status": "passed"
+    },
+    {
+      "id": "live-amount-invalid",
+      "name": "different currencies values and ambiguous commitment formats remain application mismatches",
+      "label": "Conservative commitments",
+      "group": "Live uploads",
+      "expected": "Flag different amounts/currencies and ambiguous or invalid formats.",
+      "status": "passed"
+    },
+    {
+      "id": "live-parse-quota",
+      "name": "unreadable page-limited text-limited and cancelled PDFs spend no provider quota",
+      "label": "Parsing before quota",
+      "group": "Live uploads",
+      "expected": "Unreadable, over-limit and cancelled PDFs consume no provider-call budget.",
+      "status": "passed"
+    },
+    {
+      "id": "live-dispatch-quota",
+      "name": "provider failures spend one dispatched-call quota after valid parsing",
+      "label": "Dispatched-call quota",
+      "group": "Live uploads",
+      "expected": "A dispatched provider failure consumes exactly one budget unit.",
+      "status": "passed"
+    },
+    {
+      "id": "live-parser-admission",
+      "name": "parser admission denies excess concurrency and releases slots after parse errors",
+      "label": "Parser concurrency",
+      "group": "Live uploads",
+      "expected": "Deny excess concurrent parsing and release admission after parser errors.",
+      "status": "passed"
+    },
+    {
+      "id": "live-parser-quota",
+      "name": "parser admission denial consumes no provider quota",
+      "label": "Parser admission quota",
+      "group": "Live uploads",
+      "expected": "Parser cap denial consumes no shared provider budget.",
+      "status": "passed"
+    },
+    {
+      "id": "live-signed-amount",
+      "name": "signed or accounting amount fragments cannot become positive grounded commitments",
+      "label": "Signed or accounting amount fragments cannot become positive grounded commitments",
+      "group": "Live uploads",
+      "expected": "Signed or accounting amount fragments cannot become positive grounded commitments.",
+      "status": "passed"
+    },
+    {
+      "id": "live-purpose",
+      "name": "live contract requires a consistent precise purpose and folder category",
+      "label": "Requires a consistent precise purpose and folder category",
+      "group": "Live uploads",
+      "expected": "Live contract requires a consistent precise purpose and folder category.",
+      "status": "passed"
+    },
+    {
+      "id": "live-application-contract",
+      "name": "live application JSON is bounded validated and never sent as expected answers to provider",
+      "label": "Live application json is bounded validated and never sent as expected answers to provider",
+      "group": "Live uploads",
+      "expected": "Live application JSON is bounded validated and never sent as expected answers to provider.",
+      "status": "passed"
+    },
+    {
+      "id": "live-strict-contract",
+      "name": "live contract rejects extra output keys array shapes and fields on unsupported documents",
+      "label": "Rejects extra output keys array shapes and fields on unsupported documents",
+      "group": "Live uploads",
+      "expected": "Live contract rejects extra output keys array shapes and fields on unsupported documents.",
+      "status": "passed"
+    },
+    {
+      "id": "live-unicode-sign",
+      "name": "Unicode minus and accounting prefixes cannot certify unsigned value fragments",
+      "label": "Unicode minus and accounting prefixes cannot certify unsigned value fragments",
+      "group": "Live uploads",
+      "expected": "Unicode minus and accounting prefixes cannot certify unsigned value fragments.",
+      "status": "passed"
+    },
+    {
+      "id": "live-eval-shape",
+      "name": "live evaluation grades precise purpose category missing extra and duplicate fields",
+      "label": "Purpose and field grading",
+      "group": "Live evaluation grading",
+      "expected": "Wrong classification, missing, extra and duplicate output remains failed.",
+      "status": "passed"
+    },
+    {
+      "id": "live-eval-source",
+      "name": "live evaluation rejects wrong page invented quote and truncated numeric source spans",
+      "label": "Complete source grading",
+      "group": "Live evaluation grading",
+      "expected": "Wrong pages and invented or partial source spans fail.",
+      "status": "passed"
+    },
+    {
+      "id": "live-eval-abstention",
+      "name": "live evaluation accepts explicit null unknown abstention but rejects inferred values",
+      "label": "Abstention grading",
+      "group": "Live evaluation grading",
+      "expected": "Explicit unknown accepts abstention and rejects invented percentages.",
+      "status": "passed"
+    },
+    {
+      "id": "live-eval-metrics",
+      "name": "live evaluation measures recall precision source correctness exceptions and false clears separately",
+      "label": "Independent live metrics",
+      "group": "Live evaluation grading",
+      "expected": "Extra fields affect precision; negative package false clears remain visible.",
+      "status": "passed"
+    },
+    {
+      "id": "live-eval-case",
+      "name": "live evaluation case grades retain conflicting evidence and never treat readiness as acceptance",
+      "label": "Deterministic live review grading",
+      "group": "Live evaluation grading",
+      "expected": "Case outcomes use the actual pure live rules; readiness does not imply acceptance.",
+      "status": "passed"
+    }
+  ]
+}

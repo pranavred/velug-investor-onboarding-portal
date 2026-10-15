@@ -1,18 +1,4 @@
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
-
-const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...nextTs,
-  // Override default ignores of eslint-config-next.
-  globalIgnores([
-    // Default ignores of eslint-config-next:
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
-]);
-
-export default eslintConfig;
+import js from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import hooks from 'eslint-plugin-react-hooks';
+export default tseslint.config({ignores:['.next/**','node_modules/**','next-env.d.ts','evaluations/**']},js.configs.recommended,...tseslint.configs.recommended,{files:['**/*.tsx'],plugins:{'react-hooks':hooks},rules:{'react-hooks/rules-of-hooks':'error','react-hooks/exhaustive-deps':'warn'}},{files:['**/*.mjs'],languageOptions:{globals:{ReadableStream:'readonly',structuredClone:'readonly',setImmediate:'readonly',Blob:'readonly',DOMException:'readonly',crypto:'readonly',process:'readonly',Buffer:'readonly',console:'readonly',URL:'readonly',fetch:'readonly',Request:'readonly',Response:'readonly',File:'readonly',FormData:'readonly',AbortController:'readonly',AbortSignal:'readonly',setTimeout:'readonly',clearTimeout:'readonly'}},rules:{'@typescript-eslint/no-require-imports':'off'}},{rules:{'@typescript-eslint/no-unused-vars':['error',{argsIgnorePattern:'^_'}]}});

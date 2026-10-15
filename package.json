@@ -7,34 +7,37 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/build-evidence.mjs && next build",
+    "build": "node --experimental-strip-types scripts/build-evidence.mjs && next build",
     "start": "next start",
     "test": "npm run test:unit && npm run build && node --test tests/rendered-html.test.mjs",
-    "test:unit": "node --experimental-strip-types --test tests/*-engine.test.mjs",
+    "test:unit": "node --experimental-strip-types --import ./tests/no-provider-network.mjs --test tests/*-engine.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "typecheck": "tsc --noEmit",
     "verify:distribution": "node scripts/verify-distribution.mjs",
     "verify:reference": "node --experimental-strip-types scripts/verify-reference-evaluations.mjs",
     "eval:offline": "npm run test:unit",
     "eval:live": "node --experimental-strip-types scripts/run-live-evaluation.mjs",
-    "verify:deployment": "node scripts/verify-deployment.mjs"
+    "verify:deployment": "node scripts/verify-deployment.mjs",
+    "verify:licenses": "node scripts/verify-licenses.mjs"
   },
   "dependencies": {
-    "next": "16.3.8",
+    "next": "16.4.1",
     "react": "19.2.6",
     "react-dom": "19.2.6",
-    "unpdf": "1.8.1",
-    "redis": "5.8.3"
+    "redis": "5.8.3",
+    "unpdf": "1.8.1"
   },
   "devDependencies": {
+    "@eslint/js": "9.39.5",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "eslint": "9.39.4",
-    "eslint-config-next": "16.3.8",
+    "eslint": "9.39.5",
+    "eslint-plugin-react-hooks": "7.1.1",
     "tailwindcss": "4.2.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.2"
   },
   "type": "module",
   "description": "Self-hostable investor onboarding demo with evidence review and OpenAI classification/extraction.",

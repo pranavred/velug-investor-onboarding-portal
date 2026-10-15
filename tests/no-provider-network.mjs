@@ -1,0 +1,1 @@
+const original=globalThis.fetch;globalThis.fetch=(input,...args)=>{const url=typeof input==='string'?input:input instanceof URL?input.href:input.url;if(new URL(url,'http://localhost').hostname==='api.openai.com')throw Error('Provider networking is forbidden in tests/build/CI');return original(input,...args);};

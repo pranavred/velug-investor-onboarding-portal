@@ -17,11 +17,14 @@ export async function reserveProviderDispatch(input:{namespace:string;sessionHas
  let allowed;try{allowed=await store.reserve([prefix+':global',prefix+':session:'+input.sessionHash],[String(input.globalLimit),String(input.sessionLimit)]);}catch{throw Object.assign(new Error('Shared provider budget unavailable. No dispatch permitted.'),{status:503});}
  if(allowed!==1)throw Object.assign(new Error('Provider call budget reached. Try next hour.'),{status:429});
 }
-const clients=new Map<string,ReturnType<typeof createClient>>();
+type Entry={client:ReturnType<typeof createClient>;ready:Promise<unknown>};
+const clients=new Map<string,Entry>();
+export function closeQuotaStores(){for(const {client} of clients.values())if(client.isOpen)client.destroy();clients.clear();}
 export function redisStore(url:string):AtomicStore{
  return {async reserve(keys,limits){
-  let client=clients.get(url);
-  if(!client){client=createClient({url,socket:{connectTimeout:2000,reconnectStrategy:false},disableOfflineQueue:true});client.on('error',()=>{/* Never log connection credentials. */});clients.set(url,client);}
-  try{if(!client.isOpen)await client.connect();return await client.eval(quotaScript,{keys,arguments:limits});}catch{clients.delete(url);client.destroy();throw new Error('Redis unavailable');}
+  let entry=clients.get(url);
+  if(!entry){const client=createClient({url,socket:{connectTimeout:2000,reconnectStrategy:false},disableOfflineQueue:true});client.on('error',()=>{/* Never log connection credentials. */});entry={client,ready:client.connect()};clients.set(url,entry);}
+  let timer:ReturnType<typeof setTimeout>|undefined;
+  try{return await Promise.race([(async()=>{await entry.ready;return entry.client.eval(quotaScript,{keys,arguments:limits});})(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Redis deadline')),3000);})]);}catch{clients.delete(url);if(entry.client.isOpen)entry.client.destroy();throw new Error('Redis unavailable');}finally{clearTimeout(timer);}
  }};
 }

@@ -1,0 +1,46 @@
+name: Offline release checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    services:
+      redis:
+        image: redis:7.4.2-bookworm
+        ports: ['6379:6379']
+        options: --health-cmd 'redis-cli ping' --health-interval 5s --health-timeout 3s --health-retries 10
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+      TEST_REDIS_URL: redis://127.0.0.1:6379
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm audit --audit-level=moderate
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run verify:reference
+      - run: npm test
+      - run: npm run verify:distribution
+      - run: npm run verify:licenses
+      - name: Container build and sample smoke
+        run: |
+          docker build -t onboarding:test .
+          docker run -d --name onboarding -p 3000:3000 onboarding:test
+          for i in $(seq 1 45); do curl -fsS http://localhost:3000/api/health && break || sleep 2; done
+          npm run verify:deployment -- http://localhost:3000
+          docker exec onboarding sh -c 'test "$(id -u)" != 0'
+          docker stop onboarding
+          docker rm onboarding
+          docker run -d --name onboarding-runtime -p 3000:3000 -e OPENAI_API_KEY=runtime-private-sentinel -e APP_SESSION_SECRET=runtime-session-private-sentinel onboarding:test
+          for i in $(seq 1 30); do curl -fsS http://localhost:3000/api/health && break || sleep 2; done
+          npm run verify:deployment -- http://localhost:3000
+          docker history --no-trunc onboarding:test > /tmp/image-history.txt
+          if grep -q runtime-private-sentinel /tmp/image-history.txt; then exit 1; fi
+          docker stop onboarding-runtime

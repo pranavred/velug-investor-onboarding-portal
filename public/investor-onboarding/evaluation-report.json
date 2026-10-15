@@ -1,20 +1,72 @@
 {
-  "schemaVersion": 2,
-  "title": "Investor onboarding workflow regression tests",
-  "scope": "Regression tests of the portal rules and recorded AI replay. Separate historical and live pipeline reports measure their recorded model runs; these workflow tests make no new model calls.",
-  "runAt": "2026-10-03T14:33:51.555Z",
-  "sourceFingerprint": "1eb81c35002a03de9aeae15d5bec81857bc15fba5310330472e84cd476d99e24",
-  "command": "node --experimental-strip-types --test --test-reporter=tap tests/investor-onboarding-engine.test.mjs tests/investor-onboarding-controls-engine.test.mjs tests/investor-onboarding-ai-engine.test.mjs tests/investor-onboarding-live-engine.test.mjs tests/investor-onboarding-live-case-engine.test.mjs tests/investor-onboarding-live-controller-engine.test.mjs tests/investor-onboarding-live-evaluation-engine.test.mjs",
-  "total": 90,
-  "passed": 90,
+  "schemaVersion": 3,
+  "title": "Current standalone offline regression",
+  "scope": "Software tests and historical replay only. Zero provider calls. Decisions/GPT-5 model evaluation: not_run. Skipped integration checks are not passes.",
+  "runAt": "2026-10-15T16:48:56.584Z",
+  "sourceFingerprint": "129de53bf165847f5389e180959dafe5e00c36c3b40a1afbcbdef22c5db0c632",
+  "command": "npm run test:unit",
+  "total": 138,
+  "passed": 137,
   "failed": 0,
+  "skipped": 1,
   "successful": true,
-  "scenarios": [
-    "Company subscription",
-    "Individual investor",
-    "Layered ownership"
-  ],
   "results": [
+    {
+      "id": "current-0",
+      "label": "missing configuration keeps sample working and disables live",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-1",
+      "label": "live configuration requires a server key, Redis and signing secret",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-2",
+      "label": "capabilities never serialize credentials",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-3",
+      "label": "origin uses configured URL and ignores forged host headers",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-4",
+      "label": "invalid settings fail closed with names only",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-5",
+      "label": "standalone distribution contains onboarding and excludes private website",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-6",
+      "label": "reference replay never becomes measured current; changes invalidate provider status",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-7",
+      "label": "immutable reference artifact integrity includes PDF bytes and failures",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
     {
       "id": "ai-score-source",
       "name": "AI scoring requires correct values and a quote on the actual PDF page",
@@ -733,6 +785,286 @@
       "label": "Deterministic live review grading",
       "group": "Live evaluation grading",
       "expected": "Case outcomes use the actual pure live rules; readiness does not imply acceptance.",
+      "status": "passed"
+    },
+    {
+      "id": "current-98",
+      "label": "a phone tour keeps the card and spotlight visible without covering the highlighted area",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-99",
+      "label": "desktop file workspace places the tour beside the highlighted documents",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-100",
+      "label": "the upload portal uses the free space on its left for the tutorial",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-101",
+      "label": "full-width evaluation evidence places the card below the highlighted report",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-102",
+      "label": "a short viewport clips the spotlight and keeps the tour card inside the screen",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-103",
+      "label": "a crowded screen omits an unusably small spotlight rather than highlighting a sliver",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-104",
+      "label": "typed choice formation",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-105",
+      "label": "typed choice identity",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-106",
+      "label": "typed choice address",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-107",
+      "label": "typed choice ownership",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-108",
+      "label": "typed choice authority",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-109",
+      "label": "typed choice tax",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-110",
+      "label": "typed choice subscription",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-111",
+      "label": "typed choice bank",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-112",
+      "label": "typed choice unsupported",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-113",
+      "label": "typed choice insufficient_evidence",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-114",
+      "label": "classification rejects refusal",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-115",
+      "label": "classification rejects wrong model",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-116",
+      "label": "classification rejects invalid distribution",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-117",
+      "label": "classification rejects invalid choice",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-118",
+      "label": "classification rejects ambiguous tie",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-119",
+      "label": "empty or overlong text spends no dispatch",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-120",
+      "label": "second-stage budget denial retains classification without completing or replacing v1",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-121",
+      "label": "supported PDF normally spends two dispatches, GPT-5 has no temperature, evidence grounded",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-122",
+      "label": "unsupported skips extraction",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-123",
+      "label": "forged host cannot override origin or dispatch",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-124",
+      "label": "review receipt binds immutable context to session and expiry",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-125",
+      "label": "draft rejects invented or uncited output {\"sourceIds\":[\"invented\"]}",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-126",
+      "label": "draft rejects invented or uncited output {\"text\":\"Investor accepted\",\"sourceIds\":[\"source-0\"]}",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-127",
+      "label": "draft rejects invented or uncited output {\"sourceIds\":[]}",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-128",
+      "label": "two adapters share global budget across 21 parallel sessions",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-129",
+      "label": "session limit is five; failure does not partially spend global counter",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-130",
+      "label": "store outage fails closed",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-131",
+      "label": "signed cookies resist forgery and expire; HTTPS sets Secure",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-132",
+      "label": "real Redis atomic adapter across instances",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "skipped"
+    },
+    {
+      "id": "current-133",
+      "label": "classifier access denied/timeout never silently falls back",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-134",
+      "label": "already cancelled work reserves nothing",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-135",
+      "label": "complete ungrounded/missing-essential-field v2 does not supersede v1",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-136",
+      "label": "paid runner refuses missing authorization and existing output before dispatch",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-137",
+      "label": "valid draft is extractive and never changes actual case",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     }
   ]
