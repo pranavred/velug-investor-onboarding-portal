@@ -2,11 +2,11 @@
   "schemaVersion": 3,
   "title": "Current standalone offline regression",
   "scope": "Software tests and historical replay only. Zero provider calls. Decisions/GPT-5 model evaluation: not_run. Skipped integration checks are not passes.",
-  "runAt": "2026-10-15T16:55:46.319Z",
-  "sourceFingerprint": "a6ddfcc1123516cfb5ba6da297f31b9b9300467dd2b96fb510edcde549b78a84",
+  "runAt": "2026-10-15T17:00:33.320Z",
+  "sourceFingerprint": "2ff9f3cf770464057c965b9559f2fc25c2d9ca37330bf949042708296ea6774b",
   "command": "npm run test:unit",
-  "total": 139,
-  "passed": 138,
+  "total": 143,
+  "passed": 142,
   "failed": 0,
   "skipped": 1,
   "successful": true,
@@ -999,76 +999,104 @@
     },
     {
       "id": "current-128",
-      "label": "two adapters share global budget across 21 parallel sessions",
+      "label": "oversized streaming provider output is cancelled before downloading the full body",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     },
     {
       "id": "current-129",
-      "label": "session limit is five; failure does not partially spend global counter",
+      "label": "provider response body cancellation interrupts a stalled stream",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     },
     {
       "id": "current-130",
-      "label": "store outage fails closed",
+      "label": "provider HTTP errors cancel their bodies without exposing error text",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     },
     {
       "id": "current-131",
-      "label": "signed cookies resist forgery and expire; HTTPS sets Secure",
+      "label": "bounded provider reader preserves JSON with split multibyte text",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     },
     {
       "id": "current-132",
-      "label": "real Redis atomic adapter across instances",
+      "label": "two adapters share global budget across 21 parallel sessions",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
-      "status": "skipped"
+      "status": "passed"
     },
     {
       "id": "current-133",
-      "label": "classifier access denied/timeout never silently falls back",
+      "label": "session limit is five; failure does not partially spend global counter",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     },
     {
       "id": "current-134",
-      "label": "already cancelled work reserves nothing",
+      "label": "store outage fails closed",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     },
     {
       "id": "current-135",
-      "label": "complete ungrounded/missing-essential-field v2 does not supersede v1",
+      "label": "signed cookies resist forgery and expire; HTTPS sets Secure",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     },
     {
       "id": "current-136",
-      "label": "paid runner refuses missing authorization and existing output before dispatch",
+      "label": "real Redis atomic adapter across instances",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
-      "status": "passed"
+      "status": "skipped"
     },
     {
       "id": "current-137",
-      "label": "valid draft is extractive and never changes actual case",
+      "label": "classifier access denied/timeout never silently falls back",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"
     },
     {
       "id": "current-138",
+      "label": "already cancelled work reserves nothing",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-139",
+      "label": "complete ungrounded/missing-essential-field v2 does not supersede v1",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-140",
+      "label": "paid runner refuses missing authorization and existing output before dispatch",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-141",
+      "label": "valid draft is extractive and never changes actual case",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-142",
       "label": "request body cancellation aborts intake without waiting for body end",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
