@@ -2,11 +2,11 @@
   "schemaVersion": 3,
   "title": "Current standalone offline regression",
   "scope": "Software tests and historical replay only. Zero provider calls. Decisions/GPT-5 model evaluation: not_run. Skipped integration checks are not passes.",
-  "runAt": "2026-10-15T16:48:56.584Z",
-  "sourceFingerprint": "129de53bf165847f5389e180959dafe5e00c36c3b40a1afbcbdef22c5db0c632",
+  "runAt": "2026-10-15T16:55:46.319Z",
+  "sourceFingerprint": "a6ddfcc1123516cfb5ba6da297f31b9b9300467dd2b96fb510edcde549b78a84",
   "command": "npm run test:unit",
-  "total": 138,
-  "passed": 137,
+  "total": 139,
+  "passed": 138,
   "failed": 0,
   "skipped": 1,
   "successful": true,
@@ -1063,6 +1063,13 @@
     {
       "id": "current-137",
       "label": "valid draft is extractive and never changes actual case",
+      "group": "Current offline regression",
+      "expected": "Exercise declared mocked/runtime invariant",
+      "status": "passed"
+    },
+    {
+      "id": "current-138",
+      "label": "request body cancellation aborts intake without waiting for body end",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
       "status": "passed"

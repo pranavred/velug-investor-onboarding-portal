@@ -1,3 +1,18 @@
+# Current cloud continuation status — October 15, 2026
+
+The standalone implementation is now built. Remote branch remains `build/standalone`; cloud implementation checkpoints are `20bc249` and `8f84d80`. Read docs/releases/v0.1-verification.md for latest validation. Earlier handoff below is preserved as historical context, not current completion status.
+
+Implemented: Decisions bounded-text classifier, GPT-5 Responses purpose-specific extraction, deterministic grounding/case checks, staged/partial provenance UI, conservative explicit replacement, signed anonymous sessions, shared Redis Lua budgets, explicit extractive review/correction drafts with session-bound receipts, config/health, historical integrity + current not_run status, private paid runner (not invoked), Docker/Compose/Vercel import, CI/security/contribution/licenses/readiness docs. No original Velug website was accessed/modified. Zero provider calls; no local keys copied.
+
+Validation: offline suite 139 tests / 138 passed / one real Redis test skipped (no TEST_REDIS_URL), typecheck/lint/build/rendered-root/reference/distribution/license gates pass in cloud; audit zero vulnerabilities. Local production HTTP smoke passed in one process (health/sample/disabled live/forged origin). Independent whole-repository reviewer found no P0/P1; its three P2 recommendations and optional draft metadata P3 were addressed. Read verification record for final exact evidence.
+
+**Actual release blockers:** Docker/Redis server are absent in cloud; GitHub Actions run 38772429246 failed before steps and retry returned HTTP403 `Unable to retry disabled workflow`. Thus container + real Redis CI are NOT verified. Chromium was unavailable; attempted browser install downloaded invalid/empty archives, so no visual desktop/tablet/mobile QA is claimed. Connected GitHub tools expose contents/tree/commit writes but no workflow-enable, repository-visibility, tag/release-create admin operation; direct shell Git had no auth. Do not fabricate public release or enable/visibility success. Keep this new repository private until unresolved gates pass. User already authorized eventual publication; do not ask again about scope. A future authorized admin-capable integration/checkout can finish release after verification. No hosted live deployment or real API run is needed.
+
+
+The concurrent originating-chat handoff reports no GitHub Actions minutes remain. Preserve manual-only workflow_dispatch; do not trigger GitHub-hosted CI. Run cloud checks directly when available.
+
+---
+
 # Cloud continuation checkpoint
 
 User authorized building and publishing **pranavred/velug-investor-onboarding-portal** as a separate open-source product. They subsequently requested moving this ongoing run to cloud. Continue the same work autonomously; do not ask again about building or publishing this new repository. Keep it private until complete/reviewed, then publish it as requested. Never modify or deploy the existing Velug website. Never request or copy existing local API credentials. User will add env variables and test real calls locally when done.

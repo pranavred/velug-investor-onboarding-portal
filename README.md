@@ -49,6 +49,6 @@ npm audit --audit-level=moderate
 docker compose up --build
 ```
 
-CI uses no provider secrets, runs disposable Redis integration and container sample smoke. If TEST_REDIS_URL is absent, that integration check is reported as skipped. Docker/Compose and Vercel import use your own infrastructure; no hosted live deployment is required. [Release verification](docs/releases/v0.1-verification.md) states actual evidence and limitations.
+The optional manual-only GitHub workflow uses no provider secrets and is configured for disposable Redis integration and container smoke. It is not automatically triggered; GitHub Actions minutes are unavailable for this build. If TEST_REDIS_URL is absent, that integration check is reported as skipped. Docker/Compose and Vercel import use your own infrastructure; no hosted live deployment is required. [Release verification](docs/releases/v0.1-verification.md) states actual evidence and limitations.
 
 See [architecture](docs/architecture.md), [deployment](docs/deployment.md), [production prerequisites](docs/production-readiness.md), [security](SECURITY.md), [contributing](CONTRIBUTING.md), [Apache-2.0](LICENSE) and [dependency notices](THIRD_PARTY_NOTICES.md). Code and fictional fixtures are independently extracted; the existing Velug business website and its history are not included.
