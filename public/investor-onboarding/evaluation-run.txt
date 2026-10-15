@@ -2,873 +2,873 @@ TAP version 13
 # Subtest: missing configuration keeps sample working and disables live
 ok 1 - missing configuration keeps sample working and disables live
   ---
-  duration_ms: 1.984966
+  duration_ms: 64.429833
   type: 'test'
   ...
 # Subtest: live configuration requires a server key, Redis and signing secret
 ok 2 - live configuration requires a server key, Redis and signing secret
   ---
-  duration_ms: 0.71926
+  duration_ms: 0.353791
   type: 'test'
   ...
 # Subtest: capabilities never serialize credentials
 ok 3 - capabilities never serialize credentials
   ---
-  duration_ms: 0.351741
+  duration_ms: 0.176709
   type: 'test'
   ...
 # Subtest: origin uses configured URL and ignores forged host headers
 ok 4 - origin uses configured URL and ignores forged host headers
   ---
-  duration_ms: 3.51981
+  duration_ms: 190.325583
   type: 'test'
   ...
 # Subtest: invalid settings fail closed with names only
 ok 5 - invalid settings fail closed with names only
   ---
-  duration_ms: 0.26998
+  duration_ms: 0.360792
   type: 'test'
   ...
 # Subtest: standalone distribution contains onboarding and excludes private website
 ok 6 - standalone distribution contains onboarding and excludes private website
   ---
-  duration_ms: 9.234821
+  duration_ms: 29.088417
   type: 'test'
   ...
 # Subtest: reference replay never becomes measured current; changes invalidate provider status
 ok 7 - reference replay never becomes measured current; changes invalidate provider status
   ---
-  duration_ms: 2.189304
+  duration_ms: 0.878
   type: 'test'
   ...
 # Subtest: immutable reference artifact integrity includes PDF bytes and failures
 ok 8 - immutable reference artifact integrity includes PDF bytes and failures
   ---
-  duration_ms: 6.418605
+  duration_ms: 18.32775
   type: 'test'
   ...
 # Subtest: AI scoring requires correct values and a quote on the actual PDF page
 ok 9 - AI scoring requires correct values and a quote on the actual PDF page
   ---
-  duration_ms: 2.106688
+  duration_ms: 4.987875
   type: 'test'
   ...
 # Subtest: AI scoring fails missing duplicate and extra fields rather than hiding them
 ok 10 - AI scoring fails missing duplicate and extra fields rather than hiding them
   ---
-  duration_ms: 0.476394
+  duration_ms: 0.466083
   type: 'test'
   ...
 # Subtest: missing evidence accepts abstention but never an inferred percentage
 ok 11 - missing evidence accepts abstention but never an inferred percentage
   ---
-  duration_ms: 0.665142
+  duration_ms: 0.452875
   type: 'test'
   ...
 # Subtest: AI output validation rejects unsupported shape keys and page types
 ok 12 - AI output validation rejects unsupported shape keys and page types
   ---
-  duration_ms: 0.410751
+  duration_ms: 2.797708
   type: 'test'
   ...
 # Subtest: empty and processing cases never show case checks as passed
 ok 13 - empty and processing cases never show case checks as passed
   ---
-  duration_ms: 5.267272
+  duration_ms: 2.961
   type: 'test'
   ...
 # Subtest: company case exposes bank conflict while passing evidence comparisons with source references
 ok 14 - company case exposes bank conflict while passing evidence comparisons with source references
   ---
-  duration_ms: 3.708482
+  duration_ms: 7.408917
   type: 'test'
   ...
 # Subtest: partial bank correction passes name comparison without completing missing evidence
 ok 15 - partial bank correction passes name comparison without completing missing evidence
   ---
-  duration_ms: 1.667775
+  duration_ms: 0.785917
   type: 'test'
   ...
 # Subtest: layered ownership remains unresolved even when direct interests total 100%
 ok 16 - layered ownership remains unresolved even when direct interests total 100%
   ---
-  duration_ms: 1.009668
+  duration_ms: 1.852
   type: 'test'
   ...
 # Subtest: individual case has an explicit not-applicable ownership result
 ok 17 - individual case has an explicit not-applicable ownership result
   ---
-  duration_ms: 0.995624
+  duration_ms: 0.376042
   type: 'test'
   ...
 # Subtest: mismatching subscription and signer values cannot pass consistency checks
 ok 18 - mismatching subscription and signer values cannot pass consistency checks
   ---
-  duration_ms: 0.821926
+  duration_ms: 3.112542
   type: 'test'
   ...
 # Subtest: provenance verification rejects an altered value, section or version
 ok 19 - provenance verification rejects an altered value, section or version
   ---
-  duration_ms: 2.448357
+  duration_ms: 2.180875
   type: 'test'
   ...
 # Subtest: JSON review record includes scoped case-check evidence and keeps verification pending
 ok 20 - JSON review record includes scoped case-check evidence and keeps verification pending
   ---
-  duration_ms: 1.109997
+  duration_ms: 0.598333
   type: 'test'
   ...
 # Subtest: confirming every available field leaves verification pending and the case unaccepted
 ok 21 - confirming every available field leaves verification pending and the case unaccepted
   ---
-  duration_ms: 27.154962
+  duration_ms: 20.707542
   type: 'test'
   ...
 # Subtest: missing and unprocessed field IDs cannot be confirmed
 ok 22 - missing and unprocessed field IDs cannot be confirmed
   ---
-  duration_ms: 1.176139
+  duration_ms: 3.1035
   type: 'test'
   ...
 # Subtest: conflicting commitment fund share class or currency cannot pass subscription terms
 ok 23 - conflicting commitment fund share class or currency cannot pass subscription terms
   ---
-  duration_ms: 1.08852
+  duration_ms: 2.987125
   type: 'test'
   ...
 # Subtest: missing malformed and non-total ownership interests never pass completeness
 ok 24 - missing malformed and non-total ownership interests never pass completeness
   ---
-  duration_ms: 0.827091
+  duration_ms: 1.047708
   type: 'test'
   ...
 # Subtest: recorded AI extra fields stay flagged without creating an investor correction request
 ok 25 - recorded AI extra fields stay flagged without creating an investor correction request
   ---
-  duration_ms: 6.091685
+  duration_ms: 2.005875
   type: 'test'
   ...
 # Subtest: portal fields replay the recorded model values quotes and run identity
 ok 26 - portal fields replay the recorded model values quotes and run identity
   ---
-  duration_ms: 6.004268
+  duration_ms: 0.757833
   type: 'test'
   ...
 # Subtest: an untouched case exposes no extracted fields or received documents
 ok 27 - an untouched case exposes no extracted fields or received documents
   ---
-  duration_ms: 1.643361
+  duration_ms: 1.625708
   type: 'test'
   ...
 # Subtest: received files expose no extraction until processing completes
 ok 28 - received files expose no extraction until processing completes
   ---
-  duration_ms: 1.064742
+  duration_ms: 1.605333
   type: 'test'
   ...
 # Subtest: duplicate and foreign sample IDs never create duplicate or foreign evidence
 ok 29 - duplicate and foreign sample IDs never create duplicate or foreign evidence
   ---
-  duration_ms: 1.025452
+  duration_ms: 0.965291
   type: 'test'
   ...
 # Subtest: a corrected bank file cannot bypass the correction request
 ok 30 - a corrected bank file cannot bypass the correction request
   ---
-  duration_ms: 0.201669
+  duration_ms: 1.364917
   type: 'test'
   ...
 # Subtest: bank discrepancy compares extracted evidence with the declared legal subscriber
 ok 31 - bank discrepancy compares extracted evidence with the declared legal subscriber
   ---
-  duration_ms: 0.586234
+  duration_ms: 2.060083
   type: 'test'
   ...
 # Subtest: correction completes the investor/admin loop while preserving the original and pending verification
 ok 32 - correction completes the investor/admin loop while preserving the original and pending verification
   ---
-  duration_ms: 0.473903
+  duration_ms: 0.502458
   type: 'test'
   ...
 # Subtest: replacement evidence does not inherit a confirmation from its original version
 ok 33 - replacement evidence does not inherit a confirmation from its original version
   ---
-  duration_ms: 0.439576
+  duration_ms: 0.463875
   type: 'test'
   ...
 # Subtest: reset prevents a delayed processing completion from repopulating the case
 ok 34 - reset prevents a delayed processing completion from repopulating the case
   ---
-  duration_ms: 0.227782
+  duration_ms: 0.132041
   type: 'test'
   ...
 # Subtest: scenario changes reject delayed stages and discard prior-case evidence
 ok 35 - scenario changes reject delayed stages and discard prior-case evidence
   ---
-  duration_ms: 0.397943
+  duration_ms: 0.524959
   type: 'test'
   ...
 # Subtest: an incomplete ownership structure remains unknown and raises an evidence-linked issue
 ok 36 - an incomplete ownership structure remains unknown and raises an evidence-linked issue
   ---
-  duration_ms: 1.09123
+  duration_ms: 0.596334
   type: 'test'
   ...
 # Subtest: extracted fields retain the document, version, page, and section
 ok 37 - extracted fields retain the document, version, page, and section
   ---
-  duration_ms: 0.476574
+  duration_ms: 0.217625
   type: 'test'
   ...
 # Subtest: unknown and missing fields cannot be confirmed and invalid requests have no effect
 ok 38 - unknown and missing fields cannot be confirmed and invalid requests have no effect
   ---
-  duration_ms: 0.707813
+  duration_ms: 0.495792
   type: 'test'
   ...
 # Subtest: JSON export includes current values, source lineage, versions, and pending checks
 ok 39 - JSON export includes current values, source lineage, versions, and pending checks
   ---
-  duration_ms: 1.874852
+  duration_ms: 4.549584
   type: 'test'
   ...
 # Subtest: the correction upload action submits only requested correction evidence in a partial case
 ok 40 - the correction upload action submits only requested correction evidence in a partial case
   ---
-  duration_ms: 0.377794
+  duration_ms: 0.89475
   type: 'test'
   ...
 # Subtest: the package upload action includes all missing originals and excludes locked corrections
 ok 41 - the package upload action includes all missing originals and excludes locked corrections
   ---
-  duration_ms: 0.383375
+  duration_ms: 0.193125
   type: 'test'
   ...
 # Subtest: live case collection separates identity address and authority ownership purposes
 ok 42 - live case collection separates identity address and authority ownership purposes
   ---
-  duration_ms: 5.312386
+  duration_ms: 103.814834
   type: 'test'
   ...
 # Subtest: live case missing omitted and ungrounded essential fields cannot pass collection
 ok 43 - live case missing omitted and ungrounded essential fields cannot pass collection
   ---
-  duration_ms: 13.20112
+  duration_ms: 3.094333
   type: 'test'
   ...
 # Subtest: live case conflicting current signer and duplicate evidence never uses first match wins
 ok 44 - live case conflicting current signer and duplicate evidence never uses first match wins
   ---
-  duration_ms: 3.015733
+  duration_ms: 8.380708
   type: 'test'
   ...
 # Subtest: live case subscription compares amount and explicit currencies against editable application
 ok 45 - live case subscription compares amount and explicit currencies against editable application
   ---
-  duration_ms: 4.374357
+  duration_ms: 1.333083
   type: 'test'
   ...
 # Subtest: live case unsupported documents satisfy nothing and unknown ownership remains review
 ok 46 - live case unsupported documents satisfy nothing and unknown ownership remains review
   ---
-  duration_ms: 1.502858
+  duration_ms: 5.138625
   type: 'test'
   ...
 # Subtest: live case pending failed and arbitrary uploads retain original discrepancy
 ok 47 - live case pending failed and arbitrary uploads retain original discrepancy
   ---
-  duration_ms: 0.907929
+  duration_ms: 1.767625
   type: 'test'
   ...
 # Subtest: live case explicit successful replacement retains original history and invalidates confirmations
 ok 48 - live case explicit successful replacement retains original history and invalidates confirmations
   ---
-  duration_ms: 3.969837
+  duration_ms: 1.568541
   type: 'test'
   ...
 # Subtest: live confirmation preserves substantive issues and reset clears case memory
 ok 49 - live confirmation preserves substantive issues and reset clears case memory
   ---
-  duration_ms: 2.131218
+  duration_ms: 0.216917
   type: 'test'
   ...
 # Subtest: company guidance advances only after real source correction replacement and export actions
 ok 50 - company guidance advances only after real source correction replacement and export actions
   ---
-  duration_ms: 0.450968
+  duration_ms: 0.457875
   type: 'test'
   ...
 # Subtest: wrong-purpose or unsupported replacement cannot supersede valid original evidence
 ok 51 - wrong-purpose or unsupported replacement cannot supersede valid original evidence
   ---
-  duration_ms: 1.284385
+  duration_ms: 0.755167
   type: 'test'
   ...
 # Subtest: conflicting ownership declarations require review even when each totals one hundred percent
 ok 52 - conflicting ownership declarations require review even when each totals one hundred percent
   ---
-  duration_ms: 0.97784
+  duration_ms: 0.504
   type: 'test'
   ...
 # Subtest: superseded transcription confirmations remain in review history
 ok 53 - superseded transcription confirmations remain in review history
   ---
-  duration_ms: 0.434502
+  duration_ms: 0.182375
   type: 'test'
   ...
 # Subtest: application amount ISO currency must agree with its separately declared currency
 ok 54 - application amount ISO currency must agree with its separately declared currency
   ---
-  duration_ms: 0.382471
+  duration_ms: 0.159875
   type: 'test'
   ...
 # Subtest: malformed or out-of-range intermediate ownership interests require review
 ok 55 - malformed or out-of-range intermediate ownership interests require review
   ---
-  duration_ms: 0.821479
+  duration_ms: 0.829042
   type: 'test'
   ...
 # Subtest: incompatible replacement cannot resolve a correction request against an otherwise passing check
 ok 56 - incompatible replacement cannot resolve a correction request against an otherwise passing check
   ---
-  duration_ms: 0.348022
+  duration_ms: 0.202958
   type: 'test'
   ...
 # Subtest: company journey requires a fresh export after the evidence review changes
 ok 57 - company journey requires a fresh export after the evidence review changes
   ---
-  duration_ms: 0.214288
+  duration_ms: 0.09175
   type: 'test'
   ...
 # Subtest: ownership interests require unique grounded named owners and complete pairs
 ok 58 - ownership interests require unique grounded named owners and complete pairs
   ---
-  duration_ms: 28.430257
+  duration_ms: 10.86
   type: 'test'
   ...
 # Subtest: conflicting current essential fields require review with both document sources
 ok 59 - conflicting current essential fields require review with both document sources
   ---
-  duration_ms: 25.820323
+  duration_ms: 7.791792
   type: 'test'
   ...
 # Subtest: live controller reset rejects success even when fetch ignores abort and revokes each URL once
 ok 60 - live controller reset rejects success even when fetch ignores abort and revokes each URL once
   ---
-  duration_ms: 18.84903
+  duration_ms: 253.147541
   type: 'test'
   ...
 # Subtest: live controller scenario switch rejects delayed old error
 ok 61 - live controller scenario switch rejects delayed old error
   ---
-  duration_ms: 4.158763
+  duration_ms: 25.957125
   type: 'test'
   ...
 # Subtest: live controller retry rejects an earlier completion and preserves one source URL
 ok 62 - live controller retry rejects an earlier completion and preserves one source URL
   ---
-  duration_ms: 28.540246
+  duration_ms: 5.900708
   type: 'test'
   ...
 # Subtest: live controller removal during upload rejects late success
 ok 63 - live controller removal during upload rejects late success
   ---
-  duration_ms: 9.960089
+  duration_ms: 21.729666
   type: 'test'
   ...
 # Subtest: live controller failed explicit replacement retains the original version
 ok 64 - live controller failed explicit replacement retains the original version
   ---
-  duration_ms: 3.061608
+  duration_ms: 16.678709
   type: 'test'
   ...
 # Subtest: live controller caps retained files at twelve and snapshots request application
 ok 65 - live controller caps retained files at twelve and snapshots request application
   ---
-  duration_ms: 2.325079
+  duration_ms: 6.262208
   type: 'test'
   ...
 # Subtest: live controller rejects invalid batches and unknown replacement targets without calls or URLs
 ok 66 - live controller rejects invalid batches and unknown replacement targets without calls or URLs
   ---
-  duration_ms: 0.394699
+  duration_ms: 0.367792
   type: 'test'
   ...
 # Subtest: live upload processes actual PDF bytes and flags an application mismatch
 ok 67 - live upload processes actual PDF bytes and flags an application mismatch
   ---
-  duration_ms: 252.650479
+  duration_ms: 352.177042
   type: 'test'
   ...
 # Subtest: live intake rejects invalid, empty, oversized, non-PDF and cross-site files before a model call
 ok 68 - live intake rejects invalid, empty, oversized, non-PDF and cross-site files before a model call
   ---
-  duration_ms: 54.755592
+  duration_ms: 27.469334
   type: 'test'
   ...
 # Subtest: live API rejects oversized streamed bodies and multiple files before processing
 ok 69 - live API rejects oversized streamed bodies and multiple files before processing
   ---
-  duration_ms: 8.39818
+  duration_ms: 10.13575
   type: 'test'
   ...
 # Subtest: unsupported dummy PDF gets a real model outcome and remains in review
 ok 70 - unsupported dummy PDF gets a real model outcome and remains in review
   ---
-  duration_ms: 28.087644
+  duration_ms: 102.391667
   type: 'test'
   ...
 # Subtest: live source checks flag wrong quotes, wrong pages, blank values and duplicate keys
 ok 71 - live source checks flag wrong quotes, wrong pages, blank values and duplicate keys
   ---
-  duration_ms: 23.237763
+  duration_ms: 84.962708
   type: 'test'
   ...
 # Subtest: malformed, oversized and unexpected-key model output cannot become live fields
 ok 72 - malformed, oversized and unexpected-key model output cannot become live fields
   ---
-  duration_ms: 104.94299
+  duration_ms: 171.072459
   type: 'test'
   ...
 # Subtest: provider failure, refusal, truncation and wrong model never fall back to replay
 ok 73 - provider failure, refusal, truncation and wrong model never fall back to replay
   ---
-  duration_ms: 52.542852
+  duration_ms: 76.641125
   type: 'test'
   ...
 # Subtest: live provider calls stop when quota, configuration or limit service is unavailable
 ok 74 - live provider calls stop when quota, configuration or limit service is unavailable
   ---
-  duration_ms: 34.206707
+  duration_ms: 41.505375
   type: 'test'
   ...
 # Subtest: cleared live uploads reject stale completions and block confirmation of unknown or ungrounded fields
 ok 75 - cleared live uploads reject stale completions and block confirmation of unknown or ungrounded fields
   ---
-  duration_ms: 2.103332
+  duration_ms: 5.036583
   type: 'test'
   ...
 # Subtest: PDFs over the page limit are rejected before model processing
 ok 76 - PDFs over the page limit are rejected before model processing
   ---
-  duration_ms: 4.568579
+  duration_ms: 7.251291
   type: 'test'
   ...
 # Subtest: cancelled requests and provider timeouts cannot produce successful live results
 ok 77 - cancelled requests and provider timeouts cannot produce successful live results
   ---
-  duration_ms: 16.614231
+  duration_ms: 17.158208
   type: 'test'
   ...
 # Subtest: live subscription subscriber uses the extracted subscribing-party key for mismatch review
 ok 78 - live subscription subscriber uses the extracted subscribing-party key for mismatch review
   ---
-  duration_ms: 15.234753
+  duration_ms: 42.610292
   type: 'test'
   ...
 # Subtest: whitespace-only model values are missing and cannot be confirmed
 ok 79 - whitespace-only model values are missing and cannot be confirmed
   ---
-  duration_ms: 11.68885
+  duration_ms: 19.376125
   type: 'test'
   ...
 # Subtest: partial identifiers cannot be grounded or confirmed from a longer quoted reference
 ok 80 - partial identifiers cannot be grounded or confirmed from a longer quoted reference
   ---
-  duration_ms: 46.580883
+  duration_ms: 86.366875
   type: 'test'
   ...
 # Subtest: partial numeric tokens cannot be grounded inside decimal thousands percent or identifier values
 ok 81 - partial numeric tokens cannot be grounded inside decimal thousands percent or identifier values
   ---
-  duration_ms: 78.779287
+  duration_ms: 82.373667
   type: 'test'
   ...
+# Warning: Invalid PDF header version: unreada
+# Warning: Invalid PDF header version: unreada
+# Warning: Indexing all PDF objects
 # Subtest: complete quoted values retain original text with case whitespace and Unicode normalization
 ok 82 - complete quoted values retain original text with case whitespace and Unicode normalization
   ---
-  duration_ms: 12.465526
+  duration_ms: 47.314458
   type: 'test'
   ...
 # Subtest: unambiguous equivalent commitment formats compare amounts without inventing currency
 ok 83 - unambiguous equivalent commitment formats compare amounts without inventing currency
   ---
-  duration_ms: 41.300661
+  duration_ms: 79.281875
   type: 'test'
   ...
 # Subtest: different currencies values and ambiguous commitment formats remain application mismatches
 ok 84 - different currencies values and ambiguous commitment formats remain application mismatches
   ---
-  duration_ms: 76.821024
+  duration_ms: 142.600125
   type: 'test'
   ...
-# Warning: Invalid PDF header version: unreada
-# Warning: Invalid PDF header version: unreada
-# Warning: Indexing all PDF objects
 # Subtest: unreadable page-limited text-limited and cancelled PDFs spend no provider quota
 ok 85 - unreadable page-limited text-limited and cancelled PDFs spend no provider quota
   ---
-  duration_ms: 382.275539
-  type: 'test'
-  ...
-# Subtest: provider failures spend one dispatched-call quota after valid parsing
-ok 86 - provider failures spend one dispatched-call quota after valid parsing
-  ---
-  duration_ms: 13.556554
+  duration_ms: 437.477625
   type: 'test'
   ...
 # Warning: Invalid PDF header version: broken
 # Warning: Invalid PDF header version: broken
 # Warning: Indexing all PDF objects
+# Subtest: provider failures spend one dispatched-call quota after valid parsing
+ok 86 - provider failures spend one dispatched-call quota after valid parsing
+  ---
+  duration_ms: 15.105917
+  type: 'test'
+  ...
 # Subtest: parser admission denies excess concurrency and releases slots after parse errors
 ok 87 - parser admission denies excess concurrency and releases slots after parse errors
   ---
-  duration_ms: 10.314125
+  duration_ms: 16.653375
   type: 'test'
   ...
 # Subtest: parser admission denial consumes no provider quota
 ok 88 - parser admission denial consumes no provider quota
   ---
-  duration_ms: 1.771214
+  duration_ms: 1.060417
   type: 'test'
   ...
 # Subtest: signed or accounting amount fragments cannot become positive grounded commitments
 ok 89 - signed or accounting amount fragments cannot become positive grounded commitments
   ---
-  duration_ms: 11.917467
+  duration_ms: 16.2795
   type: 'test'
   ...
 # Subtest: live contract requires a consistent precise purpose and folder category
 ok 90 - live contract requires a consistent precise purpose and folder category
   ---
-  duration_ms: 24.712817
+  duration_ms: 38.922542
   type: 'test'
   ...
 # Subtest: live application JSON is bounded validated and never sent as expected answers to provider
 ok 91 - live application JSON is bounded validated and never sent as expected answers to provider
   ---
-  duration_ms: 13.498829
+  duration_ms: 15.768459
   type: 'test'
   ...
 # Subtest: live contract rejects extra output keys array shapes and fields on unsupported documents
 ok 92 - live contract rejects extra output keys array shapes and fields on unsupported documents
   ---
-  duration_ms: 37.865776
+  duration_ms: 99.5655
   type: 'test'
   ...
 # Subtest: Unicode minus and accounting prefixes cannot certify unsigned value fragments
 ok 93 - Unicode minus and accounting prefixes cannot certify unsigned value fragments
   ---
-  duration_ms: 1.336941
+  duration_ms: 4.60575
   type: 'test'
   ...
 # Subtest: live evaluation grades precise purpose category missing extra and duplicate fields
 ok 94 - live evaluation grades precise purpose category missing extra and duplicate fields
   ---
-  duration_ms: 11.834484
+  duration_ms: 80.876375
   type: 'test'
   ...
 # Subtest: live evaluation rejects wrong page invented quote and truncated numeric source spans
 ok 95 - live evaluation rejects wrong page invented quote and truncated numeric source spans
   ---
-  duration_ms: 2.941205
+  duration_ms: 0.47625
   type: 'test'
   ...
 # Subtest: live evaluation accepts explicit null unknown abstention but rejects inferred values
 ok 96 - live evaluation accepts explicit null unknown abstention but rejects inferred values
   ---
-  duration_ms: 0.334612
+  duration_ms: 0.183542
   type: 'test'
   ...
 # Subtest: live evaluation measures recall precision source correctness exceptions and false clears separately
 ok 97 - live evaluation measures recall precision source correctness exceptions and false clears separately
   ---
-  duration_ms: 1.498864
+  duration_ms: 0.592
   type: 'test'
   ...
 # Subtest: live evaluation case grades retain conflicting evidence and never treat readiness as acceptance
 ok 98 - live evaluation case grades retain conflicting evidence and never treat readiness as acceptance
   ---
-  duration_ms: 6.533403
+  duration_ms: 11.797958
   type: 'test'
   ...
 # Subtest: a phone tour keeps the card and spotlight visible without covering the highlighted area
 ok 99 - a phone tour keeps the card and spotlight visible without covering the highlighted area
   ---
-  duration_ms: 1.10967
+  duration_ms: 1.974167
   type: 'test'
   ...
 # Subtest: desktop file workspace places the tour beside the highlighted documents
 ok 100 - desktop file workspace places the tour beside the highlighted documents
   ---
-  duration_ms: 0.189086
+  duration_ms: 0.183459
   type: 'test'
   ...
 # Subtest: the upload portal uses the free space on its left for the tutorial
 ok 101 - the upload portal uses the free space on its left for the tutorial
   ---
-  duration_ms: 0.157559
+  duration_ms: 0.274125
   type: 'test'
   ...
 # Subtest: full-width evaluation evidence places the card below the highlighted report
 ok 102 - full-width evaluation evidence places the card below the highlighted report
   ---
-  duration_ms: 0.138838
+  duration_ms: 0.209375
   type: 'test'
   ...
 # Subtest: a short viewport clips the spotlight and keeps the tour card inside the screen
 ok 103 - a short viewport clips the spotlight and keeps the tour card inside the screen
   ---
-  duration_ms: 0.668854
+  duration_ms: 0.112375
   type: 'test'
   ...
 # Subtest: a crowded screen omits an unusably small spotlight rather than highlighting a sliver
 ok 104 - a crowded screen omits an unusably small spotlight rather than highlighting a sliver
   ---
-  duration_ms: 0.240162
+  duration_ms: 0.124667
   type: 'test'
   ...
 # Subtest: typed choice formation
 ok 105 - typed choice formation
   ---
-  duration_ms: 54.184617
+  duration_ms: 82.501
   type: 'test'
   ...
 # Subtest: typed choice identity
 ok 106 - typed choice identity
   ---
-  duration_ms: 0.71201
+  duration_ms: 23.268875
   type: 'test'
   ...
 # Subtest: typed choice address
 ok 107 - typed choice address
   ---
-  duration_ms: 0.634082
+  duration_ms: 2.408166
   type: 'test'
   ...
 # Subtest: typed choice ownership
 ok 108 - typed choice ownership
   ---
-  duration_ms: 5.06376
+  duration_ms: 6.927834
   type: 'test'
   ...
 # Subtest: typed choice authority
 ok 109 - typed choice authority
   ---
-  duration_ms: 1.890752
+  duration_ms: 62.890084
   type: 'test'
   ...
 # Subtest: typed choice tax
 ok 110 - typed choice tax
   ---
-  duration_ms: 3.323582
+  duration_ms: 7.913
   type: 'test'
   ...
 # Subtest: typed choice subscription
 ok 111 - typed choice subscription
   ---
-  duration_ms: 0.470789
+  duration_ms: 1.08225
   type: 'test'
   ...
 # Subtest: typed choice bank
 ok 112 - typed choice bank
   ---
-  duration_ms: 2.753231
+  duration_ms: 0.581
   type: 'test'
   ...
 # Subtest: typed choice unsupported
 ok 113 - typed choice unsupported
   ---
-  duration_ms: 0.645695
+  duration_ms: 7.639667
   type: 'test'
   ...
 # Subtest: typed choice insufficient_evidence
 ok 114 - typed choice insufficient_evidence
   ---
-  duration_ms: 2.283356
+  duration_ms: 2.234292
   type: 'test'
   ...
 # Subtest: classification rejects refusal
 ok 115 - classification rejects refusal
   ---
-  duration_ms: 3.523198
+  duration_ms: 0.777042
   type: 'test'
   ...
 # Subtest: classification rejects wrong model
 ok 116 - classification rejects wrong model
   ---
-  duration_ms: 0.329387
+  duration_ms: 2.91425
   type: 'test'
   ...
 # Subtest: classification rejects invalid distribution
 ok 117 - classification rejects invalid distribution
   ---
-  duration_ms: 0.24019
+  duration_ms: 5.565
   type: 'test'
   ...
 # Subtest: classification rejects invalid choice
 ok 118 - classification rejects invalid choice
   ---
-  duration_ms: 1.812998
+  duration_ms: 3.654875
   type: 'test'
   ...
 # Subtest: classification rejects ambiguous tie
 ok 119 - classification rejects ambiguous tie
   ---
-  duration_ms: 3.809823
+  duration_ms: 0.771125
   type: 'test'
   ...
 # Subtest: empty or overlong text spends no dispatch
 ok 120 - empty or overlong text spends no dispatch
   ---
-  duration_ms: 1.58714
+  duration_ms: 0.235542
   type: 'test'
   ...
 # Subtest: second-stage budget denial retains classification without completing or replacing v1
 ok 121 - second-stage budget denial retains classification without completing or replacing v1
   ---
-  duration_ms: 401.470881
+  duration_ms: 265.905583
   type: 'test'
   ...
 # Subtest: supported PDF normally spends two dispatches, GPT-5 has no temperature, evidence grounded
 ok 122 - supported PDF normally spends two dispatches, GPT-5 has no temperature, evidence grounded
   ---
-  duration_ms: 47.415983
+  duration_ms: 64.691167
   type: 'test'
   ...
 # Subtest: unsupported skips extraction
 ok 123 - unsupported skips extraction
   ---
-  duration_ms: 42.287984
+  duration_ms: 50.183416
   type: 'test'
   ...
 # Subtest: forged host cannot override origin or dispatch
 ok 124 - forged host cannot override origin or dispatch
   ---
-  duration_ms: 2.075185
+  duration_ms: 0.570083
   type: 'test'
   ...
 # Subtest: review receipt binds immutable context to session and expiry
 ok 125 - review receipt binds immutable context to session and expiry
   ---
-  duration_ms: 3.806585
+  duration_ms: 1.164334
   type: 'test'
   ...
 # Subtest: draft rejects invented or uncited output {"sourceIds":["invented"]}
 ok 126 - draft rejects invented or uncited output {"sourceIds":["invented"]}
   ---
-  duration_ms: 2.620492
+  duration_ms: 0.578875
   type: 'test'
   ...
 # Subtest: draft rejects invented or uncited output {"text":"Investor accepted","sourceIds":["source-0"]}
 ok 127 - draft rejects invented or uncited output {"text":"Investor accepted","sourceIds":["source-0"]}
   ---
-  duration_ms: 0.325635
+  duration_ms: 0.189083
   type: 'test'
   ...
 # Subtest: draft rejects invented or uncited output {"sourceIds":[]}
 ok 128 - draft rejects invented or uncited output {"sourceIds":[]}
   ---
-  duration_ms: 0.278122
+  duration_ms: 0.162
   type: 'test'
   ...
 # Subtest: oversized streaming provider output is cancelled before downloading the full body
 ok 129 - oversized streaming provider output is cancelled before downloading the full body
   ---
-  duration_ms: 14.590951
+  duration_ms: 299.526875
   type: 'test'
   ...
 # Subtest: provider response body cancellation interrupts a stalled stream
 ok 130 - provider response body cancellation interrupts a stalled stream
   ---
-  duration_ms: 15.070395
+  duration_ms: 33.272917
   type: 'test'
   ...
 # Subtest: provider HTTP errors cancel their bodies without exposing error text
 ok 131 - provider HTTP errors cancel their bodies without exposing error text
   ---
-  duration_ms: 1.555832
+  duration_ms: 0.592042
   type: 'test'
   ...
 # Subtest: bounded provider reader preserves JSON with split multibyte text
 ok 132 - bounded provider reader preserves JSON with split multibyte text
   ---
-  duration_ms: 3.763393
+  duration_ms: 6.22525
   type: 'test'
   ...
 # Subtest: two adapters share global budget across 21 parallel sessions
 ok 133 - two adapters share global budget across 21 parallel sessions
   ---
-  duration_ms: 2.822641
+  duration_ms: 2.106083
   type: 'test'
   ...
 # Subtest: session limit is five; failure does not partially spend global counter
 ok 134 - session limit is five; failure does not partially spend global counter
   ---
-  duration_ms: 1.956197
+  duration_ms: 2.11525
   type: 'test'
   ...
 # Subtest: store outage fails closed
 ok 135 - store outage fails closed
   ---
-  duration_ms: 0.458372
+  duration_ms: 0.495667
   type: 'test'
   ...
 # Subtest: signed cookies resist forgery and expire; HTTPS sets Secure
 ok 136 - signed cookies resist forgery and expire; HTTPS sets Secure
   ---
-  duration_ms: 8.245156
+  duration_ms: 51.9085
   type: 'test'
   ...
 # Subtest: real Redis atomic adapter across instances
-ok 137 - real Redis atomic adapter across instances # SKIP
+ok 137 - real Redis atomic adapter across instances
   ---
-  duration_ms: 0.52874
+  duration_ms: 123.8615
   type: 'test'
   ...
 # Subtest: classifier access denied/timeout never silently falls back
 ok 138 - classifier access denied/timeout never silently falls back
   ---
-  duration_ms: 17.68777
+  duration_ms: 66.379334
   type: 'test'
   ...
 # Subtest: already cancelled work reserves nothing
 ok 139 - already cancelled work reserves nothing
   ---
-  duration_ms: 0.344573
+  duration_ms: 0.438334
   type: 'test'
   ...
 # Subtest: complete ungrounded/missing-essential-field v2 does not supersede v1
 ok 140 - complete ungrounded/missing-essential-field v2 does not supersede v1
   ---
-  duration_ms: 0.622648
+  duration_ms: 0.691084
   type: 'test'
   ...
 # Subtest: paid runner refuses missing authorization and existing output before dispatch
 ok 141 - paid runner refuses missing authorization and existing output before dispatch
   ---
-  duration_ms: 1021.446902
+  duration_ms: 1565.525792
   type: 'test'
   ...
 # Subtest: valid draft is extractive and never changes actual case
 ok 142 - valid draft is extractive and never changes actual case
   ---
-  duration_ms: 5.388079
+  duration_ms: 7.488042
   type: 'test'
   ...
 # Subtest: request body cancellation aborts intake without waiting for body end
 ok 143 - request body cancellation aborts intake without waiting for body end
   ---
-  duration_ms: 7.286942
+  duration_ms: 10.223958
   type: 'test'
   ...
 1..143
 # tests 143
 # suites 0
-# pass 142
+# pass 143
 # fail 0
 # cancelled 0
-# skipped 1
+# skipped 0
 # todo 0
-# duration_ms 2949.519447
+# duration_ms 3063.691917

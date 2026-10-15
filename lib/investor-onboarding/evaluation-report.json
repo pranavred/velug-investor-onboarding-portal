@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "title": "Current standalone offline regression",
   "scope": "Software tests and historical replay only. Zero provider calls. Decisions/GPT-5 model evaluation: not_run. Skipped integration checks are not passes.",
-  "runAt": "2026-10-15T17:00:33.320Z",
+  "runAt": "2026-10-15T21:56:17.047Z",
   "sourceFingerprint": "2ff9f3cf770464057c965b9559f2fc25c2d9ca37330bf949042708296ea6774b",
   "command": "npm run test:unit",
   "total": 143,
-  "passed": 142,
+  "passed": 143,
   "failed": 0,
-  "skipped": 1,
+  "skipped": 0,
   "successful": true,
   "results": [
     {
@@ -1058,7 +1058,7 @@
       "label": "real Redis atomic adapter across instances",
       "group": "Current offline regression",
       "expected": "Exercise declared mocked/runtime invariant",
-      "status": "skipped"
+      "status": "passed"
     },
     {
       "id": "current-137",
