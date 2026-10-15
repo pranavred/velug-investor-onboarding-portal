@@ -6,7 +6,7 @@ User authorized building and publishing **pranavred/velug-investor-onboarding-po
 
 - Fresh Git root and independent history; onboarding-only extraction from upstream c8a7b32b80291a2af2e9773f13098c89913bb3f4. docs/source-manifest.json records 106 allowlisted source files/hashes. No private website history, env or deployment metadata copied.
 - Standalone root/layout/styles with system fonts and repository link; package name and deployment-independent Next standalone config.
-- Sample/domain code and synthetic PDF fixtures/reference AI records copied. Existing tests retained. Task1 distribution RED then GREEN; full npm test passed (unit/regression/build/rendered root).
+- Sample/domain code and synthetic PDF fixtures/reference AI records copied. Existing tests retained. Task1 distribution RED then GREEN; fresh full npm test passed (unit/regression/build/rendered root), TypeScript passed. Lint caught one internal-link issue in the new shell; corrected it to Next Link before cloud transfer.
 - Server configuration/capabilities and .env.example added. Config tests RED four failures, then GREEN5/5. Live origin checks use APP_URL; settings fail closed and public capabilities redact credentials.
 - Live API route is an intentional503 setup stub at this checkpoint. New provider pipeline has NOT been implemented. Old lib/investor-onboarding/live-service.ts still contains the historical GPT-4.1 implementation used by retained tests; do not mistake it for the new route.
 - No API credentials read/copied and zero provider calls made.
