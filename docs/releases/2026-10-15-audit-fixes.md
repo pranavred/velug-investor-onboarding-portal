@@ -24,7 +24,7 @@ October 15, 2026. Fixes the five findings recorded against `6a45bac`. Only the s
 
 Docker image `velug-onboarding:audit-fixed` built successfully (manifest `sha256:00c602982b7b3927d6f9b44674cb376146ead7ef8350ecd0a06ffbbd2659e49f`). A runtime-only `APP_NAME=Atlas Investor Review` changed its header and title without rebuilding; fake private sentinels were absent from HTML. Health/sample HTTP and forged-origin rejection passed, and the process ran as UID 1000. Compose configuration also passed the supplied application name. The container build recorded 144 offline passes and one explicit Redis skip; the host run above exercised real Redis and passed all 145. A temporary unauthenticated Docker configuration avoided a stalled credential-helper lookup for the public base image; global Docker settings were not changed.
 
-Publication: pending GitHub visibility verification after push.
+Published at https://github.com/pranavred/velug-investor-onboarding-portal under Apache-2.0. GitHub reports PUBLIC; its unauthenticated API reports private=false. An anonymous shallow clone with credential helpers and prompts disabled retrieved fix commit `f65a342`, then passed all 52 historical hashes and the distribution scan without an env file or installed dependencies. This clone check did not repeat installation/build; those were verified locally and in Docker above. Final Git history (16 commits including the fix) passed Gitleaks with no leaks. The manual release workflow remains disabled; no GitHub Actions execution was requested.
 
 ## Limits
 

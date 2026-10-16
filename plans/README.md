@@ -16,9 +16,9 @@ Details and verification: [server/evaluation findings](audit-2026-10-15/root-fin
 
 The fixes included regression-first verification for: real-shaped process-response grading; disabled-live file selection; incomplete/ungrounded replacement confirmation retention; presentation configuration. The evaluation adapter is corrected; no paid run was performed. Preserve historical reports, immutable fixtures and the existing business website throughout.
 
-## Release follow-up
+## Release publication
 
-GitHub visibility remains **PRIVATE**, verified read-only with `gh repo view`. Public cloning and unauthenticated Deploy with Vercel cannot work until the repository is published. This is separate from application defects. No visibility change, commit, push, deployment, API call or GitHub Actions run was performed in this audit.
+Published the separate [standalone repository](https://github.com/pranavred/velug-investor-onboarding-portal) under Apache-2.0 after the fixes and publication scans. PUBLIC visibility, unauthenticated API access and anonymous cloning of fix commit `f65a342` were verified. The anonymous clone passed reference hashes and distribution scanning. The manual release workflow remains disabled. The original audit correctly observed a private repository; that release follow-up is now complete. No business-website deployment or paid model call was made.
 
 ## Considered and rejected
 
@@ -31,7 +31,7 @@ GitHub visibility remains **PRIVATE**, verified read-only with `gh repo view`. P
 - A `next start` warning with standalone output was observed, but the server actually served the UI and health endpoint. Do not report it as a broken local launch without stronger evidence.
 - Browser locator/download-event timeouts during automation are not app failures unless the underlying user action fails independently.
 
-## Scope and limits
+## Original audit scope and limits
 
 Correctness and security received detailed source review; performance, tests, architecture, dependencies, tooling, docs and grounded direction received a hotspot review. One fresh independent agent exercised the browser while the primary agent reviewed complementary server/evaluation paths and vetted findings. No exhaustive claim is made about all possible defects.
 
