@@ -1,10 +1,15 @@
 import {normalizeValue,quoteContainsValue} from './value-checks.ts';
 import {validateLiveOutput} from './live-contract.ts';
 import {getLiveCaseView} from './live-case.ts';
-import type {LiveCaseState,LivePurpose} from './live-types.ts';
+import type {LiveCaseState,LivePurpose,LiveResult} from './live-types.ts';
 type ExpectedField={key:string;value:string|null;page:number};
 export type LiveExpectedDocument={purpose:LivePurpose;category:string;fields:ExpectedField[]};
 type Output={purpose:string;category:string;fields:{key:string;value:string|null;page:number|null;quote:string|null}[]};
+// Runtime metadata and sourceStatus belong to the service envelope, not the
+// provider extraction contract. Keep raw provider validation strict below.
+export function gradeProcessedDocument(expected:LiveExpectedDocument,result:LiveResult,pages:string[]){
+ return gradeLiveDocument(expected,{purpose:result.purpose,category:result.category,fields:result.fields.map(({key,label,value,page,quote})=>({key,label,value,page,quote}))},pages);
+}
 export function gradeLiveDocument(expected:LiveExpectedDocument,output:Output|null,pages:string[]) {
  const formatValid=validateLiveOutput(output),actual=Array.isArray(output?.fields)?output.fields.filter(f=>f&&typeof f.key==='string'&&(f.value===null||typeof f.value==='string')):[],seen=new Set<string>(),duplicates=actual.filter(f=>{const duplicate=seen.has(f.key);seen.add(f.key);return duplicate;}).map(f=>f.key);
  const fields=expected.fields.map(field=>{

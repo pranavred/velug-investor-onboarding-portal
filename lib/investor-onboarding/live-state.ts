@@ -13,7 +13,7 @@ export function liveReducer(state: LiveDocument[], action: LiveAction): LiveDocu
 }
 
 import type {LiveCaseState,LiveCaseAction} from './live-types.ts';
-import {createLiveCase} from './live-case.ts';
+import {createLiveCase,currentLiveDocuments} from './live-case.ts';
 export function liveCaseReducer(state:LiveCaseState,action:LiveCaseAction):LiveCaseState {
  if(action.type==='reset')return createLiveCase(action.scenarioId);
  if(action.type==='application')return {...state,application:action.application,events:[...state.events,{at:action.at,title:'Declared application updated; checks recomputed'}]};
@@ -21,6 +21,9 @@ export function liveCaseReducer(state:LiveCaseState,action:LiveCaseAction):LiveC
  if(action.type==='retry')return {...state,documents:state.documents.map(d=>d.id===action.id?{...d,status:'processing',error:undefined,result:undefined,confirmed:{}}:d)};
  let documents=liveReducer(state.documents,action);
  if(documents===state.documents)return state;
- if(action.type==='complete'){const replacement=documents.find(d=>d.id===action.id);if(replacement?.replacesId&&replacement.result?.purpose!=='unsupported'&&replacement.result?.purpose===documents.find(d=>d.id===replacement.replacesId)?.result?.purpose)documents=documents.map(d=>d.logicalId===replacement.logicalId?{...d,confirmationHistory:{...d.confirmationHistory,...d.confirmed},confirmed:{}}:d);}
+ if(action.type==='complete'){
+  const before=new Set(currentLiveDocuments(state.documents).map(d=>d.id)),after=new Set(currentLiveDocuments(documents).map(d=>d.id));
+  documents=documents.map(d=>before.has(d.id)&&!after.has(d.id)?{...d,confirmationHistory:{...d.confirmationHistory,...d.confirmed},confirmed:{}}:d);
+ }
  return {...state,documents,events:[...state.events,{at:action.at??new Date().toISOString(),title:({add:'PDF submitted',complete:'PDF processing completed',error:'PDF processing failed',confirm:'Transcription confirmed',remove:'PDF removed'} as const)[action.type],documentId:action.type==='add'?action.document.id:action.id}]};
 }

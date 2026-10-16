@@ -1,6 +1,6 @@
 export const tourPreferenceKey = 'velug:investor-onboarding-tour:v1';
 export const tourSteps = [
-  { target: null, eyebrow: 'Overview', title: 'Investor onboarding demo', description: 'Upload as an investor. Review the same application as a fund admin.', note: 'Sample files replay a recorded AI run. Your dummy PDFs get a fresh model call.', action: 'Show me around', icon: 'grid' },
+  { target: null, eyebrow: 'Overview', title: 'Investor onboarding demo', description: 'Upload as an investor. Review the same application as a fund admin.', note: 'Sample files replay a recorded AI run. Live PDF processing requires server setup.', action: 'Show me around', icon: 'grid' },
   { target: '[data-tour="documents"]', eyebrow: '01 / Sample files', title: 'Use these files.', description: 'Preview a PDF, drag a file or folder, or select files to upload.', note: 'No files from your computer needed.', action: 'Next', icon: 'folder' },
   { target: '[data-tour="upload"]', eyebrow: '02 / Upload', title: 'Drop files here.', description: 'Drag the sample files here or click Upload sample package.', note: 'Classification and extraction come from a recorded AI run.', action: 'Next', icon: 'upload' },
   { target: '#ob-tab-admin', eyebrow: '03 / Fund admin', title: 'Review fields and sources.', description: 'After uploading, inspect the classified files, extracted fields, and discrepancies.', note: 'The company sample includes a bank-name mismatch to correct.', action: 'Next', icon: 'user' },

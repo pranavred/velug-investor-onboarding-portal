@@ -60,6 +60,19 @@ test('company guidance advances only after real source correction replacement an
 test('wrong-purpose or unsupported replacement cannot supersede valid original evidence',()=>{for(const purpose of ['formation','unsupported']){const state=stateWith(bank('Wrong LLC'),doc(purpose,{},'v2',{logicalId:'bank',version:2,replacesId:'bank'}));assert.ok(getLiveCaseView(state).currentDocuments.some(d=>d.id==='bank'));assert.equal(check(state,'bank').status,'needs-review');}});
 test('conflicting ownership declarations require review even when each totals one hundred percent',()=>{const original=doc('ownership',{'owner-1':'Morgan Ellis','owner-1-interest':'100%'}),conflicting=doc('ownership',{'owner-1':'Different Owner','owner-1-interest':'100%'},'different-ownership');assert.equal(check(stateWith(original,conflicting),'ownership').status,'needs-review');});
 test('superseded transcription confirmations remain in review history',()=>{const original={...bank('Wrong LLC'),confirmed:{0:true}};let state=stateWith(original,{...bank('Oakbridge Holdings LLC','v2',{logicalId:'bank',version:2,replacesId:'bank'}),status:'processing',result:undefined});state=liveCaseReducer(state,{type:'complete',id:'v2',result:bank().result,at});assert.equal(liveReviewExport(state).documents[0].confirmationHistory[0],true);});
+test('insufficient same-purpose replacement preserves confirmations on the still-current original',()=>{
+ for(const failure of ['missing-essential','ungrounded','other-field']){
+  const original={...bank(),confirmed:{0:true}},replacement={...bank('Oakbridge Holdings LLC','v2',{logicalId:'bank',version:2,replacesId:'bank'}),status:'processing',result:undefined};
+  const result={...bank().result,processing:{extraction:{status:'completed'}}};
+  if(failure==='missing-essential')result.fields=result.fields.slice(0,1);
+  if(failure==='ungrounded')result.fields[0].sourceStatus='unmatched';
+  if(failure==='other-field')result.fields.push({...result.fields[0],key:'other'});
+  const next=liveCaseReducer(stateWith(original,replacement),{type:'complete',id:'v2',result,at});
+  assert.ok(getLiveCaseView(next).currentDocuments.some(d=>d.id==='bank'),failure);
+  assert.deepEqual(next.documents[0].confirmed,{0:true},failure);
+  assert.equal(next.documents[0].confirmationHistory,undefined,failure);
+ }
+});
 test('application amount ISO currency must agree with its separately declared currency',()=>{const sub=doc('subscription',{'subscribing-party':'Oakbridge Holdings LLC','fund-name':'Asteria Private Credit Fund I','share-class':'Class A',commitment:'1000000',currency:'USD'});const state=stateWith(sub);state.application.commitment='EUR 1000000';assert.equal(check(state,'terms').status,'needs-review');});
 test('malformed or out-of-range intermediate ownership interests require review',()=>{for(const value of ['150%','not stated','-5%']){const ownership=doc('ownership',{'owner-1':'Holding Ltd','owner-1-interest':'100%','intermediate-owner':'Person','intermediate-interest':value});assert.equal(check(stateWith(ownership),'ownership').status,'needs-review',value);}});
 test('incompatible replacement cannot resolve a correction request against an otherwise passing check',()=>{const state=stateWith(bank(),doc('formation',{},'v2',{logicalId:'bank',version:2,replacesId:'bank'}));state.requests=[{id:'request',issueId:'bank',documentId:'bank',reason:'Replace source',at}];assert.equal(getLiveCaseView(state).requests[0].resolved,false);});

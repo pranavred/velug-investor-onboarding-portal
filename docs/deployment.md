@@ -4,6 +4,8 @@
 
 Node 24.19.0 is the pinned CI/container version. `npm ci --ignore-scripts`, `npm run dev`, then open http://localhost:3000. No env file, Redis or API key is required. Use the fictional sample folders. Refresh or Reset demo clears documents, fields, correction requests and version history. Only tutorial dismissal is stored locally.
 
+Set `APP_NAME` to change the visible header and browser title. This is a server runtime setting: restart the server/container after changing it; no rebuild is needed. The application name is public. Keep provider and session secrets in their separate server-only settings. Live upload controls stay disabled with setup guidance until live processing is configured; sample uploads remain available.
+
 ## Local live processing (optional, paid)
 
 Copy `.env.example` to `.env.local` and edit it yourself. Set `APP_URL=http://localhost:3000`, `LIVE_AI_ENABLED=true`, `OPENAI_API_KEY`, `REDIS_URL=redis://localhost:6379`, and a fresh `APP_SESSION_SECRET` of at least 32 random characters (`openssl rand -hex 32`). Never put secrets in NEXT_PUBLIC_ settings. Start your Redis first, then restart `npm run dev`. Sample mode stays available if live config is incomplete. Redis must be writable and reachable; a failure denies dispatch. Capabilities report configuration, not a paid connectivity check.
