@@ -107,3 +107,23 @@ test('conflicting current essential fields require review with both document sou
  const differing=stateWith(doc('subscription',values,'first'),doc('subscription',{...values,commitment:'USD 2000000'},'second'));assert.equal(check(differing,'required').status,'needs-review');
  const replacement=stateWith(bank(),{...bank('Oakbridge Holdings LLC','v2',{logicalId:'bank',version:2,replacesId:'bank'}),result:{...bank().result,fields:bank().result.fields.map(f=>f.key==='bank-name'?{...f,value:'Replacement Bank'}:f)}});assert.equal(getLiveCaseView(replacement).requirements.find(r=>r.purpose==='bank').status,'passed');
 });
+test('a null abstention on a non-essential key keeps traceability passed while a null essential key still fails',()=>{
+ const docs=completePackage();const address=docs.find(d=>d.result.purpose==='address');
+ address.result.fields.push({key:'address-issued',label:'Evidence date',value:null,page:null,quote:null,sourceStatus:'missing'});
+ const state=stateWith(...docs);
+ assert.equal(check(state,'sources').status,'passed');assert.equal(check(state,'required').status,'passed');assert.equal(check(state,'signer').status,'passed');
+ const essential=completePackage();const addr=essential.find(d=>d.result.purpose==='address');
+ const field=addr.result.fields.find(f=>f.key==='residential-address');field.value=null;field.page=null;field.quote=null;field.sourceStatus='missing';
+ assert.equal(check(stateWith(...essential),'required').status,'needs-review');assert.equal(check(stateWith(...essential),'sources').status,'needs-review');
+});
+test('a replacement carrying a null non-essential abstention still supersedes its original',async()=>{
+ const {currentLiveDocuments}=await import('../lib/investor-onboarding/live-case.ts');
+ const v1=doc('bank',{'account-holder':'Wrong Holder','bank-name':'Fiction Bank','account-suffix':'SYNTH-1','bank-currency':'USD'},'bank');
+ const v2=doc('bank',{'account-holder':'Oakbridge Holdings LLC','bank-name':'Fiction Bank','account-suffix':'SYNTH-1','bank-currency':'USD'},'bank-v2',{version:2,logicalId:'bank',replacesId:'bank'});
+ v2.result.processing={extraction:{status:'completed'}};
+ v2.result.fields.push({key:'bank-address',label:'Bank address',value:null,page:null,quote:null,sourceStatus:'missing'});
+ const current=currentLiveDocuments([v1,v2]);
+ assert.ok(current.some(d=>d.id==='bank-v2'));assert.ok(!current.some(d=>d.id==='bank'));
+ const essentialNull=structuredClone(v2);const holder=essentialNull.result.fields.find(f=>f.key==='account-holder');holder.value=null;holder.sourceStatus='missing';
+ assert.ok(currentLiveDocuments([v1,essentialNull]).some(d=>d.id==='bank'));
+});
