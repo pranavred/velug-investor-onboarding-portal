@@ -15,12 +15,22 @@ Open http://localhost:3000. Select Sample application, upload the fictional fold
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpranavred%2Fvelug-investor-onboarding-portal)
 
+## What it looks like
+
+| Investor portal | Fund admin review |
+|---|---|
+| ![Investor portal with sample files and the upload drop zone](docs/screenshots/investor-portal.jpg) | ![Fund admin view with evidence collection, case checks and pending external verification](docs/screenshots/fund-admin.jpg) |
+
+| Live processing trace | Optional review draft |
+|---|---|
+| ![Classify, extract, check and review stages with model, latency, tokens and request ids, and every field quote matched to the PDF](docs/screenshots/processing-trace.jpg) | ![Editable unapproved review draft rendered from model-selected grounded sources](docs/screenshots/review-draft.jpg) |
+
 ## Optional live AI
 
 Bring your own **server-only** Anthropic API key, shared Redis and fresh session-signing secret. Follow [local/runtime setup](docs/deployment.md). Builds, tests and CI make **zero provider calls**.
 
 1. Claude Opus 5.5 (`claude-opus-5-5`) classifies bounded page-labelled text into one purpose with a model-reported confidence. It never receives PDF bytes.
-2. A supported PDF normally uses a second dispatch to Claude Fable 5.1 (`claude-fable-5-1`), which receives the original PDF and returns purpose-specific fields with page numbers and verbatim quotes under a JSON-schema structured output.
+2. A supported PDF normally uses a second dispatch to Claude Sonnet 5.5 (`claude-sonnet-5-5`), which receives the original PDF and returns purpose-specific fields with page numbers and verbatim quotes under a JSON-schema structured output.
 3. Deterministic checks validate schema/purpose, page quotes and declared case comparisons. Missing, unmatched or contradictory evidence remains for review. Classification alone cannot replace v1.
 4. Optional explicit summary/correction drafts use a separate Claude Opus 5.5 dispatch, are disabled by default and render source-grounded facts selected by the model. They never send messages or change checks.
 

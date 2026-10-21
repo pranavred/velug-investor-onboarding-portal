@@ -744,3 +744,10 @@
  .ob-page .ob-ai-results code,.ob-page .ob-ai-results .ob-ai-raw-link {max-width:100%;white-space:normal;overflow-wrap:anywhere;}
  .ob-page .ob-ai-results .ob-ai-raw-link {display:block;min-height:44px;}
 }
+.ob-review-draft { border:1px solid #dce3d3; border-radius:6px; margin:16px 0; padding:16px; font-size:13px; }
+.ob-review-draft h4 { margin:0 0 6px; font-size:15px; }
+.ob-review-draft>p { margin:0 0 12px; color:#677263; line-height:1.6; }
+.ob-review-draft-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.ob-review-draft-output { display:block; margin-top:14px; }
+.ob-review-draft-output span { display:block; margin-bottom:6px; font:11px var(--font-mono); letter-spacing:.04em; text-transform:uppercase; color:#677263; }
+.ob-review-draft-output textarea { width:100%; box-sizing:border-box; min-height:220px; padding:12px; border:1px solid #cbd0bf; border-radius:6px; background:#fffef9; font:13px/1.6 var(--font-mono); color:inherit; resize:vertical; }

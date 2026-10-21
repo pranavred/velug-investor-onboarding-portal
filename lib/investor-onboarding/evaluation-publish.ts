@@ -21,7 +21,14 @@ export function buildCurrentEvaluationReport(run:PrivateRun,dataset:EvaluationDa
  return {schemaVersion:1 as const,title:'Current Claude pipeline evaluation',status:'measured_current' as const,fingerprint:run.fingerprint,datasetId:run.datasetId,models:run.models,dispatchCap:run.dispatchCap,dispatches:run.dispatches,requestCount:run.dispatches,completedAt:run.completedAt,documentCount:documents.length,classification:run.classification,metrics,cases,documents,notMeasured,method:evaluationMethod};
 }
 export type CurrentEvaluationReport=ReturnType<typeof buildCurrentEvaluationReport>;
-export function currentEvaluationSummary(report:{status:string;fingerprint?:string}|null,currentFingerprint:string){
- if(!report||report.status==='not_run')return {status:'not_run' as const};
- return {status:report.status==='measured_current'&&report.fingerprint===currentFingerprint?'measured_current' as const:'stale' as const,fingerprint:report.fingerprint};
+export type EvaluationUpstream={repository:string;commit:string};
+// A report mirrored from the open-source portal carries `upstream`; its numbers
+// describe that pipeline at that commit, so a host site labels them measured
+// upstream rather than pretending they were run against its own build.
+export type CurrentEvaluationSummary={status:'not_run'}|{status:'measured_current'|'stale';fingerprint?:string}|{status:'measured_upstream';fingerprint?:string;upstream:EvaluationUpstream};
+export function currentEvaluationSummary(report:{status:string;fingerprint?:string;upstream?:EvaluationUpstream}|null,currentFingerprint:string):CurrentEvaluationSummary{
+ if(!report||report.status==='not_run')return {status:'not_run'};
+ if(report.status==='measured_current'&&report.fingerprint===currentFingerprint)return {status:'measured_current',fingerprint:report.fingerprint};
+ if(report.status==='measured_current'&&report.upstream)return {status:'measured_upstream',fingerprint:report.fingerprint,upstream:report.upstream};
+ return {status:'stale',fingerprint:report.fingerprint};
 }
