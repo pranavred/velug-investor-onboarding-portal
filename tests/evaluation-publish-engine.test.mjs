@@ -33,3 +33,14 @@ test('a mirrored report measured upstream is labelled measured_upstream, never s
  assert.equal(currentEvaluationSummary({status:'measured_current',fingerprint:'portal-fp',upstream},'portal-fp').status,'measured_current');
  assert.equal(currentEvaluationSummary({status:'measured_current',fingerprint:'portal-fp'},'site-fp').status,'stale');
 });
+test('an expected unsupported PDF that was routed to manual review grades as a correct classification',()=>{
+ const unsupportedFixture={id:'unrelated',path:'public/investor-onboarding/live-eval/unrelated.pdf',pdfHash:'h-unrelated',expected:{purpose:'unsupported',category:'unsupported',fields:[]}};
+ const unsupportedRecord={id:'unrelated',pdfHash:'h-unrelated',expectedPurpose:'unsupported',actualPurpose:'unsupported',status:422,result:{error:'unsupported: retained Unsorted for manual review; extraction skipped.',processing:{version:'onboarding-anthropic-v1',pdfHash:'h',textTruncated:false,classification:{status:'completed',endpoint:'messages',model:'claude-opus-5-5',durationMs:1,purpose:'unsupported',confidence:0.95},extraction:{status:'skipped',endpoint:'messages',model:'claude-sonnet-5-5',durationMs:0},check:{status:'skipped',endpoint:'local',model:'deterministic',durationMs:0},review:'pending'}},grade:null};
+ const report=buildCurrentEvaluationReport({...run,records:[...packageRecords,unsupportedRecord],dispatches:3},{...dataset,fixtures:[...dataset.fixtures,unsupportedFixture]},'fp-current',{cases:false});
+ const graded=report.documents.find(d=>d.id==='unrelated');
+ assert.equal(graded.grade.passed,true);assert.equal(graded.grade.classificationCorrect,true);assert.equal(graded.serviceStatus,422);
+ assert.ok(report.metrics.some(m=>m.id==='classification'&&m.correct===2&&m.total===2));
+ const wrong={...unsupportedRecord,actualPurpose:'bank',result:{...unsupportedRecord.result,processing:{...unsupportedRecord.result.processing,classification:{...unsupportedRecord.result.processing.classification,purpose:'bank'}}}};
+ const failing=buildCurrentEvaluationReport({...run,records:[...packageRecords,wrong],dispatches:3},{...dataset,fixtures:[...dataset.fixtures,unsupportedFixture]},'fp-current',{cases:false});
+ assert.equal(failing.documents.find(d=>d.id==='unrelated').grade.passed,false);
+});

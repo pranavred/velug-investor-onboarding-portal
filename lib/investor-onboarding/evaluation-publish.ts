@@ -14,7 +14,12 @@ export function buildCurrentEvaluationReport(run:PrivateRun,dataset:EvaluationDa
   const record=run.records.find(r=>r.id===fixture.id)!,result=completeResult(record);
   const actual=result?{purpose:result.purpose,category:result.category,fields:result.fields.map(({key,label,value,page,quote})=>({key,label,value,page,quote}))}:null;
   const service=Object.fromEntries(Object.entries(record.result).filter(([key])=>key!=='draftReceipt'));
-  return {id:fixture.id,path:fixture.path,pdfHash:fixture.pdfHash,expected:fixture.expected,actual,serviceStatus:record.status,service,grade:record.grade??gradeLiveDocument(fixture.expected,null,[]),responseId:result?.responseId??null,processing:record.result.processing??null};
+  // An unsupported PDF is correct when classification said unsupported and the
+  // pipeline retained it Unsorted (HTTP 422, no extraction); grade that outcome
+  // rather than treating the absent extraction grade as a failure.
+  const routedUnsupported=fixture.expected.purpose==='unsupported'&&record.actualPurpose==='unsupported'&&!result;
+  const grade=record.grade??gradeLiveDocument(fixture.expected,routedUnsupported?{purpose:'unsupported',category:'unsupported',fields:[]}:null,[]);
+  return {id:fixture.id,path:fixture.path,pdfHash:fixture.pdfHash,expected:fixture.expected,actual:actual??(routedUnsupported?{purpose:'unsupported',category:'unsupported',fields:[]}:null),serviceStatus:record.status,service,grade,responseId:result?.responseId??null,processing:record.result.processing??null};
  });
  const cases=options.cases===false?[]:evaluateRecordedLiveCases(dataset.application,run.records.map(r=>({id:r.id,service:{status:r.status,body:r.result}})));
  const metrics=liveEvaluationMetrics(documents.map(d=>({grade:d.grade,actual:d.actual})),cases);
