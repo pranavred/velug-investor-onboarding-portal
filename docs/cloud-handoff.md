@@ -1,3 +1,5 @@
+> **Historical checkpoint.** Written before the October 21, 2026 move to Claude; provider details below are outdated.
+
 # Cloud continuation checkpoint
 
 All work is scoped to **pranavred/velug-investor-onboarding-portal**, branch `build/standalone`. The existing Velug website must remain untouched. The user authorized publication of only this new repo after verification. Do not create another repository or ask for authorization again.

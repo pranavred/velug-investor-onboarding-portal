@@ -1,3 +1,4 @@
+import {currentModelEvaluationLabel} from '@/lib/investor-onboarding/evaluation-status';
 import liveReport from "@/lib/investor-onboarding/live-ai-report.json";
 import aiReport from "@/lib/investor-onboarding/ai-report.json";
 import workflowReport from "@/lib/investor-onboarding/evaluation-report.json";
@@ -6,7 +7,7 @@ import { Icon } from "./icons";
 const liveSteps = [
   { place: "Browser", title: "Upload a PDF", icon: "upload", detail: "Choose or drop a dummy file. Send its bytes to the upload API.", payload: "PDF + current application", kind: "browser" },
   { place: "Your server", title: "Validate & read", icon: "shield", detail: "Check origin, type and size. Parse within limits, then check the model-call quota.", payload: "2 MB / 10 pages / Shared quota", kind: "server" },
-  { place: "OpenAI", title: "Classify → extract", icon: "spark", detail: "Decisions classifies bounded page-labelled text. GPT-5 extracts fields from the original PDF with page quotes.", payload: "Strict JSON · No tools", kind: "model" },
+  { place: "Anthropic", title: "Classify → extract", icon: "spark", detail: "Claude Opus 5.5 classifies bounded page-labelled text. Claude Fable 5.1 extracts fields from the original PDF with page quotes.", payload: "Structured JSON · No tools", kind: "model" },
   { place: "Your server", title: "Check the result", icon: "check", detail: "Validate output. Match quotes to PDF text. Compare fields with the application.", payload: "Fields + sources + review flags", kind: "server" },
   { place: "Browser", title: "Review in folders", icon: "folder", detail: "Sort into document folders. Recompare current versions with the editable application; inspect the original PDF.", payload: "Human review required", kind: "browser" },
 ] as const;
@@ -34,7 +35,7 @@ export function BackendWalkthrough() {
       </div>
       <details className="ob-backend-technical"><summary>Request & response details <Icon name="chevron" size={16} /></summary><div>
         <p><span>API</span><code>POST /api/investor-onboarding/process</code>One PDF, scenario and current fictional application. After valid parsing, a shared provider quota allows 20 global dispatches and 5 session dispatches per Redis hour; normally two per supported PDF. A separate local cap limits concurrent parsers. The provider key stays on the server.</p>
-        <p><span>Model request</span><code>gpt-6-luna / gpt-5-2025-08-07</code>Current model evaluation: not_run. Versioned purpose/field contract, PDF bytes, strict JSON output, store: false, and a 50-second shared deadline.</p>
+        <p><span>Model request</span><code>claude-opus-5-5 / claude-fable-5-1</code>Current model evaluation: {currentModelEvaluationLabel}. Versioned purpose/field contract, PDF bytes, JSON-schema structured output, no tools, and a 50-second shared deadline.</p>
         <p><span>Returned record</span><code>purpose · category · fields · page · quote · flags</code>Also includes the model, response ID, timestamp and token usage.</p>
       </div></details>
     </figure>
@@ -51,6 +52,6 @@ export function BackendWalkthrough() {
       <p className="ob-backend-eval-scope">Synthetic text PDFs only. The live evaluation bypasses hosting and quota enforcement through an injected no-op budget; it does not benchmark those controls. Visitor uploads have no labelled answers, so their source checks do not measure extraction accuracy.</p>
     </figure>
 
-    <div className="ob-backend-lifecycle"><div><Icon name="reset" size={23} /><h3>A fresh workspace on refresh.</h3></div><p>OpenAI receives the uploaded PDF. This app keeps the file and result in browser memory and does not persist them on its server. Refresh or Reset demo clears the workspace.</p><span>No investor verification or acceptance</span></div>
+    <div className="ob-backend-lifecycle"><div><Icon name="reset" size={23} /><h3>A fresh workspace on refresh.</h3></div><p>Anthropic receives the uploaded PDF. This app keeps the file and result in browser memory and does not persist them on its server. Refresh or Reset demo clears the workspace.</p><span>No investor verification or acceptance</span></div>
   </section>;
 }

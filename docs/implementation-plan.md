@@ -1,3 +1,5 @@
+> **Superseded on October 21, 2026.** Provider-specific steps below refer to the earlier OpenAI pipeline; the current implementation is documented in [architecture](architecture.md) and the [changelog](../CHANGELOG.md).
+
 # Standalone Open-Source Investor Onboarding Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.

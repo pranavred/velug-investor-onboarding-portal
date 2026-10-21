@@ -6,8 +6,8 @@ import {validateLiveApplication,purposeCategory} from '../investor-onboarding/li
 import {processingVersion,supported} from '../investor-onboarding/processing-contract.ts';
 import type {ProcessingTrace} from '../investor-onboarding/processing-contract.ts';
 import {boundedBody,parsePdf,UploadError} from './pdf-intake.ts';
-import {classifyDocument} from './providers/openai-decisions.ts';
-import {extractWithOpenAI} from './providers/openai-responses.ts';
+import {classifyDocument} from './providers/classify.ts';
+import {extractDocument} from './providers/extract.ts';
 import {ProviderError} from './providers/transport.ts';
 import {ground} from './grounding.ts';
 import {demoSession} from './session.ts';
@@ -34,11 +34,11 @@ export async function processUpload(request:Request,options:{config?:ServerConfi
   const session=demoSession(request,c.sessionSecret!,c.appUrl.startsWith('https:'));cookie=session.cookie;
   const reserve=options.reserve??(()=>reserveProviderDispatch({namespace:c.namespace,sessionHash:session.hash,globalLimit:c.globalLimit,sessionLimit:c.sessionLimit},redisStore(c.redisUrl!)));
   const deps={apiKey:c.apiKey!,reserve,signal,fetchImpl:options.fetchImpl};
-  trace={version:processingVersion,pdfHash:createHash('sha256').update(pdfBytes).digest('hex'),textTruncated:false,classification:{status:'skipped',endpoint:'decisions',model:c.classificationModel,durationMs:0},extraction:{status:'skipped',endpoint:'responses',model:c.extractionModel,durationMs:0},check:{status:'skipped',endpoint:'local',model:'deterministic',durationMs:0},review:'pending'};
+  trace={version:processingVersion,pdfHash:createHash('sha256').update(pdfBytes).digest('hex'),textTruncated:false,classification:{status:'skipped',endpoint:'messages',model:c.classificationModel,durationMs:0},extraction:{status:'skipped',endpoint:'messages',model:c.extractionModel,durationMs:0},check:{status:'skipped',endpoint:'local',model:'deterministic',durationMs:0},review:'pending'};
   try{trace.classification=await classifyDocument(texts,c.classificationModel,deps);}catch(e){trace.classification={...trace.classification,...(e instanceof ProviderError?e.stage:{}),status:'failed',error:'Classification unavailable or invalid; manual review required.'};throw e;}
   const purpose=trace.classification.purpose!;
   if(!supported(purpose))return json({error:`${purpose}: retained Unsorted for manual review; extraction skipped.`,processing:trace},422);
-  let extraction;try{extraction=await extractWithOpenAI(pdfBytes,purpose,c.extractionModel,deps);trace.extraction=extraction.stage;}catch(e){trace.extraction={...trace.extraction,...(e instanceof ProviderError?e.stage:{}),status:'failed',error:'Extraction did not complete. Prior evidence remains current.'};throw e;}
+  let extraction;try{extraction=await extractDocument(pdfBytes,purpose,c.extractionModel,deps);trace.extraction=extraction.stage;}catch(e){trace.extraction={...trace.extraction,...(e instanceof ProviderError?e.stage:{}),status:'failed',error:'Extraction did not complete. Prior evidence remains current.'};throw e;}
   const start=Date.now(),grounded=ground(extraction.output,texts,pageCount,application);
   trace.check={...trace.check,status:'completed',durationMs:Date.now()-start};
   return json({mode:'live_ai',purpose,category:purposeCategory[purpose],contractVersion:processingVersion,requestApplication:application,...grounded,model:c.extractionModel,responseId:extraction.stage.responseId,completedAt:new Date().toISOString(),pageCount,usage:extraction.stage.usage,processing:trace,...(c.reviewDrafts?{draftReceipt:signDraftContext({fields:grounded.fields,issues:grounded.flags,sessionHash:session.hash,expires:Date.now()+3600000},c.sessionSecret!)}:{}),externalVerificationCompleted:false});

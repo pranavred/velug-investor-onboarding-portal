@@ -8,7 +8,7 @@ async function withPortal(name,check){
  const socket=createServer();await new Promise(resolve=>socket.listen(0,'127.0.0.1',resolve));
  const port=socket.address().port;await new Promise(resolve=>socket.close(resolve));
  const origin=`http://127.0.0.1:${port}`;
- const child=spawn(process.execPath,['node_modules/next/dist/bin/next','start','--hostname','127.0.0.1','--port',String(port)],{env:{...process.env,APP_NAME:name,APP_URL:origin,LIVE_AI_ENABLED:'false',REVIEW_DRAFTS_ENABLED:'false',OPENAI_API_KEY:'render-test-private-sentinel',APP_SESSION_SECRET:'render-test-session-sentinel-'.repeat(2),NEXT_TELEMETRY_DISABLED:'1'},stdio:['ignore','pipe','pipe']});
+ const child=spawn(process.execPath,['node_modules/next/dist/bin/next','start','--hostname','127.0.0.1','--port',String(port)],{env:{...process.env,APP_NAME:name,APP_URL:origin,LIVE_AI_ENABLED:'false',REVIEW_DRAFTS_ENABLED:'false',ANTHROPIC_API_KEY:'render-test-private-sentinel',APP_SESSION_SECRET:'render-test-session-sentinel-'.repeat(2),NEXT_TELEMETRY_DISABLED:'1'},stdio:['ignore','pipe','pipe']});
  let log='';child.stdout.on('data',chunk=>{log+=chunk;});child.stderr.on('data',chunk=>{log+=chunk;});
  try{
   let ready=false;

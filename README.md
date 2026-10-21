@@ -17,23 +17,23 @@ Open http://localhost:3000. Select Sample application, upload the fictional fold
 
 ## Optional live AI
 
-Bring your own **server-only** OpenAI key, shared Redis and fresh session-signing secret. Follow [local/runtime setup](docs/deployment.md), including your own model availability check. This build made **zero provider calls**.
+Bring your own **server-only** Anthropic API key, shared Redis and fresh session-signing secret. Follow [local/runtime setup](docs/deployment.md). Builds, tests and CI make **zero provider calls**.
 
-1. OpenAI Decisions (`gpt-6-luna`) classifies bounded page-labelled text, never PDF input.
-2. A supported PDF normally uses a second dispatch to GPT-5 Responses (`gpt-5-2025-08-07`) to extract fields from the original PDF.
+1. Claude Opus 5.5 (`claude-opus-5-5`) classifies bounded page-labelled text into one purpose with a model-reported confidence. It never receives PDF bytes.
+2. A supported PDF normally uses a second dispatch to Claude Fable 5.1 (`claude-fable-5-1`), which receives the original PDF and returns purpose-specific fields with page numbers and verbatim quotes under a JSON-schema structured output.
 3. Deterministic checks validate schema/purpose, page quotes and declared case comparisons. Missing, unmatched or contradictory evidence remains for review. Classification alone cannot replace v1.
-4. Optional explicit summary/correction drafts use a separate dispatch, are disabled by default and render source-grounded facts selected by the model. They never send messages or change checks.
+4. Optional explicit summary/correction drafts use a separate Claude Opus 5.5 dispatch, are disabled by default and render source-grounded facts selected by the model. They never send messages or change checks.
 
-The requested GPT-5 snapshot was documented as **deprecated**. Check your own account before live use. It is never silently substituted. Endpoint/model failure leaves sample replay usable and live work partial/error. The actual endpoint, model, timings, usage and available request IDs appear in the stage trace.
+Model ids are configurable; any `claude-*` id is accepted and nothing is substituted automatically. A refusal, truncated output, unavailable model or exhausted account leaves sample replay usable and the live document in manual review. The actual endpoint, model, timings, token usage and request IDs appear in the Fund admin stage trace. The provider endpoint is pinned to `api.anthropic.com`; no ambient base URL or proxy setting is honoured.
 
-**Current model evaluation: `not_run`.** The 31-call/17-call GPT-4.1 records are historical reference measurements only. Quote matches are source checks, not accuracy, authenticity or external verification. [Evaluation methods and explicit private paid runner](docs/evaluations.md).
+**Current model evaluation: `not_run`.** The 31-call/17-call GPT-4.1 records are historical reference measurements of the earlier pipeline only. Quote matches are source checks, not accuracy, authenticity or external verification. [Evaluation methods, the private paid runner and the publish step](docs/evaluations.md).
 
 ## Boundaries
 
 - Fictional documents only. Role tabs are a demo switch, **not authentication**.
 - No investor acceptance, identity authenticity, sanctions/PEP/AML, tax approval or bank-control verification.
 - Browser-memory data, no durable document store or audit database. Exports are review snapshots.
-- OpenAI receives classification text and extraction PDFs. `store:false` is a request option, not a zero-retention guarantee. No data/API proxy goes through Velug.
+- Anthropic receives classification text and extraction PDFs under its API data-handling terms; review your own agreement and retention settings. No data/API proxy goes through Velug.
 - Default shared budget: 20 global / 5 anonymous-session reservations per Redis-clock hour. Normally two per supported PDF. Redis failure denies dispatch. Four local parser slots and 12 retained browser PDFs are separate controls. Limits: 2 MiB, 10 pages, 60,000 parsed characters; text PDFs only, no OCR.
 
 ## Verify and deploy

@@ -1,13 +1,14 @@
 'use client';
 import report from '@/lib/investor-onboarding/ai-report.json';
 import {LiveEvaluationResults} from './live-evaluation-results';
+import {CurrentEvaluationResults} from './current-evaluation-results';
 import { Icon } from './icons';
 
 export function AIRunResults() {
   const date = new Date(report.completedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
   const samples = report.documents.filter(d => d.kind === 'sample');
   const edgeCases = report.documents.filter(d => d.kind !== 'sample');
-  return <><section id="ob-ai-results" className="ob-control-section ob-ai-results" aria-label="Recorded AI evaluation results">
+  return <><CurrentEvaluationResults/><section id="ob-ai-results" className="ob-control-section ob-ai-results" aria-label="Recorded AI evaluation results">
     <header className="ob-control-section-heading"><div><span className="ob-eyebrow">03 / AI evaluation</span><h4>Sample model run</h4><p>{report.documentCount} sample PDFs · 4 edge documents · {report.requestCount} model calls · {date} UTC</p></div><a className="ob-button ob-button-outline" href="/investor-onboarding/ai-report.json" download="velug-ai-evaluation.json"><Icon name="download" size={15} />AI report</a></header>
     <div className="ob-ai-run-summary"><span className="ob-controls-kicker"><Icon name="spark" size={15} />{report.provider}</span><strong>{report.requestedModel}</strong><p>Sample application uploads replay these historical model outputs.</p><code>Run {report.runId}</code></div>
     <div className="ob-ai-metrics">{report.metrics.map(metric => <article key={metric.id} className={metric.correct < metric.total ? 'ob-ai-metric-review' : ''}><span>{metric.label}</span><strong>{metric.correct}<small>/ {metric.total}</small></strong><p>{metric.unit}</p><details><summary>Criteria <Icon name="chevron" size={12} /></summary><p>{metric.scope}</p></details></article>)}</div>

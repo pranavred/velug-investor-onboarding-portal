@@ -39,7 +39,7 @@ jobs:
           docker exec onboarding sh -c 'test "$(id -u)" != 0'
           docker stop onboarding
           docker rm onboarding
-          docker run -d --name onboarding-runtime -p 3000:3000 -e OPENAI_API_KEY=runtime-private-sentinel -e APP_SESSION_SECRET=runtime-session-private-sentinel onboarding:test
+          docker run -d --name onboarding-runtime -p 3000:3000 -e ANTHROPIC_API_KEY=runtime-private-sentinel -e APP_SESSION_SECRET=runtime-session-private-sentinel onboarding:test
           for i in $(seq 1 30); do curl -fsS http://localhost:3000/api/health && break || sleep 2; done
           npm run verify:deployment -- http://localhost:3000
           docker history --no-trunc onboarding:test > /tmp/image-history.txt

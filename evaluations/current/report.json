@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "status": "not_run",
+  "note": "No current-pipeline model evaluation has been published. Run scripts/run-live-evaluation.mjs, then scripts/publish-live-evaluation.mjs."
+}

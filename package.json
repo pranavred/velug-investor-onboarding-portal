@@ -21,6 +21,7 @@
     "verify:licenses": "node scripts/verify-licenses.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "1.0.0",
     "next": "16.4.1",
     "react": "19.2.6",
     "react-dom": "19.2.6",
@@ -40,7 +41,7 @@
     "typescript-eslint": "8.71.2"
   },
   "type": "module",
-  "description": "Self-hostable investor onboarding demo with evidence review and OpenAI classification/extraction.",
+  "description": "Self-hostable investor onboarding demo with evidence review and Claude classification/extraction.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",

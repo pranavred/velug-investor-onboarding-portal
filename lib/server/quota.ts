@@ -13,7 +13,7 @@ redis.call('INCR',s); redis.call('EXPIRE',s,ttl)
 return 1`;
 export type AtomicStore={reserve:(keys:string[],limits:string[])=>Promise<unknown>};
 export async function reserveProviderDispatch(input:{namespace:string;sessionHash:string;globalLimit:number;sessionLimit:number},store:AtomicStore){
- const prefix=`{${input.namespace}}:openai`;
+ const prefix=`{${input.namespace}}:anthropic`;
  let allowed;try{allowed=await store.reserve([prefix+':global',prefix+':session:'+input.sessionHash],[String(input.globalLimit),String(input.sessionLimit)]);}catch{throw Object.assign(new Error('Shared provider budget unavailable. No dispatch permitted.'),{status:503});}
  if(allowed!==1)throw Object.assign(new Error('Provider call budget reached. Try next hour.'),{status:429});
 }

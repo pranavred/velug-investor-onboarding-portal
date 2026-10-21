@@ -1,5 +1,5 @@
 import type {LivePurpose} from './live-types.ts';
-export const processingVersion='onboarding-openai-v1';
+export const processingVersion='onboarding-anthropic-v1';
 export const classificationChoices=['formation','identity','address','ownership','authority','tax','subscription','bank','unsupported','insufficient_evidence'] as const;
 export type ClassificationChoice=typeof classificationChoices[number];
 export type Usage={input_tokens:number;output_tokens:number;total_tokens:number};

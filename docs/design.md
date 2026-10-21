@@ -1,3 +1,5 @@
+> **Superseded on October 21, 2026.** This design targeted OpenAI Decisions and GPT-5. The shipped pipeline uses Claude Opus 5.5 and Claude Fable 5.1 through the Anthropic SDK; see [architecture](architecture.md). Kept as the original design record.
+
 # Standalone open-source investor onboarding
 
 Date: October 15, 2026. Status: proposed design for the requested plan. Updated to the user's OpenAI-only architecture; this document does not itself publish or deploy software.
