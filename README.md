@@ -1,6 +1,6 @@
 # Velug Investor Onboarding Portal
 
-A self-hostable, open-source **fictional-data demo/starter** for document intake and evidence review. Investor/admin demo tabs, sample folder drag/drop, original PDF/page/quote inspection, editable declarations, correction requests, explicit v2 replacement history, optional tutorial, backend diagrams and scoped evaluation evidence are included.
+A self-hostable, open-source **fictional-data demo/starter** for document intake and evidence review. **Live demo:** [velug.ai/investor-onboarding-example](https://velug.ai/investor-onboarding-example) runs this same pipeline. Investor/admin demo tabs, sample folder drag/drop, original PDF/page/quote inspection, editable declarations, correction requests, explicit v2 replacement history, optional tutorial, backend diagrams and scoped evaluation evidence are included.
 
 **Try samples without keys.** Node 24.19.0:
 
