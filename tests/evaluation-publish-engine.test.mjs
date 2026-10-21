@@ -44,3 +44,7 @@ test('an expected unsupported PDF that was routed to manual review grades as a c
  const failing=buildCurrentEvaluationReport({...run,records:[...packageRecords,wrong],dispatches:3},{...dataset,fixtures:[...dataset.fixtures,unsupportedFixture]},'fp-current',{cases:false});
  assert.equal(failing.documents.find(d=>d.id==='unrelated').grade.passed,false);
 });
+test('publishing refuses a run that recorded budget or availability denials',()=>{
+ const denied={id:'formation',pdfHash:'h-formation',expectedPurpose:'formation',actualPurpose:null,status:429,result:{error:'Provider call budget reached. Try next hour.',processing:{version:'onboarding-anthropic-v1',pdfHash:'h',textTruncated:false,classification:{status:'failed',endpoint:'messages',model:'claude-opus-5-5',durationMs:0,error:'Classification unavailable or invalid; manual review required.'},extraction:{status:'skipped',endpoint:'messages',model:'claude-sonnet-5-5',durationMs:0},check:{status:'skipped',endpoint:'local',model:'deterministic',durationMs:0},review:'pending'}},grade:null};
+ assert.throws(()=>buildCurrentEvaluationReport({...run,records:[denied]},dataset,'fp-current',{cases:false}),/budget|denied/i);
+});

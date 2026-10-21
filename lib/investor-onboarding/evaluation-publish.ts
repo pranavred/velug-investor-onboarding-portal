@@ -10,6 +10,9 @@ function completeResult(record:RunRecord):LiveResult|null{return record.status==
 export function buildCurrentEvaluationReport(run:PrivateRun,dataset:EvaluationDataset,currentFingerprint:string,options:{cases?:boolean}={}){
  if(run.kind!=='provider'||run.fingerprint!==currentFingerprint)throw new Error('Run is stale: the pipeline fingerprint changed since this run. Re-run before publishing.');
  if(run.datasetId!==dataset.datasetId||dataset.fixtures.some(f=>!run.records.some(r=>r.id===f.id&&r.pdfHash===f.pdfHash)))throw new Error('Run is incomplete: every dataset fixture needs a recorded result with a matching PDF hash.');
+ // A reservation denied by the shared budget (429) or an unavailable store (503) means
+ // the model never saw that PDF; such a run measures the deployer's quota, not the model.
+ if(run.records.some(r=>r.status===429||r.status===503))throw new Error('Run recorded budget or availability denials; re-run with sufficient budget before publishing.');
  const documents=dataset.fixtures.map(fixture=>{
   const record=run.records.find(r=>r.id===fixture.id)!,result=completeResult(record);
   const actual=result?{purpose:result.purpose,category:result.category,fields:result.fields.map(({key,label,value,page,quote})=>({key,label,value,page,quote}))}:null;
