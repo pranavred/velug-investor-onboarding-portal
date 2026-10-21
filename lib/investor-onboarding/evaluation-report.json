@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "title": "Current offline regression",
   "scope": "Software tests and historical replay only. Zero provider calls. Current model evaluation status: measured_current; see the current pipeline evaluation panel. Skipped integration checks are not passes.",
-  "runAt": "2026-10-21T20:16:39.605Z",
+  "runAt": "2026-10-21T20:17:25.915Z",
   "sourceFingerprint": "30f9cc806b4dd29f2f6569c2d83694aec7c1e357b2dd6a19050d1eb98dd8f0e0",
   "command": "npm run test:unit",
   "total": 173,
