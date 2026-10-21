@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Current Claude pipeline evaluation",
   "status": "measured_current",
-  "fingerprint": "d6add0325bcd48130fabce896ab25e880a6a92745b16e701bef480bd742b3e76",
+  "fingerprint": "7ac1515d573ae5db9fd9331b9ecffba1738920596014d5a855288cd2e0f60767",
   "datasetId": "elmshore-text-evidence-v1",
   "models": {
     "classification": "claude-opus-5-5",
@@ -11,7 +11,7 @@
   "dispatchCap": 40,
   "dispatches": 33,
   "requestCount": 33,
-  "completedAt": "2026-10-21T20:07:37.184Z",
+  "completedAt": "2026-10-21T20:12:30.847Z",
   "documentCount": 17,
   "classification": {
     "confusion": {
@@ -64,7 +64,7 @@
       "id": "precision",
       "label": "Output precision",
       "correct": 58,
-      "total": 59,
+      "total": 58,
       "unit": "returned fields matching expected values"
     },
     {
@@ -77,7 +77,7 @@
     {
       "id": "cases",
       "label": "Case review outcomes",
-      "correct": 3,
+      "correct": 11,
       "total": 11,
       "unit": "packages matching every expected check and decision"
     },
@@ -169,7 +169,7 @@
           "terms": "passed",
           "bank": "needs-review",
           "ownership": "passed",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -425,15 +425,6 @@
                 "value": "72 Fiction Lane, Portland, ME 00000",
                 "page": 1,
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
-              },
-              {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
               },
               {
                 "documentId": "tax",
@@ -587,7 +578,7 @@
         "accepted": false,
         "externalVerificationCompleted": false
       },
-      "passed": false
+      "passed": true
     },
     {
       "id": "corrected",
@@ -660,7 +651,7 @@
       },
       "expectedDecision": "ready_for_review",
       "actual": {
-        "decision": "needs_review",
+        "decision": "ready_for_review",
         "checks": {
           "required": "passed",
           "subscriber": "passed",
@@ -668,7 +659,7 @@
           "terms": "passed",
           "bank": "passed",
           "ownership": "passed",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -924,15 +915,6 @@
                 "value": "72 Fiction Lane, Portland, ME 00000",
                 "page": 1,
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
-              },
-              {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
               },
               {
                 "documentId": "tax",
@@ -1086,7 +1068,7 @@
         "accepted": false,
         "externalVerificationCompleted": false
       },
-      "passed": false
+      "passed": true
     },
     {
       "id": "equivalent",
@@ -1159,7 +1141,7 @@
       },
       "expectedDecision": "ready_for_review",
       "actual": {
-        "decision": "needs_review",
+        "decision": "ready_for_review",
         "checks": {
           "required": "passed",
           "subscriber": "passed",
@@ -1167,7 +1149,7 @@
           "terms": "passed",
           "bank": "passed",
           "ownership": "passed",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -1423,15 +1405,6 @@
                 "value": "72 Fiction Lane, Portland, ME 00000",
                 "page": 1,
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
-              },
-              {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
               },
               {
                 "documentId": "tax",
@@ -1585,7 +1558,7 @@
         "accepted": false,
         "externalVerificationCompleted": false
       },
-      "passed": false
+      "passed": true
     },
     {
       "id": "amount",
@@ -1666,7 +1639,7 @@
           "terms": "needs-review",
           "bank": "passed",
           "ownership": "passed",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -1922,15 +1895,6 @@
                 "value": "72 Fiction Lane, Portland, ME 00000",
                 "page": 1,
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
-              },
-              {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
               },
               {
                 "documentId": "tax",
@@ -2084,7 +2048,7 @@
         "accepted": false,
         "externalVerificationCompleted": false
       },
-      "passed": false
+      "passed": true
     },
     {
       "id": "currency",
@@ -2165,7 +2129,7 @@
           "terms": "needs-review",
           "bank": "passed",
           "ownership": "passed",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -2192,7 +2156,7 @@
                 "key": "subscribing-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Elmshore Ventures LLC"
+                "quote": "Legal subscriber: Elmshore Ventures LLC"
               },
               {
                 "documentId": "tax",
@@ -2258,7 +2222,7 @@
                 "key": "fund-name",
                 "value": "Juniper Income Fund IV",
                 "page": 1,
-                "quote": "Juniper Income Fund IV"
+                "quote": "Fund: Juniper Income Fund IV"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2267,7 +2231,7 @@
                 "key": "share-class",
                 "value": "Class Q",
                 "page": 2,
-                "quote": "Class Q"
+                "quote": "Share class: Class Q"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2276,7 +2240,7 @@
                 "key": "commitment",
                 "value": "EUR 1,250,000",
                 "page": 2,
-                "quote": "EUR 1,250,000"
+                "quote": "Requested commitment: EUR 1,250,000"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2423,15 +2387,6 @@
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
               },
               {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
-              },
-              {
                 "documentId": "tax",
                 "version": 1,
                 "index": 0,
@@ -2528,7 +2483,7 @@
                 "key": "subscribing-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Elmshore Ventures LLC"
+                "quote": "Legal subscriber: Elmshore Ventures LLC"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2537,7 +2492,7 @@
                 "key": "fund-name",
                 "value": "Juniper Income Fund IV",
                 "page": 1,
-                "quote": "Juniper Income Fund IV"
+                "quote": "Fund: Juniper Income Fund IV"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2546,7 +2501,7 @@
                 "key": "share-class",
                 "value": "Class Q",
                 "page": 2,
-                "quote": "Class Q"
+                "quote": "Share class: Class Q"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2555,7 +2510,7 @@
                 "key": "commitment",
                 "value": "EUR 1,250,000",
                 "page": 2,
-                "quote": "EUR 1,250,000"
+                "quote": "Requested commitment: EUR 1,250,000"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2583,7 +2538,7 @@
         "accepted": false,
         "externalVerificationCompleted": false
       },
-      "passed": false
+      "passed": true
     },
     {
       "id": "omitted",
@@ -2657,7 +2612,7 @@
           "terms": "passed",
           "bank": "needs-review",
           "ownership": "passed",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -2911,15 +2866,6 @@
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
               },
               {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
-              },
-              {
                 "documentId": "tax",
                 "version": 1,
                 "index": 0,
@@ -3062,7 +3008,7 @@
         "accepted": false,
         "externalVerificationCompleted": false
       },
-      "passed": false
+      "passed": true
     },
     {
       "id": "unknown",
@@ -3131,7 +3077,7 @@
         "terms": "passed",
         "bank": "passed",
         "ownership": "needs-review",
-        "sources": "needs-review"
+        "sources": "passed"
       },
       "expectedDecision": "needs_review",
       "actual": {
@@ -3143,7 +3089,7 @@
           "terms": "passed",
           "bank": "passed",
           "ownership": "needs-review",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -3428,15 +3374,6 @@
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
               },
               {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
-              },
-              {
                 "documentId": "tax",
                 "version": 1,
                 "index": 0,
@@ -3680,7 +3617,7 @@
           "terms": "passed",
           "bank": "needs-review",
           "ownership": "passed",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -3938,15 +3875,6 @@
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
               },
               {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
-              },
-              {
                 "documentId": "tax",
                 "version": 1,
                 "index": 0,
@@ -4098,7 +4026,7 @@
         "accepted": false,
         "externalVerificationCompleted": false
       },
-      "passed": false
+      "passed": true
     },
     {
       "id": "unrelated",
@@ -4443,15 +4371,6 @@
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
               },
               {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
-              },
-              {
                 "documentId": "tax",
                 "version": 1,
                 "index": 0,
@@ -4691,7 +4610,7 @@
           "terms": "passed",
           "bank": "passed",
           "ownership": "passed",
-          "sources": "needs-review"
+          "sources": "passed"
         },
         "sources": [
           {
@@ -5021,15 +4940,6 @@
                 "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
               },
               {
-                "documentId": "address",
-                "version": 1,
-                "index": 2,
-                "key": "address-issued",
-                "value": null,
-                "page": null,
-                "quote": null
-              },
-              {
                 "documentId": "tax",
                 "version": 1,
                 "index": 0,
@@ -5218,7 +5128,7 @@
         "accepted": false,
         "externalVerificationCompleted": false
       },
-      "passed": false
+      "passed": true
     },
     {
       "id": "missing-address",
@@ -5753,8 +5663,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz3Sx4J7wmyAte1wWas",
-        "completedAt": "2026-10-21T20:06:16.021Z",
+        "responseId": "msg_011CgFzPvYXfgbcvrvbybnFo",
+        "completedAt": "2026-10-21T20:10:53.645Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3382,
@@ -5768,9 +5678,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 3091,
+            "durationMs": 1588,
             "status": "completed",
-            "requestId": "req_011CgFz3DTBrJ2kJXKFN3Hjq",
+            "requestId": "req_011CgFzPojmEqzNsF2pHdi7Z",
             "usage": {
               "input_tokens": 598,
               "output_tokens": 20,
@@ -5782,10 +5692,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2084,
+            "durationMs": 1921,
             "status": "completed",
-            "requestId": "req_011CgFz3SaE3Q29vkBBGngks",
-            "responseId": "msg_011CgFz3Sx4J7wmyAte1wWas",
+            "requestId": "req_011CgFzPv8UjTDS2LheMzLae",
+            "responseId": "msg_011CgFzPvYXfgbcvrvbybnFo",
             "usage": {
               "input_tokens": 3382,
               "output_tokens": 155,
@@ -5835,7 +5745,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz3Sx4J7wmyAte1wWas",
+      "responseId": "msg_011CgFzPvYXfgbcvrvbybnFo",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "242af5b7f9172b14c6555f675cd69ee2a46ce46498d9457e98db328edf6a34fd",
@@ -5843,9 +5753,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 3091,
+          "durationMs": 1588,
           "status": "completed",
-          "requestId": "req_011CgFz3DTBrJ2kJXKFN3Hjq",
+          "requestId": "req_011CgFzPojmEqzNsF2pHdi7Z",
           "usage": {
             "input_tokens": 598,
             "output_tokens": 20,
@@ -5857,10 +5767,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2084,
+          "durationMs": 1921,
           "status": "completed",
-          "requestId": "req_011CgFz3SaE3Q29vkBBGngks",
-          "responseId": "msg_011CgFz3Sx4J7wmyAte1wWas",
+          "requestId": "req_011CgFzPv8UjTDS2LheMzLae",
+          "responseId": "msg_011CgFzPvYXfgbcvrvbybnFo",
           "usage": {
             "input_tokens": 3382,
             "output_tokens": 155,
@@ -5951,8 +5861,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz3jwkj2SwjtRfs73Kb",
-        "completedAt": "2026-10-21T20:06:19.959Z",
+        "responseId": "msg_011CgFzQAh5jhDWF7U9Evg1u",
+        "completedAt": "2026-10-21T20:10:56.859Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3371,
@@ -5966,9 +5876,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1886,
+            "durationMs": 1351,
             "status": "completed",
-            "requestId": "req_011CgFz3bZikMePxD769rHkj",
+            "requestId": "req_011CgFzQ4VWtj2R6bsUdjXNo",
             "usage": {
               "input_tokens": 597,
               "output_tokens": 20,
@@ -5980,10 +5890,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2013,
+            "durationMs": 1824,
             "status": "completed",
-            "requestId": "req_011CgFz3jcfJSRWboBqpm4iq",
-            "responseId": "msg_011CgFz3jwkj2SwjtRfs73Kb",
+            "requestId": "req_011CgFzQAMFkxsNDftT4pRTZ",
+            "responseId": "msg_011CgFzQAh5jhDWF7U9Evg1u",
             "usage": {
               "input_tokens": 3371,
               "output_tokens": 133,
@@ -5994,7 +5904,7 @@
             "status": "completed",
             "endpoint": "local",
             "model": "deterministic",
-            "durationMs": 3
+            "durationMs": 0
           },
           "review": "pending"
         },
@@ -6033,7 +5943,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz3jwkj2SwjtRfs73Kb",
+      "responseId": "msg_011CgFzQAh5jhDWF7U9Evg1u",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "2b0457cd140cbeb1bc392d82237e93d69846be51b5aa582a416ac8ef23a1f02a",
@@ -6041,9 +5951,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1886,
+          "durationMs": 1351,
           "status": "completed",
-          "requestId": "req_011CgFz3bZikMePxD769rHkj",
+          "requestId": "req_011CgFzQ4VWtj2R6bsUdjXNo",
           "usage": {
             "input_tokens": 597,
             "output_tokens": 20,
@@ -6055,10 +5965,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2013,
+          "durationMs": 1824,
           "status": "completed",
-          "requestId": "req_011CgFz3jcfJSRWboBqpm4iq",
-          "responseId": "msg_011CgFz3jwkj2SwjtRfs73Kb",
+          "requestId": "req_011CgFzQAMFkxsNDftT4pRTZ",
+          "responseId": "msg_011CgFzQAh5jhDWF7U9Evg1u",
           "usage": {
             "input_tokens": 3371,
             "output_tokens": 133,
@@ -6069,7 +5979,7 @@
           "status": "completed",
           "endpoint": "local",
           "model": "deterministic",
-          "durationMs": 3
+          "durationMs": 0
         },
         "review": "pending"
       }
@@ -6129,8 +6039,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz42KFHjFK1vKnZomSV",
-        "completedAt": "2026-10-21T20:06:24.895Z",
+        "responseId": "msg_011CgFzQjVZFQgfMDTa3YiSN",
+        "completedAt": "2026-10-21T20:11:05.155Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3335,
@@ -6144,9 +6054,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1761,
+            "durationMs": 5813,
             "status": "completed",
-            "requestId": "req_011CgFz3tJHeDCcE6GwDKHgx",
+            "requestId": "req_011CgFzQJ9Z5HFpKdktJt5ch",
             "usage": {
               "input_tokens": 578,
               "output_tokens": 20,
@@ -6158,10 +6068,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 3158,
+            "durationMs": 2469,
             "status": "completed",
-            "requestId": "req_011CgFz41uhAxEHx8DA5S1g1",
-            "responseId": "msg_011CgFz42KFHjFK1vKnZomSV",
+            "requestId": "req_011CgFzQj4kC2UZmNrDCaNSr",
+            "responseId": "msg_011CgFzQjVZFQgfMDTa3YiSN",
             "usage": {
               "input_tokens": 3335,
               "output_tokens": 79,
@@ -6200,7 +6110,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz42KFHjFK1vKnZomSV",
+      "responseId": "msg_011CgFzQjVZFQgfMDTa3YiSN",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "d7c7e63cff7753798740b2f7afd3d47d94610845911629ca7b0865a47875ab9c",
@@ -6208,9 +6118,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1761,
+          "durationMs": 5813,
           "status": "completed",
-          "requestId": "req_011CgFz3tJHeDCcE6GwDKHgx",
+          "requestId": "req_011CgFzQJ9Z5HFpKdktJt5ch",
           "usage": {
             "input_tokens": 578,
             "output_tokens": 20,
@@ -6222,10 +6132,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 3158,
+          "durationMs": 2469,
           "status": "completed",
-          "requestId": "req_011CgFz41uhAxEHx8DA5S1g1",
-          "responseId": "msg_011CgFz42KFHjFK1vKnZomSV",
+          "requestId": "req_011CgFzQj4kC2UZmNrDCaNSr",
+          "responseId": "msg_011CgFzQjVZFQgfMDTa3YiSN",
           "usage": {
             "input_tokens": 3335,
             "output_tokens": 79,
@@ -6278,13 +6188,6 @@
             "value": "72 Fiction Lane, Portland, ME 00000",
             "page": 1,
             "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000"
-          },
-          {
-            "key": "address-issued",
-            "label": "Evidence date",
-            "value": null,
-            "page": null,
-            "quote": null
           }
         ]
       },
@@ -6319,30 +6222,17 @@
             "page": 1,
             "quote": "Address on evidence: 72 Fiction Lane, Portland, ME 00000",
             "sourceStatus": "matched"
-          },
-          {
-            "key": "address-issued",
-            "label": "Evidence date",
-            "value": null,
-            "page": null,
-            "quote": null,
-            "sourceStatus": "missing"
           }
         ],
-        "flags": [
-          {
-            "code": "missing",
-            "detail": "Evidence date: value is missing."
-          }
-        ],
+        "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz4NyDDW7L498iTbJ3F",
-        "completedAt": "2026-10-21T20:06:28.860Z",
+        "responseId": "msg_011CgFzR9QiSTynyCzr47cb7",
+        "completedAt": "2026-10-21T20:11:10.178Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3353,
-          "output_tokens": 188,
-          "total_tokens": 3541
+          "output_tokens": 154,
+          "total_tokens": 3507
         },
         "processing": {
           "version": "onboarding-anthropic-v1",
@@ -6351,9 +6241,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1671,
+            "durationMs": 3124,
             "status": "completed",
-            "requestId": "req_011CgFz4FPZ6cTXFA28eB2SN",
+            "requestId": "req_011CgFzQuixgYPLKP3ZwXeNK",
             "usage": {
               "input_tokens": 600,
               "output_tokens": 19,
@@ -6365,14 +6255,14 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2276,
+            "durationMs": 1877,
             "status": "completed",
-            "requestId": "req_011CgFz4NZ9xjitxrE9D8BF1",
-            "responseId": "msg_011CgFz4NyDDW7L498iTbJ3F",
+            "requestId": "req_011CgFzR93ePCVcrjSKmSLdh",
+            "responseId": "msg_011CgFzR9QiSTynyCzr47cb7",
             "usage": {
               "input_tokens": 3353,
-              "output_tokens": 188,
-              "total_tokens": 3541
+              "output_tokens": 154,
+              "total_tokens": 3507
             }
           },
           "check": {
@@ -6414,19 +6304,11 @@
             "unknown": false
           }
         ],
-        "extras": [
-          {
-            "key": "address-issued",
-            "label": "Evidence date",
-            "value": null,
-            "page": null,
-            "quote": null
-          }
-        ],
+        "extras": [],
         "duplicates": [],
-        "passed": false
+        "passed": true
       },
-      "responseId": "msg_011CgFz4NyDDW7L498iTbJ3F",
+      "responseId": "msg_011CgFzR9QiSTynyCzr47cb7",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "f7e8b79ddc448e86679475b3fe4c72dc6f69a70951f8f446c8d78f93ae54bc64",
@@ -6434,9 +6316,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1671,
+          "durationMs": 3124,
           "status": "completed",
-          "requestId": "req_011CgFz4FPZ6cTXFA28eB2SN",
+          "requestId": "req_011CgFzQuixgYPLKP3ZwXeNK",
           "usage": {
             "input_tokens": 600,
             "output_tokens": 19,
@@ -6448,14 +6330,14 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2276,
+          "durationMs": 1877,
           "status": "completed",
-          "requestId": "req_011CgFz4NZ9xjitxrE9D8BF1",
-          "responseId": "msg_011CgFz4NyDDW7L498iTbJ3F",
+          "requestId": "req_011CgFzR93ePCVcrjSKmSLdh",
+          "responseId": "msg_011CgFzR9QiSTynyCzr47cb7",
           "usage": {
             "input_tokens": 3353,
-            "output_tokens": 188,
-            "total_tokens": 3541
+            "output_tokens": 154,
+            "total_tokens": 3507
           }
         },
         "check": {
@@ -6542,8 +6424,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz4kupe54EcAfTUgsBD",
-        "completedAt": "2026-10-21T20:06:36.201Z",
+        "responseId": "msg_011CgFzRPMsNiXW5oaEYuk9B",
+        "completedAt": "2026-10-21T20:11:14.104Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3388,
@@ -6557,9 +6439,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 2855,
+            "durationMs": 1363,
             "status": "completed",
-            "requestId": "req_011CgFz4YQVu9X2TiFwUMyLU",
+            "requestId": "req_011CgFzRH9ZYZexrdcKwCQcD",
             "usage": {
               "input_tokens": 604,
               "output_tokens": 20,
@@ -6571,10 +6453,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 4468,
+            "durationMs": 2542,
             "status": "completed",
-            "requestId": "req_011CgFz4kaE7kGQf69BDZJzX",
-            "responseId": "msg_011CgFz4kupe54EcAfTUgsBD",
+            "requestId": "req_011CgFzRP2Gcx3hgx42ZTtLD",
+            "responseId": "msg_011CgFzRPMsNiXW5oaEYuk9B",
             "usage": {
               "input_tokens": 3388,
               "output_tokens": 159,
@@ -6624,7 +6506,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz4kupe54EcAfTUgsBD",
+      "responseId": "msg_011CgFzRPMsNiXW5oaEYuk9B",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "410c6672443245948fb898578d9d3ce778326e41590592c965b71284c40273a7",
@@ -6632,9 +6514,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 2855,
+          "durationMs": 1363,
           "status": "completed",
-          "requestId": "req_011CgFz4YQVu9X2TiFwUMyLU",
+          "requestId": "req_011CgFzRH9ZYZexrdcKwCQcD",
           "usage": {
             "input_tokens": 604,
             "output_tokens": 20,
@@ -6646,10 +6528,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 4468,
+          "durationMs": 2542,
           "status": "completed",
-          "requestId": "req_011CgFz4kaE7kGQf69BDZJzX",
-          "responseId": "msg_011CgFz4kupe54EcAfTUgsBD",
+          "requestId": "req_011CgFzRP2Gcx3hgx42ZTtLD",
+          "responseId": "msg_011CgFzRPMsNiXW5oaEYuk9B",
           "usage": {
             "input_tokens": 3388,
             "output_tokens": 159,
@@ -6780,8 +6662,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz5BvxkMW7yDjbtUtUE",
-        "completedAt": "2026-10-21T20:06:40.621Z",
+        "responseId": "msg_011CgFzRhKrYKCpjAuPpzCRz",
+        "completedAt": "2026-10-21T20:11:17.977Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3404,
@@ -6795,9 +6677,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1364,
+            "durationMs": 1648,
             "status": "completed",
-            "requestId": "req_011CgFz55iQwny7JYj61bux5",
+            "requestId": "req_011CgFzRa3YfdFvhFknVJy6K",
             "usage": {
               "input_tokens": 613,
               "output_tokens": 21,
@@ -6809,10 +6691,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 3037,
+            "durationMs": 2214,
             "status": "completed",
-            "requestId": "req_011CgFz5BaPMxvmp6goduLRC",
-            "responseId": "msg_011CgFz5BvxkMW7yDjbtUtUE",
+            "requestId": "req_011CgFzRgvnytzp9DR4Zme4t",
+            "responseId": "msg_011CgFzRhKrYKCpjAuPpzCRz",
             "usage": {
               "input_tokens": 3404,
               "output_tokens": 236,
@@ -6884,7 +6766,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz5BvxkMW7yDjbtUtUE",
+      "responseId": "msg_011CgFzRhKrYKCpjAuPpzCRz",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "e63d4a50474d01297ea6c738cc2b404e2f38d6050039eecfdcd356b5890e8621",
@@ -6892,9 +6774,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1364,
+          "durationMs": 1648,
           "status": "completed",
-          "requestId": "req_011CgFz55iQwny7JYj61bux5",
+          "requestId": "req_011CgFzRa3YfdFvhFknVJy6K",
           "usage": {
             "input_tokens": 613,
             "output_tokens": 21,
@@ -6906,10 +6788,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 3037,
+          "durationMs": 2214,
           "status": "completed",
-          "requestId": "req_011CgFz5BaPMxvmp6goduLRC",
-          "responseId": "msg_011CgFz5BvxkMW7yDjbtUtUE",
+          "requestId": "req_011CgFzRgvnytzp9DR4Zme4t",
+          "responseId": "msg_011CgFzRhKrYKCpjAuPpzCRz",
           "usage": {
             "input_tokens": 3404,
             "output_tokens": 236,
@@ -7060,8 +6942,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz5bgE8DfVmQwQQQGTQ",
-        "completedAt": "2026-10-21T20:06:45.665Z",
+        "responseId": "msg_011CgFzS2Lr4Lzb5KQaHscw6",
+        "completedAt": "2026-10-21T20:11:22.980Z",
         "pageCount": 2,
         "usage": {
           "input_tokens": 5051,
@@ -7075,24 +6957,24 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 2412,
+            "durationMs": 2198,
             "status": "completed",
-            "requestId": "req_011CgFz5QewXbcQRita3h3vJ",
+            "requestId": "req_011CgFzRrVkkoDdSAwPGpq8Y",
             "usage": {
               "input_tokens": 717,
               "output_tokens": 21,
               "total_tokens": 738
             },
             "purpose": "subscription",
-            "confidence": 0.93
+            "confidence": 0.95
           },
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2618,
+            "durationMs": 2790,
             "status": "completed",
-            "requestId": "req_011CgFz5bLshnvrTSbsZZhtE",
-            "responseId": "msg_011CgFz5bgE8DfVmQwQQQGTQ",
+            "requestId": "req_011CgFzS1v3qd5JukxeRPK5R",
+            "responseId": "msg_011CgFzS2Lr4Lzb5KQaHscw6",
             "usage": {
               "input_tokens": 5051,
               "output_tokens": 283,
@@ -7103,7 +6985,7 @@
             "status": "completed",
             "endpoint": "local",
             "model": "deterministic",
-            "durationMs": 1
+            "durationMs": 0
           },
           "review": "pending"
         },
@@ -7175,7 +7057,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz5bgE8DfVmQwQQQGTQ",
+      "responseId": "msg_011CgFzS2Lr4Lzb5KQaHscw6",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "80a636d0aa0bcf14e31b241a134a65e405ee5c719da9c88c664a4bb68861f6b5",
@@ -7183,24 +7065,24 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 2412,
+          "durationMs": 2198,
           "status": "completed",
-          "requestId": "req_011CgFz5QewXbcQRita3h3vJ",
+          "requestId": "req_011CgFzRrVkkoDdSAwPGpq8Y",
           "usage": {
             "input_tokens": 717,
             "output_tokens": 21,
             "total_tokens": 738
           },
           "purpose": "subscription",
-          "confidence": 0.93
+          "confidence": 0.95
         },
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2618,
+          "durationMs": 2790,
           "status": "completed",
-          "requestId": "req_011CgFz5bLshnvrTSbsZZhtE",
-          "responseId": "msg_011CgFz5bgE8DfVmQwQQQGTQ",
+          "requestId": "req_011CgFzS1v3qd5JukxeRPK5R",
+          "responseId": "msg_011CgFzS2Lr4Lzb5KQaHscw6",
           "usage": {
             "input_tokens": 5051,
             "output_tokens": 283,
@@ -7211,7 +7093,7 @@
           "status": "completed",
           "endpoint": "local",
           "model": "deterministic",
-          "durationMs": 1
+          "durationMs": 0
         },
         "review": "pending"
       }
@@ -7336,8 +7218,8 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz5yb6jxpS3F5b7E7RG",
-        "completedAt": "2026-10-21T20:06:50.946Z",
+        "responseId": "msg_011CgFzSk46MBUGwQ4qsyFGy",
+        "completedAt": "2026-10-21T20:11:32.942Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3397,
@@ -7351,9 +7233,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 2582,
+            "durationMs": 6982,
             "status": "completed",
-            "requestId": "req_011CgFz5nDjEcVM6Rp2YZuWT",
+            "requestId": "req_011CgFzSDpfbgzpwkyMaoAkk",
             "usage": {
               "input_tokens": 625,
               "output_tokens": 20,
@@ -7365,10 +7247,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2686,
+            "durationMs": 2969,
             "status": "completed",
-            "requestId": "req_011CgFz5yDXMvjiLQJoCGqY6",
-            "responseId": "msg_011CgFz5yb6jxpS3F5b7E7RG",
+            "requestId": "req_011CgFzSjh1LV2NdABx6w9u9",
+            "responseId": "msg_011CgFzSk46MBUGwQ4qsyFGy",
             "usage": {
               "input_tokens": 3397,
               "output_tokens": 252,
@@ -7440,7 +7322,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz5yb6jxpS3F5b7E7RG",
+      "responseId": "msg_011CgFzSk46MBUGwQ4qsyFGy",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "d71ae26244e122a969ec510ca89d981b60bf81280571c851411e74224aae4229",
@@ -7448,9 +7330,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 2582,
+          "durationMs": 6982,
           "status": "completed",
-          "requestId": "req_011CgFz5nDjEcVM6Rp2YZuWT",
+          "requestId": "req_011CgFzSDpfbgzpwkyMaoAkk",
           "usage": {
             "input_tokens": 625,
             "output_tokens": 20,
@@ -7462,10 +7344,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2686,
+          "durationMs": 2969,
           "status": "completed",
-          "requestId": "req_011CgFz5yDXMvjiLQJoCGqY6",
-          "responseId": "msg_011CgFz5yb6jxpS3F5b7E7RG",
+          "requestId": "req_011CgFzSjh1LV2NdABx6w9u9",
+          "responseId": "msg_011CgFzSk46MBUGwQ4qsyFGy",
           "usage": {
             "input_tokens": 3397,
             "output_tokens": 252,
@@ -7596,8 +7478,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz6XfQbxUaJmSZZxMV8",
-        "completedAt": "2026-10-21T20:06:58.208Z",
+        "responseId": "msg_011CgFzTKjtBqPfKFazSz3K4",
+        "completedAt": "2026-10-21T20:11:40.349Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3399,
@@ -7611,24 +7493,24 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 4798,
+            "durationMs": 4906,
             "status": "completed",
-            "requestId": "req_011CgFz6AtjRoJXyvt2132d7",
+            "requestId": "req_011CgFzSxVx3aP1F6EzDn79W",
             "usage": {
               "input_tokens": 627,
               "output_tokens": 20,
               "total_tokens": 647
             },
             "purpose": "bank",
-            "confidence": 0.95
+            "confidence": 0.93
           },
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2448,
+            "durationMs": 2490,
             "status": "completed",
-            "requestId": "req_011CgFz6XM4541bA8ivmyQhW",
-            "responseId": "msg_011CgFz6XfQbxUaJmSZZxMV8",
+            "requestId": "req_011CgFzTKQYKywd7ZtNPPp71",
+            "responseId": "msg_011CgFzTKjtBqPfKFazSz3K4",
             "usage": {
               "input_tokens": 3399,
               "output_tokens": 256,
@@ -7700,7 +7582,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz6XfQbxUaJmSZZxMV8",
+      "responseId": "msg_011CgFzTKjtBqPfKFazSz3K4",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "82045f07cf3dd2c836592428504522738036eddc795cac4bc1a2db9792b27615",
@@ -7708,24 +7590,24 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 4798,
+          "durationMs": 4906,
           "status": "completed",
-          "requestId": "req_011CgFz6AtjRoJXyvt2132d7",
+          "requestId": "req_011CgFzSxVx3aP1F6EzDn79W",
           "usage": {
             "input_tokens": 627,
             "output_tokens": 20,
             "total_tokens": 647
           },
           "purpose": "bank",
-          "confidence": 0.95
+          "confidence": 0.93
         },
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2448,
+          "durationMs": 2490,
           "status": "completed",
-          "requestId": "req_011CgFz6XM4541bA8ivmyQhW",
-          "responseId": "msg_011CgFz6XfQbxUaJmSZZxMV8",
+          "requestId": "req_011CgFzTKQYKywd7ZtNPPp71",
+          "responseId": "msg_011CgFzTKjtBqPfKFazSz3K4",
           "usage": {
             "input_tokens": 3399,
             "output_tokens": 256,
@@ -7876,8 +7758,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz72j8p89PJT6EDTdT2",
-        "completedAt": "2026-10-21T20:07:05.508Z",
+        "responseId": "msg_011CgFzToDs1MDkj1hPZkPbQ",
+        "completedAt": "2026-10-21T20:11:46.921Z",
         "pageCount": 2,
         "usage": {
           "input_tokens": 5064,
@@ -7891,9 +7773,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 4340,
+            "durationMs": 3913,
             "status": "completed",
-            "requestId": "req_011CgFz6hrpKWF76kyvbqEGG",
+            "requestId": "req_011CgFzTW6iwChizArokpprA",
             "usage": {
               "input_tokens": 730,
               "output_tokens": 21,
@@ -7905,10 +7787,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2944,
+            "durationMs": 2642,
             "status": "completed",
-            "requestId": "req_011CgFz72PYEX1xynHSadkQ4",
-            "responseId": "msg_011CgFz72j8p89PJT6EDTdT2",
+            "requestId": "req_011CgFzTnrJEmqYHFTgpZfSG",
+            "responseId": "msg_011CgFzToDs1MDkj1hPZkPbQ",
             "usage": {
               "input_tokens": 5064,
               "output_tokens": 277,
@@ -7991,7 +7873,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz72j8p89PJT6EDTdT2",
+      "responseId": "msg_011CgFzToDs1MDkj1hPZkPbQ",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "b58461af9f66c319b0441024ddeb9b975e6f216f6fe3883ac61c230391009d2e",
@@ -7999,9 +7881,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 4340,
+          "durationMs": 3913,
           "status": "completed",
-          "requestId": "req_011CgFz6hrpKWF76kyvbqEGG",
+          "requestId": "req_011CgFzTW6iwChizArokpprA",
           "usage": {
             "input_tokens": 730,
             "output_tokens": 21,
@@ -8013,10 +7895,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2944,
+          "durationMs": 2642,
           "status": "completed",
-          "requestId": "req_011CgFz72PYEX1xynHSadkQ4",
-          "responseId": "msg_011CgFz72j8p89PJT6EDTdT2",
+          "requestId": "req_011CgFzTnrJEmqYHFTgpZfSG",
+          "responseId": "msg_011CgFzToDs1MDkj1hPZkPbQ",
           "usage": {
             "input_tokens": 5064,
             "output_tokens": 277,
@@ -8172,8 +8054,8 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz7QDwvRnaHue5o1woD",
-        "completedAt": "2026-10-21T20:07:09.550Z",
+        "responseId": "msg_011CgFzU6csX2pdZVbVBcAqG",
+        "completedAt": "2026-10-21T20:11:50.296Z",
         "pageCount": 2,
         "usage": {
           "input_tokens": 5051,
@@ -8187,9 +8069,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 2048,
+            "durationMs": 1409,
             "status": "completed",
-            "requestId": "req_011CgFz7F2K5XxcUWpmktUDS",
+            "requestId": "req_011CgFzTzEQRaRuMrPLqHsXh",
             "usage": {
               "input_tokens": 717,
               "output_tokens": 21,
@@ -8201,10 +8083,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 1977,
+            "durationMs": 1946,
             "status": "completed",
-            "requestId": "req_011CgFz7PqNyddAM1VdBivrb",
-            "responseId": "msg_011CgFz7QDwvRnaHue5o1woD",
+            "requestId": "req_011CgFzU6FJD4wLuXwWSdKuW",
+            "responseId": "msg_011CgFzU6csX2pdZVbVBcAqG",
             "usage": {
               "input_tokens": 5051,
               "output_tokens": 261,
@@ -8287,7 +8169,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz7QDwvRnaHue5o1woD",
+      "responseId": "msg_011CgFzU6csX2pdZVbVBcAqG",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "3c76f34eee20e5c905bc9f3eec0c773d8592643dbe87c9ac64e6605dfd5109c9",
@@ -8295,9 +8177,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 2048,
+          "durationMs": 1409,
           "status": "completed",
-          "requestId": "req_011CgFz7F2K5XxcUWpmktUDS",
+          "requestId": "req_011CgFzTzEQRaRuMrPLqHsXh",
           "usage": {
             "input_tokens": 717,
             "output_tokens": 21,
@@ -8309,10 +8191,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 1977,
+          "durationMs": 1946,
           "status": "completed",
-          "requestId": "req_011CgFz7PqNyddAM1VdBivrb",
-          "responseId": "msg_011CgFz7QDwvRnaHue5o1woD",
+          "requestId": "req_011CgFzU6FJD4wLuXwWSdKuW",
+          "responseId": "msg_011CgFzU6csX2pdZVbVBcAqG",
           "usage": {
             "input_tokens": 5051,
             "output_tokens": 261,
@@ -8372,28 +8254,28 @@
             "label": "Legal subscriber",
             "value": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Elmshore Ventures LLC"
+            "quote": "Legal subscriber: Elmshore Ventures LLC"
           },
           {
             "key": "fund-name",
             "label": "Fund",
             "value": "Juniper Income Fund IV",
             "page": 1,
-            "quote": "Juniper Income Fund IV"
+            "quote": "Fund: Juniper Income Fund IV"
           },
           {
             "key": "share-class",
             "label": "Share class",
             "value": "Class Q",
             "page": 2,
-            "quote": "Class Q"
+            "quote": "Share class: Class Q"
           },
           {
             "key": "commitment",
             "label": "Requested commitment",
             "value": "EUR 1,250,000",
             "page": 2,
-            "quote": "EUR 1,250,000"
+            "quote": "Requested commitment: EUR 1,250,000"
           },
           {
             "key": "currency",
@@ -8425,7 +8307,7 @@
             "label": "Legal subscriber",
             "value": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Elmshore Ventures LLC",
+            "quote": "Legal subscriber: Elmshore Ventures LLC",
             "sourceStatus": "matched"
           },
           {
@@ -8433,7 +8315,7 @@
             "label": "Fund",
             "value": "Juniper Income Fund IV",
             "page": 1,
-            "quote": "Juniper Income Fund IV",
+            "quote": "Fund: Juniper Income Fund IV",
             "sourceStatus": "matched"
           },
           {
@@ -8441,7 +8323,7 @@
             "label": "Share class",
             "value": "Class Q",
             "page": 2,
-            "quote": "Class Q",
+            "quote": "Share class: Class Q",
             "sourceStatus": "matched"
           },
           {
@@ -8449,7 +8331,7 @@
             "label": "Requested commitment",
             "value": "EUR 1,250,000",
             "page": 2,
-            "quote": "EUR 1,250,000",
+            "quote": "Requested commitment: EUR 1,250,000",
             "sourceStatus": "matched"
           },
           {
@@ -8472,13 +8354,13 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz7iTK8Dcd7pYCvFr5E",
-        "completedAt": "2026-10-21T20:07:14.263Z",
+        "responseId": "msg_011CgFzUMnBwB2aT71J3aUo5",
+        "completedAt": "2026-10-21T20:11:54.248Z",
         "pageCount": 2,
         "usage": {
           "input_tokens": 5062,
-          "output_tokens": 273,
-          "total_tokens": 5335
+          "output_tokens": 296,
+          "total_tokens": 5358
         },
         "processing": {
           "version": "onboarding-anthropic-v1",
@@ -8487,9 +8369,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 2207,
+            "durationMs": 1590,
             "status": "completed",
-            "requestId": "req_011CgFz7YMbZvKxc9bYmbKBv",
+            "requestId": "req_011CgFzUEiHWP9qb8Kgg3CYi",
             "usage": {
               "input_tokens": 728,
               "output_tokens": 21,
@@ -8501,21 +8383,21 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2490,
+            "durationMs": 2347,
             "status": "completed",
-            "requestId": "req_011CgFz7hndpwCUcDSiQSLjE",
-            "responseId": "msg_011CgFz7iTK8Dcd7pYCvFr5E",
+            "requestId": "req_011CgFzUMS7HKjVKZ6C3zHQT",
+            "responseId": "msg_011CgFzUMnBwB2aT71J3aUo5",
             "usage": {
               "input_tokens": 5062,
-              "output_tokens": 273,
-              "total_tokens": 5335
+              "output_tokens": 296,
+              "total_tokens": 5358
             }
           },
           "check": {
             "status": "completed",
             "endpoint": "local",
             "model": "deterministic",
-            "durationMs": 1
+            "durationMs": 0
           },
           "review": "pending"
         },
@@ -8533,7 +8415,7 @@
             "expectedPage": 1,
             "actual": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Elmshore Ventures LLC",
+            "quote": "Legal subscriber: Elmshore Ventures LLC",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -8544,7 +8426,7 @@
             "expectedPage": 1,
             "actual": "Juniper Income Fund IV",
             "page": 1,
-            "quote": "Juniper Income Fund IV",
+            "quote": "Fund: Juniper Income Fund IV",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -8555,7 +8437,7 @@
             "expectedPage": 2,
             "actual": "Class Q",
             "page": 2,
-            "quote": "Class Q",
+            "quote": "Share class: Class Q",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -8566,7 +8448,7 @@
             "expectedPage": 2,
             "actual": "EUR 1,250,000",
             "page": 2,
-            "quote": "EUR 1,250,000",
+            "quote": "Requested commitment: EUR 1,250,000",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -8587,7 +8469,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz7iTK8Dcd7pYCvFr5E",
+      "responseId": "msg_011CgFzUMnBwB2aT71J3aUo5",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "e3774491d54f5eebbde0f0b33cb9fb211b9cef309e301c5348949baba0dd1384",
@@ -8595,9 +8477,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 2207,
+          "durationMs": 1590,
           "status": "completed",
-          "requestId": "req_011CgFz7YMbZvKxc9bYmbKBv",
+          "requestId": "req_011CgFzUEiHWP9qb8Kgg3CYi",
           "usage": {
             "input_tokens": 728,
             "output_tokens": 21,
@@ -8609,21 +8491,21 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2490,
+          "durationMs": 2347,
           "status": "completed",
-          "requestId": "req_011CgFz7hndpwCUcDSiQSLjE",
-          "responseId": "msg_011CgFz7iTK8Dcd7pYCvFr5E",
+          "requestId": "req_011CgFzUMS7HKjVKZ6C3zHQT",
+          "responseId": "msg_011CgFzUMnBwB2aT71J3aUo5",
           "usage": {
             "input_tokens": 5062,
-            "output_tokens": 273,
-            "total_tokens": 5335
+            "output_tokens": 296,
+            "total_tokens": 5358
           }
         },
         "check": {
           "status": "completed",
           "endpoint": "local",
           "model": "deterministic",
-          "durationMs": 1
+          "durationMs": 0
         },
         "review": "pending"
       }
@@ -8723,8 +8605,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz82r6orHKSKYqYAceG",
-        "completedAt": "2026-10-21T20:07:18.490Z",
+        "responseId": "msg_011CgFzUgseZCEyH8foiWoGV",
+        "completedAt": "2026-10-21T20:11:58.991Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3376,
@@ -8738,9 +8620,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1868,
+            "durationMs": 2108,
             "status": "completed",
-            "requestId": "req_011CgFz7tT5b6Kjy2Z1LLXWi",
+            "requestId": "req_011CgFzUXb3dtipC8FXDSi2e",
             "usage": {
               "input_tokens": 604,
               "output_tokens": 20,
@@ -8752,10 +8634,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2344,
+            "durationMs": 2621,
             "status": "completed",
-            "requestId": "req_011CgFz82UXPAcd2BTN55b2j",
-            "responseId": "msg_011CgFz82r6orHKSKYqYAceG",
+            "requestId": "req_011CgFzUgYK6m5xFSEp5pDn8",
+            "responseId": "msg_011CgFzUgseZCEyH8foiWoGV",
             "usage": {
               "input_tokens": 3376,
               "output_tokens": 191,
@@ -8816,7 +8698,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz82r6orHKSKYqYAceG",
+      "responseId": "msg_011CgFzUgseZCEyH8foiWoGV",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "a63f8681def8ad30031a9522b02c25282107a17c847295a16cc47cb7f691d821",
@@ -8824,9 +8706,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1868,
+          "durationMs": 2108,
           "status": "completed",
-          "requestId": "req_011CgFz7tT5b6Kjy2Z1LLXWi",
+          "requestId": "req_011CgFzUXb3dtipC8FXDSi2e",
           "usage": {
             "input_tokens": 604,
             "output_tokens": 20,
@@ -8838,10 +8720,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2344,
+          "durationMs": 2621,
           "status": "completed",
-          "requestId": "req_011CgFz82UXPAcd2BTN55b2j",
-          "responseId": "msg_011CgFz82r6orHKSKYqYAceG",
+          "requestId": "req_011CgFzUgYK6m5xFSEp5pDn8",
+          "responseId": "msg_011CgFzUgseZCEyH8foiWoGV",
           "usage": {
             "input_tokens": 3376,
             "output_tokens": 191,
@@ -9017,8 +8899,8 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz8SyRToyHiDU7a7Adf",
-        "completedAt": "2026-10-21T20:07:24.572Z",
+        "responseId": "msg_011CgFzV1aHzKst2xj8YCNs8",
+        "completedAt": "2026-10-21T20:12:03.743Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3445,
@@ -9032,9 +8914,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 3131,
+            "durationMs": 1731,
             "status": "completed",
-            "requestId": "req_011CgFz8CoPTV8SaXaSY7qHA",
+            "requestId": "req_011CgFzUsmEj1Mr55YieRKTW",
             "usage": {
               "input_tokens": 654,
               "output_tokens": 21,
@@ -9046,10 +8928,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2938,
+            "durationMs": 3008,
             "status": "completed",
-            "requestId": "req_011CgFz8SJFguLsbLDwmcawU",
-            "responseId": "msg_011CgFz8SyRToyHiDU7a7Adf",
+            "requestId": "req_011CgFzV1Cik4rhU3JSTKrVx",
+            "responseId": "msg_011CgFzV1aHzKst2xj8YCNs8",
             "usage": {
               "input_tokens": 3445,
               "output_tokens": 377,
@@ -9060,7 +8942,7 @@
             "status": "completed",
             "endpoint": "local",
             "model": "deterministic",
-            "durationMs": 1
+            "durationMs": 0
           },
           "review": "pending"
         },
@@ -9143,7 +9025,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz8SyRToyHiDU7a7Adf",
+      "responseId": "msg_011CgFzV1aHzKst2xj8YCNs8",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "b3e65dac064a29dd9670832a4843737ffa3edb23df1b66f046b4813126ceff7a",
@@ -9151,9 +9033,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 3131,
+          "durationMs": 1731,
           "status": "completed",
-          "requestId": "req_011CgFz8CoPTV8SaXaSY7qHA",
+          "requestId": "req_011CgFzUsmEj1Mr55YieRKTW",
           "usage": {
             "input_tokens": 654,
             "output_tokens": 21,
@@ -9165,10 +9047,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2938,
+          "durationMs": 3008,
           "status": "completed",
-          "requestId": "req_011CgFz8SJFguLsbLDwmcawU",
-          "responseId": "msg_011CgFz8SyRToyHiDU7a7Adf",
+          "requestId": "req_011CgFzV1Cik4rhU3JSTKrVx",
+          "responseId": "msg_011CgFzV1aHzKst2xj8YCNs8",
           "usage": {
             "input_tokens": 3445,
             "output_tokens": 377,
@@ -9179,7 +9061,7 @@
           "status": "completed",
           "endpoint": "local",
           "model": "deterministic",
-          "durationMs": 1
+          "durationMs": 0
         },
         "review": "pending"
       }
@@ -9304,8 +9186,8 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz8mA59TuiimsT1n8VN",
-        "completedAt": "2026-10-21T20:07:28.568Z",
+        "responseId": "msg_011CgFzVx7i467BKo8KQ7hts",
+        "completedAt": "2026-10-21T20:12:16.621Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3459,
@@ -9319,9 +9201,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1462,
+            "durationMs": 9721,
             "status": "completed",
-            "requestId": "req_011CgFz8eaBkEtZz5ArmtpxK",
+            "requestId": "req_011CgFzVE95u4g95vatGpBnc",
             "usage": {
               "input_tokens": 687,
               "output_tokens": 20,
@@ -9333,10 +9215,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2521,
+            "durationMs": 3145,
             "status": "completed",
-            "requestId": "req_011CgFz8krDKTjZb6p5yC8n9",
-            "responseId": "msg_011CgFz8mA59TuiimsT1n8VN",
+            "requestId": "req_011CgFzVwieedcfb3oU5C6uo",
+            "responseId": "msg_011CgFzVx7i467BKo8KQ7hts",
             "usage": {
               "input_tokens": 3459,
               "output_tokens": 252,
@@ -9408,7 +9290,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz8mA59TuiimsT1n8VN",
+      "responseId": "msg_011CgFzVx7i467BKo8KQ7hts",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "e08b5b68cb596124f0abc6b046e7f1672ef547110e6cc5e6d1f0c2dc4b3839ae",
@@ -9416,9 +9298,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1462,
+          "durationMs": 9721,
           "status": "completed",
-          "requestId": "req_011CgFz8eaBkEtZz5ArmtpxK",
+          "requestId": "req_011CgFzVE95u4g95vatGpBnc",
           "usage": {
             "input_tokens": 687,
             "output_tokens": 20,
@@ -9430,10 +9312,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2521,
+          "durationMs": 3145,
           "status": "completed",
-          "requestId": "req_011CgFz8krDKTjZb6p5yC8n9",
-          "responseId": "msg_011CgFz8mA59TuiimsT1n8VN",
+          "requestId": "req_011CgFzVwieedcfb3oU5C6uo",
+          "responseId": "msg_011CgFzVx7i467BKo8KQ7hts",
           "usage": {
             "input_tokens": 3459,
             "output_tokens": 252,
@@ -9473,9 +9355,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1419,
+            "durationMs": 4337,
             "status": "completed",
-            "requestId": "req_011CgFz8wcrSJ2rK2Sdiakw6",
+            "requestId": "req_011CgFzWBJUGiYfJdSbUybBj",
             "usage": {
               "input_tokens": 614,
               "output_tokens": 22,
@@ -9517,9 +9399,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1419,
+          "durationMs": 4337,
           "status": "completed",
-          "requestId": "req_011CgFz8wcrSJ2rK2Sdiakw6",
+          "requestId": "req_011CgFzWBJUGiYfJdSbUybBj",
           "usage": {
             "input_tokens": 614,
             "output_tokens": 22,
@@ -9658,8 +9540,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFz9QfnvLMD8Srny1aJh",
-        "completedAt": "2026-10-21T20:07:37.069Z",
+        "responseId": "msg_011CgFzWpve71PhZxPzMVT8v",
+        "completedAt": "2026-10-21T20:12:30.837Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3393,
@@ -9673,9 +9555,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 4812,
+            "durationMs": 4386,
             "status": "completed",
-            "requestId": "req_011CgFz93puzBxUFCy1bkBMi",
+            "requestId": "req_011CgFzWVqgNuhehGeUoSs6X",
             "usage": {
               "input_tokens": 621,
               "output_tokens": 20,
@@ -9687,10 +9569,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2243,
+            "durationMs": 5455,
             "status": "completed",
-            "requestId": "req_011CgFz9QKDt7FM6kn6mNTkD",
-            "responseId": "msg_011CgFz9QfnvLMD8Srny1aJh",
+            "requestId": "req_011CgFzWpb3wGRRMc91cmiJN",
+            "responseId": "msg_011CgFzWpve71PhZxPzMVT8v",
             "usage": {
               "input_tokens": 3393,
               "output_tokens": 250,
@@ -9762,7 +9644,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFz9QfnvLMD8Srny1aJh",
+      "responseId": "msg_011CgFzWpve71PhZxPzMVT8v",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "344cf2b032fff0e7f4ee3c8cde857c34072801f84622b1fc1e5e7bb3b13c9408",
@@ -9770,9 +9652,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 4812,
+          "durationMs": 4386,
           "status": "completed",
-          "requestId": "req_011CgFz93puzBxUFCy1bkBMi",
+          "requestId": "req_011CgFzWVqgNuhehGeUoSs6X",
           "usage": {
             "input_tokens": 621,
             "output_tokens": 20,
@@ -9784,10 +9666,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2243,
+          "durationMs": 5455,
           "status": "completed",
-          "requestId": "req_011CgFz9QKDt7FM6kn6mNTkD",
-          "responseId": "msg_011CgFz9QfnvLMD8Srny1aJh",
+          "requestId": "req_011CgFzWpb3wGRRMc91cmiJN",
+          "responseId": "msg_011CgFzWpve71PhZxPzMVT8v",
           "usage": {
             "input_tokens": 3393,
             "output_tokens": 250,
