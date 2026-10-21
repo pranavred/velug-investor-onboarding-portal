@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Current Claude pipeline evaluation",
   "status": "measured_current",
-  "fingerprint": "30f9cc806b4dd29f2f6569c2d83694aec7c1e357b2dd6a19050d1eb98dd8f0e0",
+  "fingerprint": "ebe0e4271419da7e799bf5c1161ded442667458f83410093a3f18e21c0059fa0",
   "datasetId": "elmshore-text-evidence-v1",
   "models": {
     "classification": "claude-opus-5-5",
@@ -11,7 +11,7 @@
   "dispatchCap": 40,
   "dispatches": 33,
   "requestCount": 33,
-  "completedAt": "2026-10-21T20:16:28.438Z",
+  "completedAt": "2026-10-21T20:20:24.153Z",
   "documentCount": 17,
   "classification": {
     "confusion": {
@@ -220,7 +220,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -229,7 +229,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -388,7 +388,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -397,7 +397,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -710,7 +710,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -719,7 +719,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -878,7 +878,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -887,7 +887,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -1200,7 +1200,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -1209,7 +1209,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -1368,7 +1368,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -1377,7 +1377,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -1690,7 +1690,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -1699,7 +1699,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -1858,7 +1858,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -1867,7 +1867,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -2156,7 +2156,7 @@
                 "key": "subscribing-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Legal subscriber: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "tax",
@@ -2180,7 +2180,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -2189,7 +2189,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -2222,7 +2222,7 @@
                 "key": "fund-name",
                 "value": "Juniper Income Fund IV",
                 "page": 1,
-                "quote": "Fund: Juniper Income Fund IV"
+                "quote": "Juniper Income Fund IV"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2231,7 +2231,7 @@
                 "key": "share-class",
                 "value": "Class Q",
                 "page": 2,
-                "quote": "Share class: Class Q"
+                "quote": "Class Q"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2240,7 +2240,7 @@
                 "key": "commitment",
                 "value": "EUR 1,250,000",
                 "page": 2,
-                "quote": "Requested commitment: EUR 1,250,000"
+                "quote": "EUR 1,250,000"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2348,7 +2348,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -2357,7 +2357,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -2483,7 +2483,7 @@
                 "key": "subscribing-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Legal subscriber: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2492,7 +2492,7 @@
                 "key": "fund-name",
                 "value": "Juniper Income Fund IV",
                 "page": 1,
-                "quote": "Fund: Juniper Income Fund IV"
+                "quote": "Juniper Income Fund IV"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2501,7 +2501,7 @@
                 "key": "share-class",
                 "value": "Class Q",
                 "page": 2,
-                "quote": "Share class: Class Q"
+                "quote": "Class Q"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2510,7 +2510,7 @@
                 "key": "commitment",
                 "value": "EUR 1,250,000",
                 "page": 2,
-                "quote": "Requested commitment: EUR 1,250,000"
+                "quote": "EUR 1,250,000"
               },
               {
                 "documentId": "subscription-different-currency",
@@ -2668,7 +2668,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -2677,7 +2677,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -2827,7 +2827,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -2836,7 +2836,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -3149,7 +3149,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -3158,7 +3158,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -3335,7 +3335,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -3344,7 +3344,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -3668,7 +3668,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -3677,7 +3677,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -3836,7 +3836,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -3845,7 +3845,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -4164,7 +4164,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -4173,7 +4173,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -4332,7 +4332,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -4341,7 +4341,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -4715,7 +4715,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -4724,7 +4724,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -4901,7 +4901,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -4910,7 +4910,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -5254,7 +5254,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -5263,7 +5263,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -5413,7 +5413,7 @@
                 "key": "authorised-party",
                 "value": "Elmshore Ventures LLC",
                 "page": 1,
-                "quote": "Represented entity: Elmshore Ventures LLC"
+                "quote": "Elmshore Ventures LLC"
               },
               {
                 "documentId": "authority",
@@ -5422,7 +5422,7 @@
                 "key": "signatory",
                 "value": "Dana Mercer",
                 "page": 1,
-                "quote": "Authorised signatory: Dana Mercer"
+                "quote": "Dana Mercer"
               },
               {
                 "documentId": "identity",
@@ -5663,8 +5663,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFziQxpg9SH5fErgJiYQ",
-        "completedAt": "2026-10-21T20:15:04.414Z",
+        "responseId": "msg_011CgG11V3ciEUFfeR5sHRC6",
+        "completedAt": "2026-10-21T20:18:57.558Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3382,
@@ -5678,9 +5678,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 4902,
+            "durationMs": 1835,
             "status": "completed",
-            "requestId": "req_011CgFzi3jdJs2KMq6NryB4X",
+            "requestId": "req_011CgG11M6strbPqrcY6h6aC",
             "usage": {
               "input_tokens": 598,
               "output_tokens": 20,
@@ -5692,10 +5692,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 1885,
+            "durationMs": 3434,
             "status": "completed",
-            "requestId": "req_011CgFziQTp6zPN9cMB5exHs",
-            "responseId": "msg_011CgFziQxpg9SH5fErgJiYQ",
+            "requestId": "req_011CgG11UgHZ2YTn5mXN5fFg",
+            "responseId": "msg_011CgG11V3ciEUFfeR5sHRC6",
             "usage": {
               "input_tokens": 3382,
               "output_tokens": 155,
@@ -5745,7 +5745,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFziQxpg9SH5fErgJiYQ",
+      "responseId": "msg_011CgG11V3ciEUFfeR5sHRC6",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "242af5b7f9172b14c6555f675cd69ee2a46ce46498d9457e98db328edf6a34fd",
@@ -5753,9 +5753,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 4902,
+          "durationMs": 1835,
           "status": "completed",
-          "requestId": "req_011CgFzi3jdJs2KMq6NryB4X",
+          "requestId": "req_011CgG11M6strbPqrcY6h6aC",
           "usage": {
             "input_tokens": 598,
             "output_tokens": 20,
@@ -5767,10 +5767,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 1885,
+          "durationMs": 3434,
           "status": "completed",
-          "requestId": "req_011CgFziQTp6zPN9cMB5exHs",
-          "responseId": "msg_011CgFziQxpg9SH5fErgJiYQ",
+          "requestId": "req_011CgG11UgHZ2YTn5mXN5fFg",
+          "responseId": "msg_011CgG11V3ciEUFfeR5sHRC6",
           "usage": {
             "input_tokens": 3382,
             "output_tokens": 155,
@@ -5815,14 +5815,14 @@
             "label": "Represented entity",
             "value": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Represented entity: Elmshore Ventures LLC"
+            "quote": "Elmshore Ventures LLC"
           },
           {
             "key": "signatory",
             "label": "Authorised signatory",
             "value": "Dana Mercer",
             "page": 1,
-            "quote": "Authorised signatory: Dana Mercer"
+            "quote": "Dana Mercer"
           }
         ]
       },
@@ -5847,7 +5847,7 @@
             "label": "Represented entity",
             "value": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Represented entity: Elmshore Ventures LLC",
+            "quote": "Elmshore Ventures LLC",
             "sourceStatus": "matched"
           },
           {
@@ -5855,19 +5855,19 @@
             "label": "Authorised signatory",
             "value": "Dana Mercer",
             "page": 1,
-            "quote": "Authorised signatory: Dana Mercer",
+            "quote": "Dana Mercer",
             "sourceStatus": "matched"
           }
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzitYGSiTqysuRQsQh6",
-        "completedAt": "2026-10-21T20:15:10.951Z",
+        "responseId": "msg_011CgG11vrPoUqihtfPPfYBy",
+        "completedAt": "2026-10-21T20:19:02.083Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3371,
-          "output_tokens": 147,
-          "total_tokens": 3518
+          "output_tokens": 133,
+          "total_tokens": 3504
         },
         "processing": {
           "version": "onboarding-anthropic-v1",
@@ -5876,9 +5876,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 4556,
+            "durationMs": 2579,
             "status": "completed",
-            "requestId": "req_011CgFziYj9XaGerRRvRzc4H",
+            "requestId": "req_011CgG11jVX8w9V7mQfxxA8z",
             "usage": {
               "input_tokens": 597,
               "output_tokens": 20,
@@ -5890,21 +5890,21 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 1935,
+            "durationMs": 1912,
             "status": "completed",
-            "requestId": "req_011CgFzitAwCSt3CEe2eh3P1",
-            "responseId": "msg_011CgFzitYGSiTqysuRQsQh6",
+            "requestId": "req_011CgG11vY3xSc1Sz15FShbm",
+            "responseId": "msg_011CgG11vrPoUqihtfPPfYBy",
             "usage": {
               "input_tokens": 3371,
-              "output_tokens": 147,
-              "total_tokens": 3518
+              "output_tokens": 133,
+              "total_tokens": 3504
             }
           },
           "check": {
             "status": "completed",
             "endpoint": "local",
             "model": "deterministic",
-            "durationMs": 4
+            "durationMs": 2
           },
           "review": "pending"
         },
@@ -5922,7 +5922,7 @@
             "expectedPage": 1,
             "actual": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Represented entity: Elmshore Ventures LLC",
+            "quote": "Elmshore Ventures LLC",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -5933,7 +5933,7 @@
             "expectedPage": 1,
             "actual": "Dana Mercer",
             "page": 1,
-            "quote": "Authorised signatory: Dana Mercer",
+            "quote": "Dana Mercer",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -5943,7 +5943,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzitYGSiTqysuRQsQh6",
+      "responseId": "msg_011CgG11vrPoUqihtfPPfYBy",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "2b0457cd140cbeb1bc392d82237e93d69846be51b5aa582a416ac8ef23a1f02a",
@@ -5951,9 +5951,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 4556,
+          "durationMs": 2579,
           "status": "completed",
-          "requestId": "req_011CgFziYj9XaGerRRvRzc4H",
+          "requestId": "req_011CgG11jVX8w9V7mQfxxA8z",
           "usage": {
             "input_tokens": 597,
             "output_tokens": 20,
@@ -5965,21 +5965,21 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 1935,
+          "durationMs": 1912,
           "status": "completed",
-          "requestId": "req_011CgFzitAwCSt3CEe2eh3P1",
-          "responseId": "msg_011CgFzitYGSiTqysuRQsQh6",
+          "requestId": "req_011CgG11vY3xSc1Sz15FShbm",
+          "responseId": "msg_011CgG11vrPoUqihtfPPfYBy",
           "usage": {
             "input_tokens": 3371,
-            "output_tokens": 147,
-            "total_tokens": 3518
+            "output_tokens": 133,
+            "total_tokens": 3504
           }
         },
         "check": {
           "status": "completed",
           "endpoint": "local",
           "model": "deterministic",
-          "durationMs": 4
+          "durationMs": 2
         },
         "review": "pending"
       }
@@ -6039,8 +6039,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzj9zhhtDsq87fVTV8p",
-        "completedAt": "2026-10-21T20:15:15.307Z",
+        "responseId": "msg_011CgG12Ehgh2jEWwryQdRWm",
+        "completedAt": "2026-10-21T20:19:06.290Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3335,
@@ -6054,9 +6054,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1653,
+            "durationMs": 2141,
             "status": "completed",
-            "requestId": "req_011CgFzj2qq4nK2toTcmU1Pg",
+            "requestId": "req_011CgG124jQfpcsY92Hg4gQp",
             "usage": {
               "input_tokens": 578,
               "output_tokens": 20,
@@ -6068,10 +6068,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2687,
+            "durationMs": 2012,
             "status": "completed",
-            "requestId": "req_011CgFzj9be8dMm9Ra4LhmxG",
-            "responseId": "msg_011CgFzj9zhhtDsq87fVTV8p",
+            "requestId": "req_011CgG12EMbeQuohYRoMnLKE",
+            "responseId": "msg_011CgG12Ehgh2jEWwryQdRWm",
             "usage": {
               "input_tokens": 3335,
               "output_tokens": 79,
@@ -6110,7 +6110,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzj9zhhtDsq87fVTV8p",
+      "responseId": "msg_011CgG12Ehgh2jEWwryQdRWm",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "d7c7e63cff7753798740b2f7afd3d47d94610845911629ca7b0865a47875ab9c",
@@ -6118,9 +6118,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1653,
+          "durationMs": 2141,
           "status": "completed",
-          "requestId": "req_011CgFzj2qq4nK2toTcmU1Pg",
+          "requestId": "req_011CgG124jQfpcsY92Hg4gQp",
           "usage": {
             "input_tokens": 578,
             "output_tokens": 20,
@@ -6132,10 +6132,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2687,
+          "durationMs": 2012,
           "status": "completed",
-          "requestId": "req_011CgFzj9be8dMm9Ra4LhmxG",
-          "responseId": "msg_011CgFzj9zhhtDsq87fVTV8p",
+          "requestId": "req_011CgG12EMbeQuohYRoMnLKE",
+          "responseId": "msg_011CgG12Ehgh2jEWwryQdRWm",
           "usage": {
             "input_tokens": 3335,
             "output_tokens": 79,
@@ -6226,8 +6226,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzjVetRFFCu3f2uPNgH",
-        "completedAt": "2026-10-21T20:15:19.004Z",
+        "responseId": "msg_011CgG12jNMk1ecLGpJRxBaZ",
+        "completedAt": "2026-10-21T20:19:13.096Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3353,
@@ -6241,9 +6241,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1775,
+            "durationMs": 4730,
             "status": "completed",
-            "requestId": "req_011CgFzjM8foLseEp2TzM8uP",
+            "requestId": "req_011CgG12NitrWkRGuhkxQvJd",
             "usage": {
               "input_tokens": 600,
               "output_tokens": 19,
@@ -6255,10 +6255,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 1907,
+            "durationMs": 2062,
             "status": "completed",
-            "requestId": "req_011CgFzjVJ3iv8Wr1iFd1PbD",
-            "responseId": "msg_011CgFzjVetRFFCu3f2uPNgH",
+            "requestId": "req_011CgG12ix4S2UNUN9dSFSbc",
+            "responseId": "msg_011CgG12jNMk1ecLGpJRxBaZ",
             "usage": {
               "input_tokens": 3353,
               "output_tokens": 154,
@@ -6269,7 +6269,7 @@
             "status": "completed",
             "endpoint": "local",
             "model": "deterministic",
-            "durationMs": 1
+            "durationMs": 0
           },
           "review": "pending"
         },
@@ -6308,7 +6308,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzjVetRFFCu3f2uPNgH",
+      "responseId": "msg_011CgG12jNMk1ecLGpJRxBaZ",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "f7e8b79ddc448e86679475b3fe4c72dc6f69a70951f8f446c8d78f93ae54bc64",
@@ -6316,9 +6316,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1775,
+          "durationMs": 4730,
           "status": "completed",
-          "requestId": "req_011CgFzjM8foLseEp2TzM8uP",
+          "requestId": "req_011CgG12NitrWkRGuhkxQvJd",
           "usage": {
             "input_tokens": 600,
             "output_tokens": 19,
@@ -6330,10 +6330,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 1907,
+          "durationMs": 2062,
           "status": "completed",
-          "requestId": "req_011CgFzjVJ3iv8Wr1iFd1PbD",
-          "responseId": "msg_011CgFzjVetRFFCu3f2uPNgH",
+          "requestId": "req_011CgG12ix4S2UNUN9dSFSbc",
+          "responseId": "msg_011CgG12jNMk1ecLGpJRxBaZ",
           "usage": {
             "input_tokens": 3353,
             "output_tokens": 154,
@@ -6344,7 +6344,7 @@
           "status": "completed",
           "endpoint": "local",
           "model": "deterministic",
-          "durationMs": 1
+          "durationMs": 0
         },
         "review": "pending"
       }
@@ -6424,8 +6424,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzjs419uZB7sTdLicY2",
-        "completedAt": "2026-10-21T20:15:24.543Z",
+        "responseId": "msg_011CgG13EZ2nmFvTV5nB1L8N",
+        "completedAt": "2026-10-21T20:19:20.283Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3388,
@@ -6439,9 +6439,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 3195,
+            "durationMs": 4760,
             "status": "completed",
-            "requestId": "req_011CgFzjd48mxEBaUYN6Q422",
+            "requestId": "req_011CgG12sqqgnB3HAQbfN5D1",
             "usage": {
               "input_tokens": 604,
               "output_tokens": 20,
@@ -6453,10 +6453,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2324,
+            "durationMs": 2409,
             "status": "completed",
-            "requestId": "req_011CgFzjrfBZpnKev85kv4tY",
-            "responseId": "msg_011CgFzjs419uZB7sTdLicY2",
+            "requestId": "req_011CgG13ECTLgcsrSbiccdRF",
+            "responseId": "msg_011CgG13EZ2nmFvTV5nB1L8N",
             "usage": {
               "input_tokens": 3388,
               "output_tokens": 159,
@@ -6506,7 +6506,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzjs419uZB7sTdLicY2",
+      "responseId": "msg_011CgG13EZ2nmFvTV5nB1L8N",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "410c6672443245948fb898578d9d3ce778326e41590592c965b71284c40273a7",
@@ -6514,9 +6514,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 3195,
+          "durationMs": 4760,
           "status": "completed",
-          "requestId": "req_011CgFzjd48mxEBaUYN6Q422",
+          "requestId": "req_011CgG12sqqgnB3HAQbfN5D1",
           "usage": {
             "input_tokens": 604,
             "output_tokens": 20,
@@ -6528,10 +6528,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2324,
+          "durationMs": 2409,
           "status": "completed",
-          "requestId": "req_011CgFzjrfBZpnKev85kv4tY",
-          "responseId": "msg_011CgFzjs419uZB7sTdLicY2",
+          "requestId": "req_011CgG13ECTLgcsrSbiccdRF",
+          "responseId": "msg_011CgG13EZ2nmFvTV5nB1L8N",
           "usage": {
             "input_tokens": 3388,
             "output_tokens": 159,
@@ -6662,8 +6662,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzk9ViDajJQFyDJJxri",
-        "completedAt": "2026-10-21T20:15:28.354Z",
+        "responseId": "msg_011CgG13YVnHgaNJ3miKNgNK",
+        "completedAt": "2026-10-21T20:19:24.478Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3404,
@@ -6677,9 +6677,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1497,
+            "durationMs": 1762,
             "status": "completed",
-            "requestId": "req_011CgFzk2cib1coCfJa4FtJh",
+            "requestId": "req_011CgG13QYZV74djjDAtHJdK",
             "usage": {
               "input_tokens": 613,
               "output_tokens": 21,
@@ -6691,10 +6691,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2299,
+            "durationMs": 2420,
             "status": "completed",
-            "requestId": "req_011CgFzk94BAdsc2J21m1gFx",
-            "responseId": "msg_011CgFzk9ViDajJQFyDJJxri",
+            "requestId": "req_011CgG13YAhgLAUqZN7H9d2X",
+            "responseId": "msg_011CgG13YVnHgaNJ3miKNgNK",
             "usage": {
               "input_tokens": 3404,
               "output_tokens": 236,
@@ -6766,7 +6766,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzk9ViDajJQFyDJJxri",
+      "responseId": "msg_011CgG13YVnHgaNJ3miKNgNK",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "e63d4a50474d01297ea6c738cc2b404e2f38d6050039eecfdcd356b5890e8621",
@@ -6774,9 +6774,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1497,
+          "durationMs": 1762,
           "status": "completed",
-          "requestId": "req_011CgFzk2cib1coCfJa4FtJh",
+          "requestId": "req_011CgG13QYZV74djjDAtHJdK",
           "usage": {
             "input_tokens": 613,
             "output_tokens": 21,
@@ -6788,10 +6788,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2299,
+          "durationMs": 2420,
           "status": "completed",
-          "requestId": "req_011CgFzk94BAdsc2J21m1gFx",
-          "responseId": "msg_011CgFzk9ViDajJQFyDJJxri",
+          "requestId": "req_011CgG13YAhgLAUqZN7H9d2X",
+          "responseId": "msg_011CgG13YVnHgaNJ3miKNgNK",
           "usage": {
             "input_tokens": 3404,
             "output_tokens": 236,
@@ -6942,8 +6942,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzkVvnGQxfhQZ1RWEHE",
-        "completedAt": "2026-10-21T20:15:33.924Z",
+        "responseId": "msg_011CgG13uS8CABnHPLiy7AHV",
+        "completedAt": "2026-10-21T20:19:29.859Z",
         "pageCount": 2,
         "usage": {
           "input_tokens": 5051,
@@ -6957,24 +6957,24 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 2475,
+            "durationMs": 2470,
             "status": "completed",
-            "requestId": "req_011CgFzkJvkBWjTEfrcXGzVk",
+            "requestId": "req_011CgG13iVoREFoYevb88YXb",
             "usage": {
               "input_tokens": 717,
               "output_tokens": 21,
               "total_tokens": 738
             },
             "purpose": "subscription",
-            "confidence": 0.93
+            "confidence": 0.95
           },
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 3081,
+            "durationMs": 2895,
             "status": "completed",
-            "requestId": "req_011CgFzkVYTYavB9wtDtab68",
-            "responseId": "msg_011CgFzkVvnGQxfhQZ1RWEHE",
+            "requestId": "req_011CgG13u53o9XtWGnVMVeq5",
+            "responseId": "msg_011CgG13uS8CABnHPLiy7AHV",
             "usage": {
               "input_tokens": 5051,
               "output_tokens": 283,
@@ -6985,7 +6985,7 @@
             "status": "completed",
             "endpoint": "local",
             "model": "deterministic",
-            "durationMs": 0
+            "durationMs": 1
           },
           "review": "pending"
         },
@@ -7057,7 +7057,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzkVvnGQxfhQZ1RWEHE",
+      "responseId": "msg_011CgG13uS8CABnHPLiy7AHV",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "80a636d0aa0bcf14e31b241a134a65e405ee5c719da9c88c664a4bb68861f6b5",
@@ -7065,24 +7065,24 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 2475,
+          "durationMs": 2470,
           "status": "completed",
-          "requestId": "req_011CgFzkJvkBWjTEfrcXGzVk",
+          "requestId": "req_011CgG13iVoREFoYevb88YXb",
           "usage": {
             "input_tokens": 717,
             "output_tokens": 21,
             "total_tokens": 738
           },
           "purpose": "subscription",
-          "confidence": 0.93
+          "confidence": 0.95
         },
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 3081,
+          "durationMs": 2895,
           "status": "completed",
-          "requestId": "req_011CgFzkVYTYavB9wtDtab68",
-          "responseId": "msg_011CgFzkVvnGQxfhQZ1RWEHE",
+          "requestId": "req_011CgG13u53o9XtWGnVMVeq5",
+          "responseId": "msg_011CgG13uS8CABnHPLiy7AHV",
           "usage": {
             "input_tokens": 5051,
             "output_tokens": 283,
@@ -7093,7 +7093,7 @@
           "status": "completed",
           "endpoint": "local",
           "model": "deterministic",
-          "durationMs": 0
+          "durationMs": 1
         },
         "review": "pending"
       }
@@ -7218,8 +7218,8 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzm6d6nZFpbMe1hMHow",
-        "completedAt": "2026-10-21T20:15:41.601Z",
+        "responseId": "msg_011CgG14UtmUAoyTYRuwqxzt",
+        "completedAt": "2026-10-21T20:19:37.495Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3397,
@@ -7233,9 +7233,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 5038,
+            "durationMs": 4935,
             "status": "completed",
-            "requestId": "req_011CgFzkijDFitTApwp3VT5c",
+            "requestId": "req_011CgG147VA6GzikBThndepj",
             "usage": {
               "input_tokens": 625,
               "output_tokens": 20,
@@ -7247,10 +7247,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2628,
+            "durationMs": 2687,
             "status": "completed",
-            "requestId": "req_011CgFzm6J1MkbQyLksxoMPx",
-            "responseId": "msg_011CgFzm6d6nZFpbMe1hMHow",
+            "requestId": "req_011CgG14UZviUxpuy4D96abj",
+            "responseId": "msg_011CgG14UtmUAoyTYRuwqxzt",
             "usage": {
               "input_tokens": 3397,
               "output_tokens": 252,
@@ -7322,7 +7322,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzm6d6nZFpbMe1hMHow",
+      "responseId": "msg_011CgG14UtmUAoyTYRuwqxzt",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "d71ae26244e122a969ec510ca89d981b60bf81280571c851411e74224aae4229",
@@ -7330,9 +7330,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 5038,
+          "durationMs": 4935,
           "status": "completed",
-          "requestId": "req_011CgFzkijDFitTApwp3VT5c",
+          "requestId": "req_011CgG147VA6GzikBThndepj",
           "usage": {
             "input_tokens": 625,
             "output_tokens": 20,
@@ -7344,10 +7344,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2628,
+          "durationMs": 2687,
           "status": "completed",
-          "requestId": "req_011CgFzm6J1MkbQyLksxoMPx",
-          "responseId": "msg_011CgFzm6d6nZFpbMe1hMHow",
+          "requestId": "req_011CgG14UZviUxpuy4D96abj",
+          "responseId": "msg_011CgG14UtmUAoyTYRuwqxzt",
           "usage": {
             "input_tokens": 3397,
             "output_tokens": 252,
@@ -7478,8 +7478,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzmQJEVo57fJ3wBE1at",
-        "completedAt": "2026-10-21T20:15:45.420Z",
+        "responseId": "msg_011CgG14nvEeJMzzmXCcDXgb",
+        "completedAt": "2026-10-21T20:19:41.370Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3399,
@@ -7493,24 +7493,24 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1490,
+            "durationMs": 1514,
             "status": "completed",
-            "requestId": "req_011CgFzmHe8ka1yM2pZPw6oc",
+            "requestId": "req_011CgG14gX26NfS59VdApEk6",
             "usage": {
               "input_tokens": 627,
               "output_tokens": 20,
               "total_tokens": 647
             },
             "purpose": "bank",
-            "confidence": 0.9
+            "confidence": 0.93
           },
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2315,
+            "durationMs": 2347,
             "status": "completed",
-            "requestId": "req_011CgFzmPuv57U8WPACzTwvS",
-            "responseId": "msg_011CgFzmQJEVo57fJ3wBE1at",
+            "requestId": "req_011CgG14naQQsxCXnfMJwMrH",
+            "responseId": "msg_011CgG14nvEeJMzzmXCcDXgb",
             "usage": {
               "input_tokens": 3399,
               "output_tokens": 256,
@@ -7582,7 +7582,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzmQJEVo57fJ3wBE1at",
+      "responseId": "msg_011CgG14nvEeJMzzmXCcDXgb",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "82045f07cf3dd2c836592428504522738036eddc795cac4bc1a2db9792b27615",
@@ -7590,24 +7590,24 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1490,
+          "durationMs": 1514,
           "status": "completed",
-          "requestId": "req_011CgFzmHe8ka1yM2pZPw6oc",
+          "requestId": "req_011CgG14gX26NfS59VdApEk6",
           "usage": {
             "input_tokens": 627,
             "output_tokens": 20,
             "total_tokens": 647
           },
           "purpose": "bank",
-          "confidence": 0.9
+          "confidence": 0.93
         },
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2315,
+          "durationMs": 2347,
           "status": "completed",
-          "requestId": "req_011CgFzmPuv57U8WPACzTwvS",
-          "responseId": "msg_011CgFzmQJEVo57fJ3wBE1at",
+          "requestId": "req_011CgG14naQQsxCXnfMJwMrH",
+          "responseId": "msg_011CgG14nvEeJMzzmXCcDXgb",
           "usage": {
             "input_tokens": 3399,
             "output_tokens": 256,
@@ -7758,8 +7758,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzmgL8fGELEibNQbpCt",
-        "completedAt": "2026-10-21T20:15:49.359Z",
+        "responseId": "msg_011CgG15LDR9SPsCBtZrohGQ",
+        "completedAt": "2026-10-21T20:19:48.932Z",
         "pageCount": 2,
         "usage": {
           "input_tokens": 5064,
@@ -7773,9 +7773,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1423,
+            "durationMs": 4929,
             "status": "completed",
-            "requestId": "req_011CgFzmZxQMdCjMM6oRqu42",
+            "requestId": "req_011CgG14xi6Pbszq2BEkeEx6",
             "usage": {
               "input_tokens": 730,
               "output_tokens": 21,
@@ -7787,10 +7787,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2504,
+            "durationMs": 2622,
             "status": "completed",
-            "requestId": "req_011CgFzmfzJ12JpF4QYrqNd7",
-            "responseId": "msg_011CgFzmgL8fGELEibNQbpCt",
+            "requestId": "req_011CgG15Kp6se3w8FMTY419P",
+            "responseId": "msg_011CgG15LDR9SPsCBtZrohGQ",
             "usage": {
               "input_tokens": 5064,
               "output_tokens": 277,
@@ -7873,7 +7873,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzmgL8fGELEibNQbpCt",
+      "responseId": "msg_011CgG15LDR9SPsCBtZrohGQ",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "b58461af9f66c319b0441024ddeb9b975e6f216f6fe3883ac61c230391009d2e",
@@ -7881,9 +7881,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1423,
+          "durationMs": 4929,
           "status": "completed",
-          "requestId": "req_011CgFzmZxQMdCjMM6oRqu42",
+          "requestId": "req_011CgG14xi6Pbszq2BEkeEx6",
           "usage": {
             "input_tokens": 730,
             "output_tokens": 21,
@@ -7895,10 +7895,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2504,
+          "durationMs": 2622,
           "status": "completed",
-          "requestId": "req_011CgFzmfzJ12JpF4QYrqNd7",
-          "responseId": "msg_011CgFzmgL8fGELEibNQbpCt",
+          "requestId": "req_011CgG15Kp6se3w8FMTY419P",
+          "responseId": "msg_011CgG15LDR9SPsCBtZrohGQ",
           "usage": {
             "input_tokens": 5064,
             "output_tokens": 277,
@@ -8054,8 +8054,8 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFznFer2RmdEz62ts4pT",
-        "completedAt": "2026-10-21T20:15:56.665Z",
+        "responseId": "msg_011CgG15vgLq5S145WitbsTY",
+        "completedAt": "2026-10-21T20:19:56.460Z",
         "pageCount": 2,
         "usage": {
           "input_tokens": 5051,
@@ -8069,9 +8069,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 5279,
+            "durationMs": 5422,
             "status": "completed",
-            "requestId": "req_011CgFzmrjTRYQH2VM7sbWk3",
+            "requestId": "req_011CgG15X32iMDL941Y97y9v",
             "usage": {
               "input_tokens": 717,
               "output_tokens": 21,
@@ -8083,10 +8083,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2014,
+            "durationMs": 2087,
             "status": "completed",
-            "requestId": "req_011CgFznFJGTHNtcZNQ97n4p",
-            "responseId": "msg_011CgFznFer2RmdEz62ts4pT",
+            "requestId": "req_011CgG15vHXJ4ggRU8G9uqXz",
+            "responseId": "msg_011CgG15vgLq5S145WitbsTY",
             "usage": {
               "input_tokens": 5051,
               "output_tokens": 261,
@@ -8169,7 +8169,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFznFer2RmdEz62ts4pT",
+      "responseId": "msg_011CgG15vgLq5S145WitbsTY",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "3c76f34eee20e5c905bc9f3eec0c773d8592643dbe87c9ac64e6605dfd5109c9",
@@ -8177,9 +8177,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 5279,
+          "durationMs": 5422,
           "status": "completed",
-          "requestId": "req_011CgFzmrjTRYQH2VM7sbWk3",
+          "requestId": "req_011CgG15X32iMDL941Y97y9v",
           "usage": {
             "input_tokens": 717,
             "output_tokens": 21,
@@ -8191,10 +8191,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2014,
+          "durationMs": 2087,
           "status": "completed",
-          "requestId": "req_011CgFznFJGTHNtcZNQ97n4p",
-          "responseId": "msg_011CgFznFer2RmdEz62ts4pT",
+          "requestId": "req_011CgG15vHXJ4ggRU8G9uqXz",
+          "responseId": "msg_011CgG15vgLq5S145WitbsTY",
           "usage": {
             "input_tokens": 5051,
             "output_tokens": 261,
@@ -8254,28 +8254,28 @@
             "label": "Legal subscriber",
             "value": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Legal subscriber: Elmshore Ventures LLC"
+            "quote": "Elmshore Ventures LLC"
           },
           {
             "key": "fund-name",
             "label": "Fund",
             "value": "Juniper Income Fund IV",
             "page": 1,
-            "quote": "Fund: Juniper Income Fund IV"
+            "quote": "Juniper Income Fund IV"
           },
           {
             "key": "share-class",
             "label": "Share class",
             "value": "Class Q",
             "page": 2,
-            "quote": "Share class: Class Q"
+            "quote": "Class Q"
           },
           {
             "key": "commitment",
             "label": "Requested commitment",
             "value": "EUR 1,250,000",
             "page": 2,
-            "quote": "Requested commitment: EUR 1,250,000"
+            "quote": "EUR 1,250,000"
           },
           {
             "key": "currency",
@@ -8307,7 +8307,7 @@
             "label": "Legal subscriber",
             "value": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Legal subscriber: Elmshore Ventures LLC",
+            "quote": "Elmshore Ventures LLC",
             "sourceStatus": "matched"
           },
           {
@@ -8315,7 +8315,7 @@
             "label": "Fund",
             "value": "Juniper Income Fund IV",
             "page": 1,
-            "quote": "Fund: Juniper Income Fund IV",
+            "quote": "Juniper Income Fund IV",
             "sourceStatus": "matched"
           },
           {
@@ -8323,7 +8323,7 @@
             "label": "Share class",
             "value": "Class Q",
             "page": 2,
-            "quote": "Share class: Class Q",
+            "quote": "Class Q",
             "sourceStatus": "matched"
           },
           {
@@ -8331,7 +8331,7 @@
             "label": "Requested commitment",
             "value": "EUR 1,250,000",
             "page": 2,
-            "quote": "Requested commitment: EUR 1,250,000",
+            "quote": "EUR 1,250,000",
             "sourceStatus": "matched"
           },
           {
@@ -8354,13 +8354,13 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzneN5unhqtYyyjCPG2",
-        "completedAt": "2026-10-21T20:16:02.442Z",
+        "responseId": "msg_011CgG16JzWyoMS3aFzrfEtW",
+        "completedAt": "2026-10-21T20:20:01.754Z",
         "pageCount": 2,
         "usage": {
           "input_tokens": 5062,
-          "output_tokens": 296,
-          "total_tokens": 5358
+          "output_tokens": 273,
+          "total_tokens": 5335
         },
         "processing": {
           "version": "onboarding-anthropic-v1",
@@ -8369,9 +8369,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 3263,
+            "durationMs": 3039,
             "status": "completed",
-            "requestId": "req_011CgFznPwRQ38NjVJUHCguv",
+            "requestId": "req_011CgG165ComTzH1TZUh7sgc",
             "usage": {
               "input_tokens": 728,
               "output_tokens": 21,
@@ -8383,14 +8383,14 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2503,
+            "durationMs": 2241,
             "status": "completed",
-            "requestId": "req_011CgFzndymtij7AMR9UkJz9",
-            "responseId": "msg_011CgFzneN5unhqtYyyjCPG2",
+            "requestId": "req_011CgG16Jay6r9QfBN2V1UNZ",
+            "responseId": "msg_011CgG16JzWyoMS3aFzrfEtW",
             "usage": {
               "input_tokens": 5062,
-              "output_tokens": 296,
-              "total_tokens": 5358
+              "output_tokens": 273,
+              "total_tokens": 5335
             }
           },
           "check": {
@@ -8415,7 +8415,7 @@
             "expectedPage": 1,
             "actual": "Elmshore Ventures LLC",
             "page": 1,
-            "quote": "Legal subscriber: Elmshore Ventures LLC",
+            "quote": "Elmshore Ventures LLC",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -8426,7 +8426,7 @@
             "expectedPage": 1,
             "actual": "Juniper Income Fund IV",
             "page": 1,
-            "quote": "Fund: Juniper Income Fund IV",
+            "quote": "Juniper Income Fund IV",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -8437,7 +8437,7 @@
             "expectedPage": 2,
             "actual": "Class Q",
             "page": 2,
-            "quote": "Share class: Class Q",
+            "quote": "Class Q",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -8448,7 +8448,7 @@
             "expectedPage": 2,
             "actual": "EUR 1,250,000",
             "page": 2,
-            "quote": "Requested commitment: EUR 1,250,000",
+            "quote": "EUR 1,250,000",
             "correct": true,
             "sourceCorrect": true,
             "unknown": false
@@ -8469,7 +8469,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzneN5unhqtYyyjCPG2",
+      "responseId": "msg_011CgG16JzWyoMS3aFzrfEtW",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "e3774491d54f5eebbde0f0b33cb9fb211b9cef309e301c5348949baba0dd1384",
@@ -8477,9 +8477,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 3263,
+          "durationMs": 3039,
           "status": "completed",
-          "requestId": "req_011CgFznPwRQ38NjVJUHCguv",
+          "requestId": "req_011CgG165ComTzH1TZUh7sgc",
           "usage": {
             "input_tokens": 728,
             "output_tokens": 21,
@@ -8491,14 +8491,14 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2503,
+          "durationMs": 2241,
           "status": "completed",
-          "requestId": "req_011CgFzndymtij7AMR9UkJz9",
-          "responseId": "msg_011CgFzneN5unhqtYyyjCPG2",
+          "requestId": "req_011CgG16Jay6r9QfBN2V1UNZ",
+          "responseId": "msg_011CgG16JzWyoMS3aFzrfEtW",
           "usage": {
             "input_tokens": 5062,
-            "output_tokens": 296,
-            "total_tokens": 5358
+            "output_tokens": 273,
+            "total_tokens": 5335
           }
         },
         "check": {
@@ -8605,8 +8605,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFznxdBydnSwsRggvQju",
-        "completedAt": "2026-10-21T20:16:06.634Z",
+        "responseId": "msg_011CgG16ZpkGoi5wfU9sQRnr",
+        "completedAt": "2026-10-21T20:20:05.401Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3376,
@@ -8620,9 +8620,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1772,
+            "durationMs": 1316,
             "status": "completed",
-            "requestId": "req_011CgFznphhgRpendaPsem7t",
+            "requestId": "req_011CgG16Tpqpfws3LWhuY65W",
             "usage": {
               "input_tokens": 604,
               "output_tokens": 20,
@@ -8634,10 +8634,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2408,
+            "durationMs": 2318,
             "status": "completed",
-            "requestId": "req_011CgFznxHbnrGabSyCqB8CW",
-            "responseId": "msg_011CgFznxdBydnSwsRggvQju",
+            "requestId": "req_011CgG16ZUev4RGdA1WqxYow",
+            "responseId": "msg_011CgG16ZpkGoi5wfU9sQRnr",
             "usage": {
               "input_tokens": 3376,
               "output_tokens": 191,
@@ -8698,7 +8698,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFznxdBydnSwsRggvQju",
+      "responseId": "msg_011CgG16ZpkGoi5wfU9sQRnr",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "a63f8681def8ad30031a9522b02c25282107a17c847295a16cc47cb7f691d821",
@@ -8706,9 +8706,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1772,
+          "durationMs": 1316,
           "status": "completed",
-          "requestId": "req_011CgFznphhgRpendaPsem7t",
+          "requestId": "req_011CgG16Tpqpfws3LWhuY65W",
           "usage": {
             "input_tokens": 604,
             "output_tokens": 20,
@@ -8720,10 +8720,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2408,
+          "durationMs": 2318,
           "status": "completed",
-          "requestId": "req_011CgFznxHbnrGabSyCqB8CW",
-          "responseId": "msg_011CgFznxdBydnSwsRggvQju",
+          "requestId": "req_011CgG16ZUev4RGdA1WqxYow",
+          "responseId": "msg_011CgG16ZpkGoi5wfU9sQRnr",
           "usage": {
             "input_tokens": 3376,
             "output_tokens": 191,
@@ -8813,7 +8813,7 @@
           },
           {
             "key": "intermediate-owner",
-            "label": "Owner of Northstar Holding Ltd",
+            "label": "Owner of intermediate entity",
             "value": "Fiction Grove Ltd",
             "page": 1,
             "quote": "Owner of intermediate entity: Fiction Grove Ltd"
@@ -8877,7 +8877,7 @@
           },
           {
             "key": "intermediate-owner",
-            "label": "Owner of Northstar Holding Ltd",
+            "label": "Owner of intermediate entity",
             "value": "Fiction Grove Ltd",
             "page": 1,
             "quote": "Owner of intermediate entity: Fiction Grove Ltd",
@@ -8899,13 +8899,13 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzoWPtaDAcdsk1bYG7S",
-        "completedAt": "2026-10-21T20:16:14.546Z",
+        "responseId": "msg_011CgG16rRP4Cu9Wb644Egae",
+        "completedAt": "2026-10-21T20:20:09.816Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3445,
-          "output_tokens": 377,
-          "total_tokens": 3822
+          "output_tokens": 372,
+          "total_tokens": 3817
         },
         "processing": {
           "version": "onboarding-anthropic-v1",
@@ -8914,9 +8914,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 5019,
+            "durationMs": 1543,
             "status": "completed",
-            "requestId": "req_011CgFzo8cxS96ZxMYZEQoLb",
+            "requestId": "req_011CgG16jWuRrnT9NY6k4SEr",
             "usage": {
               "input_tokens": 654,
               "output_tokens": 21,
@@ -8928,14 +8928,14 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2882,
+            "durationMs": 2854,
             "status": "completed",
-            "requestId": "req_011CgFzoW3ZgYwP1Wxn4fieZ",
-            "responseId": "msg_011CgFzoWPtaDAcdsk1bYG7S",
+            "requestId": "req_011CgG16r3oebHyDRADH4Bud",
+            "responseId": "msg_011CgG16rRP4Cu9Wb644Egae",
             "usage": {
               "input_tokens": 3445,
-              "output_tokens": 377,
-              "total_tokens": 3822
+              "output_tokens": 372,
+              "total_tokens": 3817
             }
           },
           "check": {
@@ -9025,7 +9025,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzoWPtaDAcdsk1bYG7S",
+      "responseId": "msg_011CgG16rRP4Cu9Wb644Egae",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "b3e65dac064a29dd9670832a4843737ffa3edb23df1b66f046b4813126ceff7a",
@@ -9033,9 +9033,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 5019,
+          "durationMs": 1543,
           "status": "completed",
-          "requestId": "req_011CgFzo8cxS96ZxMYZEQoLb",
+          "requestId": "req_011CgG16jWuRrnT9NY6k4SEr",
           "usage": {
             "input_tokens": 654,
             "output_tokens": 21,
@@ -9047,14 +9047,14 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2882,
+          "durationMs": 2854,
           "status": "completed",
-          "requestId": "req_011CgFzoW3ZgYwP1Wxn4fieZ",
-          "responseId": "msg_011CgFzoWPtaDAcdsk1bYG7S",
+          "requestId": "req_011CgG16r3oebHyDRADH4Bud",
+          "responseId": "msg_011CgG16rRP4Cu9Wb644Egae",
           "usage": {
             "input_tokens": 3445,
-            "output_tokens": 377,
-            "total_tokens": 3822
+            "output_tokens": 372,
+            "total_tokens": 3817
           }
         },
         "check": {
@@ -9186,8 +9186,8 @@
           }
         ],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzp7hg9n1qJRJArCfsX",
-        "completedAt": "2026-10-21T20:16:23.231Z",
+        "responseId": "msg_011CgG17S9fC4gfqz8F49xbe",
+        "completedAt": "2026-10-21T20:20:18.829Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3459,
@@ -9201,9 +9201,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 5369,
+            "durationMs": 4990,
             "status": "completed",
-            "requestId": "req_011CgFzoiTSQj6Jaw8sHyQKy",
+            "requestId": "req_011CgG174fpqh5r6sDprkqk4",
             "usage": {
               "input_tokens": 687,
               "output_tokens": 20,
@@ -9215,10 +9215,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 3301,
+            "durationMs": 4004,
             "status": "completed",
-            "requestId": "req_011CgFzp7NKzcJsZwyPQWN3Z",
-            "responseId": "msg_011CgFzp7hg9n1qJRJArCfsX",
+            "requestId": "req_011CgG17Ri7QwL6Wm4hgoR8H",
+            "responseId": "msg_011CgG17S9fC4gfqz8F49xbe",
             "usage": {
               "input_tokens": 3459,
               "output_tokens": 252,
@@ -9229,7 +9229,7 @@
             "status": "completed",
             "endpoint": "local",
             "model": "deterministic",
-            "durationMs": 0
+            "durationMs": 1
           },
           "review": "pending"
         },
@@ -9290,7 +9290,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzp7hg9n1qJRJArCfsX",
+      "responseId": "msg_011CgG17S9fC4gfqz8F49xbe",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "e08b5b68cb596124f0abc6b046e7f1672ef547110e6cc5e6d1f0c2dc4b3839ae",
@@ -9298,9 +9298,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 5369,
+          "durationMs": 4990,
           "status": "completed",
-          "requestId": "req_011CgFzoiTSQj6Jaw8sHyQKy",
+          "requestId": "req_011CgG174fpqh5r6sDprkqk4",
           "usage": {
             "input_tokens": 687,
             "output_tokens": 20,
@@ -9312,10 +9312,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 3301,
+          "durationMs": 4004,
           "status": "completed",
-          "requestId": "req_011CgFzp7NKzcJsZwyPQWN3Z",
-          "responseId": "msg_011CgFzp7hg9n1qJRJArCfsX",
+          "requestId": "req_011CgG17Ri7QwL6Wm4hgoR8H",
+          "responseId": "msg_011CgG17S9fC4gfqz8F49xbe",
           "usage": {
             "input_tokens": 3459,
             "output_tokens": 252,
@@ -9326,7 +9326,7 @@
           "status": "completed",
           "endpoint": "local",
           "model": "deterministic",
-          "durationMs": 0
+          "durationMs": 1
         },
         "review": "pending"
       }
@@ -9355,9 +9355,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1483,
+            "durationMs": 1298,
             "status": "completed",
-            "requestId": "req_011CgFzpMZMsTvxQjyS3Bvaj",
+            "requestId": "req_011CgG17itjPTHo9RgRsnFJp",
             "usage": {
               "input_tokens": 614,
               "output_tokens": 22,
@@ -9399,9 +9399,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1483,
+          "durationMs": 1298,
           "status": "completed",
-          "requestId": "req_011CgFzpMZMsTvxQjyS3Bvaj",
+          "requestId": "req_011CgG17itjPTHo9RgRsnFJp",
           "usage": {
             "input_tokens": 614,
             "output_tokens": 22,
@@ -9540,8 +9540,8 @@
         ],
         "flags": [],
         "model": "claude-sonnet-5-5",
-        "responseId": "msg_011CgFzpbUX4LJsjP3X4PGNz",
-        "completedAt": "2026-10-21T20:16:28.426Z",
+        "responseId": "msg_011CgG17y4WhWuGwYx983esP",
+        "completedAt": "2026-10-21T20:20:24.139Z",
         "pageCount": 1,
         "usage": {
           "input_tokens": 3393,
@@ -9555,9 +9555,9 @@
           "classification": {
             "endpoint": "messages",
             "model": "claude-opus-5-5",
-            "durationMs": 1667,
+            "durationMs": 1913,
             "status": "completed",
-            "requestId": "req_011CgFzpTx5u49jBKhfbD1G4",
+            "requestId": "req_011CgG17pULVnK1MEzcmCLHv",
             "usage": {
               "input_tokens": 621,
               "output_tokens": 20,
@@ -9569,10 +9569,10 @@
           "extraction": {
             "endpoint": "messages",
             "model": "claude-sonnet-5-5",
-            "durationMs": 2024,
+            "durationMs": 2078,
             "status": "completed",
-            "requestId": "req_011CgFzpb6Sf4BW4LQNVm6eN",
-            "responseId": "msg_011CgFzpbUX4LJsjP3X4PGNz",
+            "requestId": "req_011CgG17xkAjZptuNmXpKM14",
+            "responseId": "msg_011CgG17y4WhWuGwYx983esP",
             "usage": {
               "input_tokens": 3393,
               "output_tokens": 250,
@@ -9644,7 +9644,7 @@
         "duplicates": [],
         "passed": true
       },
-      "responseId": "msg_011CgFzpbUX4LJsjP3X4PGNz",
+      "responseId": "msg_011CgG17y4WhWuGwYx983esP",
       "processing": {
         "version": "onboarding-anthropic-v1",
         "pdfHash": "344cf2b032fff0e7f4ee3c8cde857c34072801f84622b1fc1e5e7bb3b13c9408",
@@ -9652,9 +9652,9 @@
         "classification": {
           "endpoint": "messages",
           "model": "claude-opus-5-5",
-          "durationMs": 1667,
+          "durationMs": 1913,
           "status": "completed",
-          "requestId": "req_011CgFzpTx5u49jBKhfbD1G4",
+          "requestId": "req_011CgG17pULVnK1MEzcmCLHv",
           "usage": {
             "input_tokens": 621,
             "output_tokens": 20,
@@ -9666,10 +9666,10 @@
         "extraction": {
           "endpoint": "messages",
           "model": "claude-sonnet-5-5",
-          "durationMs": 2024,
+          "durationMs": 2078,
           "status": "completed",
-          "requestId": "req_011CgFzpb6Sf4BW4LQNVm6eN",
-          "responseId": "msg_011CgFzpbUX4LJsjP3X4PGNz",
+          "requestId": "req_011CgG17xkAjZptuNmXpKM14",
+          "responseId": "msg_011CgG17y4WhWuGwYx983esP",
           "usage": {
             "input_tokens": 3393,
             "output_tokens": 250,
