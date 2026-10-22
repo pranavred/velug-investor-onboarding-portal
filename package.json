@@ -26,7 +26,7 @@
     "react": "19.2.6",
     "react-dom": "19.2.6",
     "redis": "5.8.3",
-    "unpdf": "1.8.1"
+    "unpdf": "1.9.1"
   },
   "devDependencies": {
     "@eslint/js": "9.39.5",
